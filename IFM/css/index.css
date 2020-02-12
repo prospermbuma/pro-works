@@ -1,0 +1,136 @@
+body {
+   background-color: #f0f0f0;
+   overflow: hidden;
+ }
+
+ .header {
+   background-color: dodgerblue; 
+   margin-top: -8px;
+   height: auto;
+   padding: 12px;
+ }
+
+ table {
+   border-collapse: collapse;
+ }
+
+ #sis {
+   margin-left: 80px;
+ }
+
+ #ifm {
+   margin-right: 50px;
+   background-color: lightgray;
+   padding: 12px;
+   border-radius: 2px;
+}
+
+ .ifm {
+   transition: all 0.5s;
+}
+
+ .ifm:hover {
+   color: darkblue;
+   transition: all 0.5s;
+}
+
+ section {
+   background-color: #f0f0f0 ;
+   padding: 54px;
+}
+
+.form {
+   color: dodgerblue;
+   width: 250px;
+   padding: 12px;
+   margin: 0 auto;
+   background-color: #ffffff;
+   border-radius: 1px;
+   opacity: 0.5px;
+   height: 300px;
+   margin-top: 50px;
+   box-shadow: 3px 5px 10px 3px #000000;
+ }
+
+ .list-1 {
+   padding: 8px 71px;
+   border: none;
+   margin-top: 5px;
+   border-radius: 2px;
+   cursor: pointer;
+   transition: all 0.5s;
+   background-color: dodgerblue;
+   color: #ffffff;
+   border: 1px solid dodgerblue;
+}
+
+ .list-1:hover {
+   background-color: #f0f0f0;
+   color: dodgerblue;
+   transition: all 0.5s;
+   opacity: 0.9;
+   border: 1px solid dodgerblue;
+ }
+
+ .list-2 {
+   padding: 8px 71px;
+   border: none;
+   margin-top: 5px;
+   border-radius: 2px;
+   cursor: pointer;
+   transition: all 0.5s;
+   background-color: dodgerblue;
+   color: #ffffff;
+   border: 1px solid dodgerblue;
+}
+ 
+ .list-2:hover {
+   background-color: #f0f0f0;
+   color: dodgerblue;
+   transition: all 0.5s;
+   opacity: 0.9;
+   border: 1px solid dodgerblue;
+}
+
+ a {
+   text-decoration: none;
+   color: dodgerblue;
+}
+
+ ul {
+   list-style-type: none;
+   padding: 12px;
+}
+
+ li {
+   padding: 16px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ li a {
+   color: #ffffff;
+}
+
+ li a:hover {
+   color: dodgerblue;
+}
+
+
+/*Media Query*/
+@media (max-width: 768px) {
+    #sis {
+    font-size: 15px;
+    margin-left: 5px;
+    }
+
+   #ifm {
+    font-size: 12px;
+    }
+
+    img {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+    }
+
+}
