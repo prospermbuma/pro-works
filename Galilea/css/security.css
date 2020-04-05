@@ -1,0 +1,123 @@
+body {
+    overflow-x: hidden;
+}
+
+.brand {
+    transition: 2s all;
+    transform: scale(1.2);
+}
+
+.brand:hover {
+   
+    transition: 1s all;
+    transform: scale(1.1);
+}
+
+#showcase .dark-overlay {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7)
+}
+
+.carousel-item {
+	height: 370px;
+}
+
+.carousel-image-1 {
+	background-image: url('../img/liker.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.carousel-image-2 {
+	background: url('../img/cam.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.carousel-image-3 {
+	background: url('../img/a.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.card-columns .card {
+    border: none;
+    //background: #f8f9fa;
+}
+
+
+.card-columns .card:hover {
+    //background:#d3d3d3;
+}
+
+img {
+    padding: 12px;
+}
+
+#go-top {
+    background: #808080;
+    color: #f0f0f0;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+#go-top:hover {
+    color: #000000;
+}
+
+#link {
+	color: #808080;
+	transition: 0.5s;
+}
+
+#link:hover {
+	color: silver;
+	opacity: 0.4;
+}
+
+
+/*FOOTER SOCIAL MEDIA ICONS*/
+
+.fab {
+	color: #808080;
+	transition: 0.5s;
+}
+
+.fa-facebook-f:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-twitter:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-instagram:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-linkedin-in:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-pinterest:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-google-plus-g:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+    h1.display-3 {
+        font-size: 40px;
+    }
+}

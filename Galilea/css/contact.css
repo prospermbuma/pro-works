@@ -1,0 +1,111 @@
+body {
+    overflow-x: hidden;
+}
+
+.brand {
+    transition: 2s all;
+    transform: scale(1.2);
+}
+
+.brand:hover {
+   
+    transition: 1s all;
+    transform: scale(1.1);
+}
+
+#contact {
+    background: url( '../img/aboutus.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#contact .dark-overlay {
+    position: relative;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.form-group, .card {
+    opacity: 0.6;
+}
+
+.col-md-4 .card {
+    border: none;
+}
+
+
+.col-md-4 .card:hover {
+    background: #f8f9fa;
+}
+
+img {
+    padding: 12px;
+}
+
+#go-top {
+    background: #808080;
+    color: #f0f0f0;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+#go-top:hover {
+    color: #000000;
+}
+
+#link {
+	color: #808080;
+	transition: 0.5s;
+}
+
+#link:hover {
+	color: silver;
+	opacity: 0.4;
+}
+
+
+/*FOOTER SOCIAL MEDIA ICONS*/
+
+.fab {
+	color: #808080;
+	transition: 0.5s;
+}
+
+.fa-facebook-f:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-twitter:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-instagram:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-linkedin-in:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-pinterest:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-google-plus-g:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+
+@media (max-width: 500px) {
+    h1.display-3 {
+        font-size: 40px;
+    }
+}
