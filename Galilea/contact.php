@@ -200,11 +200,12 @@ echo '<p class="alert alert-success text-success">'. $formMessage . '</p>';
                                         <br>
                                         Fax: +255 736 601 525
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+		  </div>
       </div>
   </section>
 
