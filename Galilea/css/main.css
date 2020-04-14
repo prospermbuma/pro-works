@@ -15,11 +15,11 @@ body {
 
 #showcase .dark-overlay {
 	width: 100%;
-	background: rgba(0, 0, 0, 0.7)
+	background: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-item {
-	height: 370px;
+	height: 400px;
 }
 
 .carousel-image-1 {
