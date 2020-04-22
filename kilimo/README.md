@@ -1,2 +1,0 @@
-# ekilimo-web
-ekilimo web
