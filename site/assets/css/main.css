@@ -19,7 +19,7 @@ body {
 }
 
 .card {
-  border: 1px solid #d3d3d3;
+  border: 1px solid #dddddd;
   background: #f8f9fa;
   flex-basis: 20%;
   margin: 12px;
@@ -47,6 +47,38 @@ body {
   margin-top: -25px;
   padding: 20px;
   text-align: start;
+  line-height: 1.8rem;
+}
+
+
+h2.heading-2 {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+h2.heading-2::before {
+  content: '';
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  display: block;
+  bottom: 1px;
+  left: calc(50% - 60px);
+  position: absolute;
+
+}
+
+h2.heading-2::after {
+  content: '';
+  background: #87b337;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0;
+  left: calc(50% - 20px);
+  position: absolute;
+
 }
 
 /*==================================================
@@ -209,6 +241,26 @@ a#active {
   transition: all 0.5s ease-in-out;
 }
 
+.right {
+  display: grid;
+  float: right;
+  justify-content: stretch;
+  margin-top: -280px;
+  padding: 60px;
+}
+
+.carousel-caption .fab {
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel-caption  .fab:hover {
+  color: #669b04;
+  transition: all 0.5s ease-in-out;
+}
+
 /*==================================================
 # Work with us Section
 ===================================================*/
@@ -301,6 +353,16 @@ p.para {
   color: #f8f9fa;
 }
 
+#works h2.heading-2::after {
+  /* content: ''; */
+  /* position: absolute; */
+  background: #57523f;
+  /* height: 3px; */
+  /* width: 40px; */
+  /* bottom: 0; */
+  /* left: calc(50% - 20px); */
+}
+
 #works p.para {
   text-align: center;
   display: flex;
@@ -313,6 +375,18 @@ p.para {
 
 #works .card {
   border: none;
+  box-shadow: #000 0px 2px 2px 0px;
+}
+
+#works .card-img-top {
+  transition: all 0.5s ease-in-out;
+}
+
+#works .card-img-top:hover {
+  /* transform: scale(1.1); */
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  height: 200px;
 }
 
 /*==================================================
@@ -509,6 +583,19 @@ p.para {
   cursor: pointer;
 }
 
+#footer .fab {
+  font-size: 20px;
+  margin-top: -30px;
+  float: left;
+  color: #6c757d;
+  transition: all 0.5s ease-in-out;
+}
+
+#footer .fab:hover {
+  color: #669b04;
+  transition: all 0.5s ease-in-out;
+}
+
 #footer .footer-logo {
   flex-basis: 50%;  
   margin: 20px;
@@ -555,7 +642,7 @@ p.para {
 }
 
 #footer .footer-social a {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: #6c757d;
   transition: all 0.5s ease-in-out;
@@ -581,6 +668,7 @@ p.para {
 #footer #events {
   border-right: #6c757d 3px solid;
   border-right-width: 12px;
+  border-radius: 50px;
   height: 15px;
   padding-right: 20px;
 }
@@ -604,6 +692,7 @@ p.para {
 #footer #forums {
   border-right: #6c757d 3px solid;
   border-right-width: 12px;
+  border-radius: 50px;
   height: 15px;
   padding-right: 20px;
 }
@@ -612,25 +701,18 @@ p.para {
   border-right: #669b04 5px solid;
 }
 
-#footer .fab {
-  font-size: 20px;
-  float: left;
-  color: #6c757d;
-  transition: all 0.5s ease-in-out;
-}
-
-#footer .fab:hover {
-  color: #669b04;
-  transition: all 0.5s ease-in-out;
-}
-
 #footer .fas {
   float: right;
   font-size: 45px;
   margin-top: 50px;
-  color: #6c757d;
+  color: #669b04;
   transition: all 1s ease-in-out;
   animation: mover 1s ease-in-out 0  infinite alternate;
+}
+
+#footer .fas:hover {
+  color: #6c757d;
+  transition: all 1s ease-in-out;
 }
 
 @keyframes mover {
@@ -639,10 +721,7 @@ p.para {
   100% {transform: translateY(-10px);}
 }
 
-#footer .fas:hover {
-  color: #669b04;
-  transition: all 1s ease-in-out;
-}
+
 
 
 
