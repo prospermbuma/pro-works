@@ -260,7 +260,7 @@ a#active {
 .carousel-caption .fab {
   font-size: 20px;
   padding: 10px;
-  color: #fff;
+  color: #ddd;
   transition: all 0.5s ease-in-out;
 }
 
@@ -683,7 +683,7 @@ p.para {
 #footer #fund {
   border-right: #6c757d 3px solid;
   border-radius: 50px;
-  height: 15px;
+  height: 5px;
   border-right-width: 12px;
   padding-right: 20px;
 }
@@ -693,10 +693,10 @@ p.para {
 }
 
 #footer #events {
-  border-right: #6c757d 3px solid;
+  border-right:  #669b04 3px solid;
   border-right-width: 12px;
   border-radius: 50px;
-  height: 15px;
+  height: 5px;
   padding-right: 20px;
 }
 
@@ -707,7 +707,7 @@ p.para {
 #footer #site {
   border-right: #6c757d 3px solid;
   border-radius: 50px;
-  height: 15px;
+  height: 5px;
   border-right-width: 12px;
   padding-right: 20px;
 }
@@ -717,10 +717,10 @@ p.para {
 }
 
 #footer #forums {
-  border-right: #6c757d 3px solid;
+  border-right:  #669b04 3px solid;
   border-right-width: 12px;
   border-radius: 50px;
-  height: 15px;
+  height: 5px;
   padding-right: 20px;
 }
 
