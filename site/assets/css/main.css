@@ -81,6 +81,14 @@ h2.heading-2::after {
 
 }
 
+p.para {
+  margin-top: 30px;
+  padding-left: 250px;
+  line-height: 1.6rem;
+  padding-right: 250px;
+  color: #6c757d;
+}
+
 /*==================================================
 # Header - Navigation Section
 ===================================================*/
@@ -171,28 +179,28 @@ a#active {
 
 @keyframes slide {
   0% {
-    background: url("../img/backg.jpg");
+    background: url("../img/backg-6.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
 
   25% {
-    background: url("../img/backg-6.jpg");
+    background: url("../img/backg-7.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
 
   50% {
-    background: url("../img/backg.jpg");
+    background: url("../img/backg-6.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
 
   100% {
-    background: url("../img/backg-6.jpg");
+    background: url("../img/backg-7.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -208,7 +216,7 @@ a#active {
   color: #f8f9fa;
   text-align: left;
   margin-left: 100px;
-  padding-top: 245px;
+  padding-top: 230px;
   font-size: 50px;
 }
 
@@ -245,7 +253,7 @@ a#active {
   display: grid;
   float: right;
   justify-content: stretch;
-  margin-top: -280px;
+  margin-top: -300px;
   padding: 60px;
 }
 
@@ -375,7 +383,7 @@ p.para {
 
 #works .card {
   border: none;
-  box-shadow: #000 0px 2px 2px 0px;
+  box-shadow: #57523f 0px 2px 2px 0px;
 }
 
 #works .card-img-top {
@@ -418,8 +426,9 @@ p.para {
 }
 
 .partner-logo {
-  width: 150px;
-  height: 150px;
+  margin-top: 5px;
+  width: 130px;
+  height: 130px;
 }
 
 .partner-logo:hover {

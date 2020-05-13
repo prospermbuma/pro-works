@@ -12,7 +12,7 @@ function scrollFunction() {
         document.getElementById('navbar-brand').style.marginTop = '-0px';
         document.getElementById('navbar-brand').style.marginBottom = '20px';
         document.getElementById('brand').style.marginTop = '-67px';
-        document.getElementById('brand').style.marginLeft = '58px';
+        document.getElementById('brand').style.marginLeft = '60px';
         document.getElementById('brand').style.fontSize = '20px';
         document.getElementById('brand').style.color = '#548005';
         document.getElementById('active').style.color = '#548005';
