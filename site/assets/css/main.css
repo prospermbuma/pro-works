@@ -226,7 +226,7 @@ a#active {
   text-align: left;
   font-size: 17px;
   margin-left: 100px;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .carousel-caption .btn {
@@ -253,7 +253,7 @@ a#active {
   display: grid;
   float: right;
   justify-content: stretch;
-  margin-top: -300px;
+  margin-top: -280px;
   padding: 60px;
 }
 
@@ -267,6 +267,24 @@ a#active {
 .carousel-caption  .fab:hover {
   color: #669b04;
   transition: all 0.5s ease-in-out;
+}
+
+.log {
+  background: #767676;
+  /* mix-blend-mode: overlay; */
+  height: 35px;
+  width: 3px;
+  margin-top: -50px;
+  margin-left: 15px;
+}
+
+.log-2 {
+  background: #767676;
+  /* mix-blend-mode: overlay; */
+  height: 35px;
+  width: 3px;
+  margin-top: 12px;
+  margin-left: 15px;
 }
 
 /*==================================================
