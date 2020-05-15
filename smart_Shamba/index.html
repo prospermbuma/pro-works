@@ -17,7 +17,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
-<body id="home">
+<body id="home" data-spy="scroll" data-target="#header">
   
   <!-- ===== Header Section ===== -->
 	<header>
@@ -25,11 +25,11 @@
       <a href="#home"><img src="assets/site-icon/logo.png" alt="logo" id="navbar-brand"><span id="brand">smartShamba</span></a>
       <ul id="nav-link">
         <li><a id="active" href="#home">Home</a></li>
-        <li><a href="#about-section" id="about">About</a></li>
-        <li><a href="#services" id="service">Services</a></li>
-        <li><a href="#works" id="work">Works</a></li>
-        <li><a href="#partners" id="team">Partners</a></li>
-        <li><a href="#" id="contact">Contact</a></li>
+        <li><a href="#about-section" id="about" class="scrollspy">About</a></li>
+        <li><a href="#services" id="service" class="scrollspy">Services</a></li>
+        <li><a href="#works" id="work" class="scrollspy">Works</a></li>
+        <li><a href="#partners" id="team" class="scrollspy">Partners</a></li>
+        <li><a href="#" id="contact" class="scrollspy">Contact</a></li>
       </ul>
     </nav>
   </header><!-- End Header-->
@@ -56,6 +56,9 @@
           <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
           <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
           <span class="log-2"></span>
+        </div>
+        <div class="go-down">
+          <a href="#about-section" id="go-down" class="tooltip" title="Go Down"><i class="fas fa-chevron-circle-down"></i></a>
         </div>
       </div>
 
@@ -262,7 +265,7 @@
     $('#year').text(new Date().getFullYear());
   
     // The smooth scroll
-    $('#header a, #go-top').on('click', function(e) {
+    $('#header a, #go-top, #go-down').on('click', function(e) {
 
       // Check for hash value
       if (this.hash !== '') {
@@ -288,6 +291,13 @@
 
     });
 
+    $(document).ready(function() {
+      
+      // Scroll spy
+      $('.scrollspy').scrollSpy();
+
+    });
+    
   </script>
 	
 </body>

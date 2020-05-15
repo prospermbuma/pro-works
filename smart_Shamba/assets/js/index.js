@@ -47,3 +47,4 @@ function scrollFunction() {
         document.getElementById('contact').style.color = '#f8f9fa';
     }
 }
+

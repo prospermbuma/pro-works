@@ -176,6 +176,10 @@ a#active {
 # Banner Section
 ===================================================*/
 .carousel {
+  background: url("../img/backg-6.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   animation: slide 30s infinite alternate;
   height: 800px;
   width: 100%;
@@ -199,7 +203,7 @@ a#active {
   }
 
   50% {
-    background: url("../img/backg.jpg");
+    background: url("../img/backg-10.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -299,6 +303,35 @@ a#active {
   width: 3px;
   margin-top: 12px;
   margin-left: 15px;
+}
+
+.carousel .go-down {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.carousel #go-down {
+  text-decoration: none;
+}
+
+.carousel .fas {
+  font-size: 45px;
+  color: #669b04;
+  transition: all 1s ease-in-out;
+  animation: changer 1s infinite alternate-reverse;
+}
+
+.carousel .fas:hover {
+  color: #6c757d;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes changer {
+  0% {transform: translateY(0); color: #ddd;}
+
+  100% {transform: translateY(-10px);}
 }
 
 /*==================================================
@@ -465,12 +498,12 @@ a#active {
 }
 
 #works .card-img-top {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 #works .card-img-top:hover {
   /* transform: scale(1.1); */
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
   cursor: pointer;
   height: 200px;
 }
@@ -577,18 +610,18 @@ a#active {
   color: #f8f9fa;
   transition: all 0.5s;
   font-size: 16px;
-  animation: sider 1.5s infinite alternate;
+  animation: sider 1s infinite alternate;
 }
 
 @keyframes sider {
-  0% {transform: translateX(0);}
+  0% {transform: translateX(10); background:  #aff331; color: #57523f;}
 
-  100% {transform: translateX(-10px);}
+  100% {transform: translateX(0px);}
 }
 
 #footer .form-news input[type=submit]:hover {
   background: #669b04;
-  color: #000;
+  color: #ddd;
   transition: all 0.5s;
 }
 
@@ -729,16 +762,16 @@ a#active {
   margin-top: 50px;
   color: #669b04;
   transition: all 1s ease-in-out;
-  animation: mover 1.5s infinite alternate-reverse;
+  animation: mover 1s infinite alternate-reverse;
 }
 
 #footer .fas:hover {
   color: #6c757d;
-  transition: all 1s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 @keyframes mover {
-  0% {transform: translateY(0);}
+  0% {transform: translateY(0); color: #6c757d;}
 
   100% {transform: translateY(-10px);}
 }
