@@ -1,10 +1,21 @@
 body {
-    overflow-x: hidden;
+	overflow-x: hidden;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+.nav-item, section, footer {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 18px;
 }
 
 .brand {
     transition: 2s all;
-    transform: scale(1.2);
+	transform: scale(1.2);
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .brand:hover {
@@ -13,44 +24,31 @@ body {
     transform: scale(1.1);
 }
 
-#showcase .dark-overlay {
+#contact {
+    background: url( '/img/aboutus.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#contact .dark-overlay {
+    position: relative;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.7)
+	background: rgba(0, 0, 0, 0.7);
 }
 
-.carousel-item {
-	height: 370px;
+.form-group, .card {
+    opacity: 0.6;
 }
 
-.carousel-image-1 {
-	background-image: url('../img/liker.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-
-.carousel-image-2 {
-	background: url('../img/cam.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-
-.carousel-image-3 {
-	background: url('../img/a.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-
-.card-columns .card {
+.col-md-4 .card {
     border: none;
-    //background: #f8f9fa;
 }
 
 
-.card-columns .card:hover {
-    //background:#d3d3d3;
+.col-md-4 .card:hover {
+    background: #f8f9fa;
 }
 
 img {
@@ -62,6 +60,7 @@ img {
     color: #f0f0f0;
     border-radius: 3px;
     transition: 1s;
+    font-size: 18px;
 }
 
 #go-top:hover {
@@ -115,6 +114,7 @@ img {
 	color: silver;
 	opacity: 0.8;
 }
+
 
 @media (max-width: 500px) {
     h1.display-3 {

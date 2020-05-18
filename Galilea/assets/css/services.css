@@ -1,43 +1,27 @@
 body {
-    overflow-x: hidden;
+	overflow-x: hidden;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+.nav-item, section, footer {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 18px;
 }
 
 .brand {
     transition: 2s all;
-    transform: scale(1.2);
+	transform: scale(1.2);
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .brand:hover {
    
     transition: 1s all;
     transform: scale(1.1);
-}
-
-#contact {
-    background: url( '../img/aboutus.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-#contact .dark-overlay {
-    position: relative;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.7);
-}
-
-.form-group, .card {
-    opacity: 0.6;
-}
-
-.col-md-4 .card {
-    border: none;
-}
-
-
-.col-md-4 .card:hover {
-    background: #f8f9fa;
 }
 
 img {
@@ -48,7 +32,8 @@ img {
     background: #808080;
     color: #f0f0f0;
     border-radius: 3px;
-    transition: 1s;
+	transition: 1s;
+	font-size: 18px;	
 }
 
 #go-top:hover {
@@ -103,9 +88,20 @@ img {
 	opacity: 0.8;
 }
 
-
 @media (max-width: 500px) {
     h1.display-3 {
         font-size: 40px;
+    }
+}
+
+@media (min-width: 501px) {
+    h1.display-3 {
+        font-size: 43px;
+    }
+}
+
+@media (min-width: 900px) {
+    h1.display-3 {
+		font-size: 4.3rem;
     }
 }

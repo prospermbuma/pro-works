@@ -14,14 +14,17 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-items: stretch;
   width: 100%;
   padding-top: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 567px) {
   .container {
-    /* display: block; */
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
@@ -34,6 +37,18 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 0.25rem;
+}
+
+@media (max-width: 576px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card  {
+    flex-basis: 60%;
+  }
 }
 
 .card-img {
@@ -96,6 +111,14 @@ p.para {
   padding-right: 250px;
   color: #767676;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  p.para {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
 
 /*==================================================
@@ -409,6 +432,13 @@ a#active {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  #work-with .show {
+    width: 300px;
+    height: 250px;
+  }
+}
+
 
 /*==================================================
 # Services Section
@@ -519,6 +549,19 @@ a#active {
   background: #f8f9fa;
 }
 
+#partners .container {
+  display: flex;
+}
+
+@media (max-width: 567px) {
+  #partners .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 #partners h2.heading-2 {
   text-align: center;
   padding-top: 40px;
@@ -571,6 +614,32 @@ a#active {
   padding: 30px 200px;
   border-radius: 300px;
   border: 20px solid #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  #footer .footer-links, .footer-social, .footer-logo {
+    display: flex;
+  }
+
+  #footer .form-news {
+    padding: 40px 40px;
+  }
+
+  #footer .form-news h3 {
+    font-size: 16px;
+  }
+
+  #footer .form-news input[type=email] {
+    width: 30px;
+    margin-right: 30px;
+  }
+
+  #footer .form-news input[type=submit] {
+    /* padding: 0px; */
+    padding-left: -100px;
+    margin-left: -700px;
+  }
+
 }
 
 
@@ -627,6 +696,7 @@ a#active {
 
 
 #footer .footer-links {
+  order: 3;
   padding: 54px;
   margin: 20px;
   flex-basis: 10%;
@@ -640,7 +710,8 @@ a#active {
 
 #footer .fab {
   font-size: 20px;
-  margin-top: -30px;
+  padding: 35px;
+  margin-top: -50px;
   float: left;
   color: #6c757d;
   transition: all 0.5s ease-in-out;
@@ -652,29 +723,11 @@ a#active {
 }
 
 #footer .footer-logo {
+  order: 2;
   flex-basis: 50%;  
   margin: 20px;
   display: grid;
   justify-content: center;
-}
-
-#footer #navbar-brand {
-  margin: 0 auto;
-  width: 75px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 250px;
-  transition: all 1s ease-in-out;
-}
-
-#footer #brand {
-  margin-top: -74px;
-  float: right;
-  margin-right: 295px;
-  color: #87b337;
-  font-weight: bold;
-  font-size: 24px;
-  transition: all 1s ease-in-out;
 }
 
 #footer .footer-logo p {
@@ -684,7 +737,28 @@ a#active {
   line-height: 1.8rem;
 }
 
+#footer .footer-logo #navbar-brand {
+  margin: 0 auto;
+  width: 75px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 250px;
+  transition: all 1s ease-in-out;
+}
+
+#footer .footer-logo #brand {
+  margin-top: -74px;
+  float: right;
+  margin-right: 295px;
+  color: #87b337;
+  font-weight: bold;
+  font-size: 24px;
+  transition: all 1s ease-in-out;
+}
+
+
 #footer .footer-social {
+  order: 1;
   padding: 54px;
   flex-basis: 10%;
   margin: 20px;
@@ -698,6 +772,7 @@ a#active {
 
 #footer .footer-social a {
   font-size: 18px;
+  margin-top: -30px;
   text-decoration: none;
   color: #6c757d;
   transition: all 0.5s ease-in-out;
@@ -757,9 +832,9 @@ a#active {
 }
 
 #footer .fas {
-  float: right;
+  /* float: right; */
   font-size: 45px;
-  margin-top: 50px;
+  margin-bottom: 10px;
   color: #669b04;
   transition: all 1s ease-in-out;
   animation: mover 1s infinite alternate-reverse;
@@ -776,7 +851,20 @@ a#active {
   100% {transform: translateY(-10px);}
 }
 
+#footer .footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
 
+.dev {
+  margin-left: 100px;  
+}
 
+.footer-para {
+  margin-right: 80px;
+}
 
-
+.top {
+  margin-right: 150px;  
+}

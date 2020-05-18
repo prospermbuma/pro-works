@@ -1,10 +1,21 @@
 body {
-	overflow-x: hidden; */
+	overflow-x: hidden;
+	font-family: 'Fira Sans Condensed', sans-serif;	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+.nav-item, section, footer {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 18px;
 }
 
 .brand {
     transition: 2s all;
-    transform: scale(1.2);
+	transform: scale(1.2);
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .brand:hover {
@@ -13,42 +24,14 @@ body {
     transform: scale(1.1);
 }
 
-#showcase .dark-overlay {
-	width: 100%;
-	background: rgba(0, 0, 0, 0.7);
-}
-
-.carousel-item {
-	height: 400px;
-}
-
-.carousel-image-1 {
-	background-image: url('../img/liker.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-
-.carousel-image-2 {
-	background: url('../img/cam.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-
-.carousel-image-3 {
-	background: url('../img/Fire-Safet.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+.card-columns .card {
+    border: none;
+    background: #f8f9fa;
 }
 
 
-.carousel-image-4 {
-	background: url('../img/mos.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+.card-columns .card:hover {
+    background:#d3d3d3;
 }
 
 img {
@@ -59,7 +42,8 @@ img {
     background: #808080;
     color: #f0f0f0;
     border-radius: 3px;
-    transition: 1s;
+	transition: 1s;
+	font-size: 18px;
 }
 
 #go-top:hover {
@@ -113,6 +97,7 @@ img {
 	color: silver;
 	opacity: 0.8;
 }
+
 
 @media (max-width: 500px) {
     h1.display-3 {

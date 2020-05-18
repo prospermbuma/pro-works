@@ -1,10 +1,21 @@
 body {
-    overflow-x: hidden;
+	overflow-x: hidden;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+.nav-item, section, footer {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 18px;
 }
 
 .brand {
     transition: 2s all;
-    transform: scale(1.2);
+	transform: scale(1.2);
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .brand:hover {
@@ -15,12 +26,12 @@ body {
 
 .card-columns .card {
     border: none;
-    background: #f8f9fa;
+    /* background: #f8f9fa; */
 }
 
 
-//.card-columns .card:hover {
-    background:#d3d3d3;
+.card-columns .card:hover {
+    /* background:#d3d3d3; */
 }
 
 img {
@@ -31,7 +42,8 @@ img {
     background: #808080;
     color: #f0f0f0;
     border-radius: 3px;
-    transition: 1s;
+	transition: 1s;
+	font-size: 18px;
 }
 
 #go-top:hover {
@@ -89,17 +101,5 @@ img {
 @media (max-width: 500px) {
     h1.display-3 {
         font-size: 40px;
-    }
-}
-
-@media (min-width: 501px) {
-    h1.display-3 {
-        font-size: 43px;
-    }
-}
-
-@media (min-width: 900px) {
-    h1.display-3 {
-		font-size: 3.9rem;
     }
 }

@@ -5,15 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Galilea</title>
-	<link rel="stylesheet" href="css/contact.css">
-	<link rel="shortcut icon" href="img/2.png" type="image">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/contact.css">
+	<link rel="shortcut icon" href="../img/2.png" type="image">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans&family=Comfortaa:wght@500;700&family=Exo&family=Fira+Sans+Condensed:wght@300;400&family=Maven+Pro:wght@500&family=PT+Sans&family=Quicksand:wght@400;600&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<style>
 		@media (min-width: 571px) {
 			li a {
-				//font-size: 10px;
+				/* font-size: 10px; */
 			}
 		}
 	</style>
@@ -28,7 +29,7 @@
 				<div class="collapse navbar-collapse" id="collapsibleNavId">
 					<ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-2">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="/index.html">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="about.html">About</a>
@@ -227,7 +228,7 @@ echo '<p class="alert alert-success text-success">'. $formMessage . '</p>';
                     </p>
 			  </div>
 			  <div class="col-md-6 col-lg-6 py-3 order-1">
-				  <img src="img/dome-camera-2.png" alt="" class="img-fluid">
+				  <img src="../img/dome-camera-2.png" alt="" class="img-fluid">
 			  </div>
 		  </div>
 	  </div>
@@ -334,7 +335,7 @@ echo '<p class="alert alert-success text-success">'. $formMessage . '</p>';
 		  <!-- Copyright -->
   
 		  <!--Go top-->
-		  <div class="bg-light text-right py-3">
+		  <div class="text-right pb-3">
 			  <a href="#home" id="Top">
 				  <i class="fas fa-angle-up fa-lg p-3 mr-4" data-toggle="tooltip" data-placement="top" title="Go to Top" id="go-top">	
 				  </i>

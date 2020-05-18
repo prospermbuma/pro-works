@@ -5,113 +5,88 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Galilea</title>
-	<link rel="stylesheet" href="css/safety.css">
-	<link rel="shortcut icon" href="img/2.png" type="image">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/home_auto.css">
+	<link rel="shortcut icon" href="../img/2.png" type="image">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans&family=Comfortaa:wght@500;700&family=Exo&family=Fira+Sans+Condensed:wght@300;400&family=Maven+Pro:wght@500&family=PT+Sans&family=Quicksand:wght@400;600&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<style>
 		div.card {
 			border: none;
 			background: #f8f9fa;
 		}
+
+		div.card:hover {
+			background:#d3d3d3;
+		}
 	</style>
 </head>
-<body id="fire">
+<body id="home">
 	<!--Navigation-->
 		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="main-header" >
-			<a class="navbar-brand ml-2" href="#fire"><span class="brand btn btn-outline-light">Galilea</span></a>
-			<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavId">
-				<ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-2">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="security.html">Security</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="#fire">Fire Safety</a>
-                    </li>
-                    <li class="nav-item">
-						<a class="nav-link" href="home_auto.html">Home automation</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="maintenance.html">Maintenance</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.php">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-  <!--Fire Safety and Protection-->
+				<a class="navbar-brand ml-2" href="#home"><span class="brand btn btn-outline-light">Galilea</span></a>
+				<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+					aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="collapsibleNavId">
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-2">
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="security.html">Security</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="fire_safety.html">Fire Safety</a>
+                        </li>
+                        <li class="nav-item  active">
+                            <a class="nav-link" href="#home">Home automation</a>
+                        </li>
+						<li class="nav-item">
+								<a class="nav-link" href="maintenance.html">Maintenance</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="contact.php">Contact</a>
+						</li>
+					</ul>
+					
+				</div>
+			</nav>
+	
+  <!--Home automation-->
   <section class="py-5">
+	  <h1 class="display-4 text-center text-muted py-2">Home Automation</h1>
 	  <div class="container">
-		  <h1 class="display-4 text-center text-secondary pt-4" id="text" title="Safety">Fire Safety and Protection</h1>
-		  <div class="row py-3">
+          <div class="jumbotron-fluid">
+                <p style="line-height: 1.7rem">
+                    The intelligent home promises a futuristic home experience where all you need is a very simple voice command, even if you’re away from home. There are a number of very cool gadgets that allow you to do a whole lot with home automation, a lot of which can be integrated into home automation security systems. These include smart smoke alarms, smart cameras, smart doorbells, smart locks, smart thermostats, smart lights or smart smoke alarms.
+                </p>
+          </div>
+		  <div class="row py-2">
 			  <div class="col-md-12 col-lg-4">
-				  <div class="card p-3 mt-4">
-					  <h2 class="card-title text-center pt-5 pb-2">Auditing of fire systems</h2>
-					  <img src="img/Fire-Protection-Systems.png" class="card-img-top img-fluid" alt="" width="100" height="100">
-					  <p class="px-2" style="line-height: 1.7rem">
-						1. Review of installation against the requirement of local and international fire codes, including assessment on conformance and compliance to the relevant standards.
-					  </p>
-					  <p class="px-2" style="line-height: 1.7rem">
-						2. Auditing of performance and adequacy of fire safety systems.
-					  </p>
-					  <p class="px-2" style="line-height: 1.7rem">
-						3. Functionality testing on performance of the installed fire system.
-					  </p>
-					  <p class="px-2" style="line-height: 1.7rem">
-						4. Statutory inspections and issuing of conformance certificate.
-					  </p>
-					  <br>
-					  <br>
-					  <br>
-					  <br>
-					  <br>
-					  <br>
-				  </div>
+					<div class="card p-3 mt-4">
+						<img src="../img/home-security-intro.png" class="card-img-top img-fluid" alt="" width="100" height="100">
+					</div>
 			  </div>
 			  <div class="col-md-12 col-lg-4">
-				  <div class="card p-3 mt-4">
-					  <h2 class="card-title text-center py-5">Risk assessment</h2>
-					  <img src="img/fight2.png" class="card-img-top img-fluid" alt="" width="100" height="100">
-					  <p class="px-2" style="line-height: 1.7rem">
-						Our experienced team of fire experts in risk assessment will explain in detail the potential risks surrounding your business.
-					  </p>
-					  <p class="px-2" style="line-height: 1.7rem">
-						1. Assessment of the level of compliance against the minimum fire safety requirements as contained in the applicable regulations and standards.
-					  </p>
-					  <p class="px-2" style="line-height: 1.7rem">
-						2. Identification of fire hazard, fire hazard assessment and evaluation.
-					  </p>
-					  <p class="px-2" style="line-height: 1.7rem">
-						3. Analysis of the costs to your business should you fall short of the minimum requirements.
-					  </p>
-					  <p class="px-2" style="line-height: 1.7rem">
-						4. Rational fire design and emergency plan to make your business premises safer, by mitigating risks associated with starting and spreading of fire thus protecting human life and property.
-					  </p>
-				  </div>
+					<div class="card p-3 mt-4">
+						<img src="../img/HomeAutomationicpng" class="card-img-top img-fluid" alt="" width="100" height="100">
+						<br>
+						<br>
+						<br>
+					</div>
 			  </div>
 			  <div class="col-md-12 col-lg-4">
-				  <div class="card p-3 mt-4">
-					  <h2 class="card-title text-center py-5">Design <br> and installation</h2>
-					  <img src="img/fight3.png" class="card-img-top img-fluid" alt="" width="100" height="100">
-					  <p class="px-2 pt-2" style="line-height: 1.7rem">
-						Design, Supply and installation of the fire protection and safety systems to BS and NFPA codes requirements.
-					  </p>
-					  <p class="px-2" style="line-height: 1.7rem">
-						1. Fire Detection and Alarm SystemsAlarm management & Alarm monitoring solutionsVoice Evacuation and Public Address systemsClean Agent suppression systems eg. Novec-1230 gas fire suppression systems, FM200 gas fire suppression systems, DSPA Aerosol Generators, EXXFIRE Nitrogen Generators.Automatic Fire Sprinkler SystemFixed and Mobile Fire extinguishersFoams and Dry powder systemsFire Hydrants and Hose reelsExit & Emergency LightingsFire Doors, & Smoke curtainsFire Stopping/Fire Proofing MaterialsIntumiscent fire protection coating, vanish and paints.
-					  </p>
-				  </div>
+					<div class="card p-3 mt-4">
+						<img src="../img/home-security.png" class="card-img-top img-fluid" alt="" width="100" height="100">
+						<br>
+						<br>
+						<br>
+					</div>
 			  </div>
 		  </div>
 	  </div>
@@ -120,21 +95,22 @@
 
   <!--Fire protection and rescure tools-->
   <section class="py-5 bg-light">
-	  <h1 class="display-4 text-dark text-center py-5">Fire protection and rescure tools</h1>
+	  <h1 class="display-4 text-secondary text-center py-5">Smart Homes</h1>
 	  <div class="container">
 		  <div class="row">
 			  <div class="col-md-12 col-lg-6 align-self-center">
-				  <h3>Fire safety</h3>
-				  <p style="line-height: 1.7rem">Stay well protected and secured from all causes of fire and insecured enviroments by the best fire safety, protection and rescure tools provided by our company.
-				  </p>
-				  <button class="btn btn-outline-danger" data-target="#more" data-toggle="collapse">Read More</button>
-				  <p id="more" class="collapse" style="line-height: 1.7rem">
-					<br>
-                    Fire safety is the set of practices intended to reduce the destruction caused by fire. Fire safety measures include those that are intended to prevent ignition of an uncontrolled fire, and those that are used to limit the development and effects of a fire after it starts.
-                  </p>
+					<h3>Home security</h3>
+					<p style="line-height: 1.7rem">
+						Away from being insecured by the best home automation products provided by our company.
+					</p>
+					<button class="btn btn-outline-primary" data-target="#more" data-toggle="collapse">Read More</button>
+                    <p id="more" class="collapse" style="line-height: 1.7rem">
+                         <br>
+                         Home automation or domotics is building automation for a home, called a smart home or smart house. A home automation system will control lighting, climate, entertainment systems, and appliances. It may also include home security such as access control and alarm systems.
+                    </p>
 			  </div>
 			  <div class="col-md-12 col-lg-6 py-3 ">
-				  <img src="img/fire-extinguishers-2.png" alt="" class="img-fluid">
+				  <img src="../img/devices.png" alt="" class="img-fluid">
 			  </div>
 		  </div>
 	  </div>
@@ -156,7 +132,7 @@
 				<!-- Grid column -->
 				<div class="col-md-2 mb-3">
 					<h6 class="text-uppercase font-weight-bold">
-						<a id="link"  href="clients.html" class="text-muted" style="text-decoration: none;">Clients</a>
+						<a id="link"  href="clients.html"text-muted" style="text-decoration: none;">Clients</a>
 					</h6>
 				</div>  
 				<!-- Grid column -->
@@ -241,8 +217,8 @@
 		  <!-- Copyright -->
   
 		  <!--Go top-->
-		  <div class="bg-light text-right py-3">
-			  <a href="#fire" id="Top">
+		  <div class="text-right pb-3">
+			  <a href="#home" id="Top">
 				  <i class="fas fa-angle-up fa-lg p-3 mr-4" data-toggle="tooltip" data-placement="top" title="Go to Top" id="go-top">	
 				  </i>
 			  </a>
@@ -261,13 +237,11 @@
 	// Init tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
-	$('#text').tooltip();
-
 	// Add smooth scrolling
 	$('#main-header a, #Top').on('click', function(e) {
       // check for hash value
       if (this.hash !== '') {
-        // Prevent default behaviour of a tag
+        // Prevent default behaviour of an a tag
         e.preventDefault();
 
         // Store hash
