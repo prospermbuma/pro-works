@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Amazing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/img/image2.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Comfortaa:wght@500;700&family=PT+Sans&family=Quicksand:wght@400;600&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans&family=Comfortaa:wght@500;700&family=Exo&family=Fira+Sans+Condensed:wght@300;400&family=Maven+Pro:wght@500&family=PT+Sans&family=Quicksand:wght@400;600&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" />
+    <script src="assets/js/index.js"></script>
+  </head>
+  <body id="home">
+    <!--HEADER_SECTION-->
+    <div class="header py-4 d-flex justify-content-around align-items-center">
+      <div class="order-1 text-muted">
+        <i
+          class="fas fa-users ml-3"
+          data-toggle="tooltip"
+          data-placement="right"
+          title="Staff Only"
+        ></i>
+        <i
+          class="fas fa-search ml-3"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Search Products"
+        ></i>
+        <i
+          class="fas fa-cart-plus ml-3"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="View Cart"
+        ></i>
+      </div>
+      <div class="order-2">
+        <p id="lead" class="lead text-center text-secondary">
+          <i class="fas fa-shipping-fast"></i> FAST FREE SHIPPING ON ORDERS OVER
+          <small><strong>$125</strong></small> GLOBALLY
+          <i class="fas fa-globe"></i>
+        </p>
+      </div>
+      <div class="order-3">
+        <a id="signin" href="signin.php" class="text-secondary">Sign In |</a>
+        <a id="signup" href="signup.php" class="text-danger">Sign Up</a>
+      </div>
+    </div>
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"
+      id="main-header"
+    >
+      <div class="container">
+        <div id="logo">
+          <a href="#home" class="navbar-brand"
+            ><span
+              style="color: #ffc107; font-size: 30px; opacity: 0.9;"
+            >A</span><span style="font-weight: bold; color: lightgray;">mazing</span></a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#home" class="nav-link"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about.html" class="nav-link"
+                ><i class="fas fa-book-reader"></i> About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#shop.html" class="nav-link"
+                ><i class="fas fa-shopping-bag"> </i> Shop</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#categories.html"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                ><i class="fas fa-align-left"></i> Categories</a
+              >
+              <div class="dropdown-menu">
+                <a href="#men.php" class="dropdown-item">Men</a>
+                <a href="#women.php" class="dropdown-item">Women</a>
+                <a href="#kids.php" class="dropdown-item">Kids</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="assets/site/contact.html" class="nav-link"
+                ><i class="fas fa-address-book"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--SHOWCASE SLIDER-->
+    <section id="showcase">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+          <li data-slide-to="1" data-target="#myCarousel"></li>
+          <li data-slide-to="2" data-target="#myCarousel"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image-1 active">
+          <div class="dark-overlay"></div>
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h1 class="display-3">Legs On Shoes</h1>
+                <p class="lead mt-2 mb-3">
+                  More Comfort, More flexibility with a cool and gentle sneakers
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-md">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image-2">
+          <div class="dark-overlay"></div>
+            <div class="container">
+              <div class="carousel-caption text-light">
+                <h1 class="display-3">Here Is Your Thing</h1>
+                <p class="lead mt-2 mb-3">
+                  With a great sense of good will of the product and firm itself
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-md">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image-3">
+          <div class="dark-overlay"></div>
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h1 class="display-3">The Best Of Yours Ever</h1>
+                <p class="lead mt-2 mb-3">
+                  The thing with a nice and awesome look
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-md">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon d-none d-lg-block"></span>
+        </a>
+
+        <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon d-none d-lg-block"></span>
+        </a>
+      </div>
+    </section>
+
+    <!--NEW ARRIVALS_HEADER-->
+
+    <section id="new-arrivals-header" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col py-5 text-center">
+            <h1 class="text-warning" style="opacity: 0.9;">
+              New Arrivals
+            </h1>
+            <p
+              class="lead text-light"
+              style="font-size: 17px; font-style: italic; opacity: 0.9;"
+            >
+              <!-- <big
+                >Grab the best of yours just right at an arrival and at an
+                affordable price.</big
+              > -->
+            </p>
+            <a href="#new-arrivals" class="text-secondary" id="Bottom"
+              ><i
+                class="fas fa-chevron-circle-down"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <span id="new-arrivals"></span>
+    </section>
+
+    <section class="py-3 bg-light"></section>
+
+    <!--NEW ARRIVALS_BODY-->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div id="card-1" class="card">
+              <img
+                id="sneakers"
+                src="assets/img/sneakers1.jpg"
+                class="card-img-top img-fluid"
+                onmouseenter="changeImage4();"
+                onmouseleave="defaultImage4();"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Rubber Sneakers</b></span
+                >
+                <br />
+                <span class="text-secondary">Nike</span>
+                <br />
+                <small class="text-muted">$35</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div id="card-2" class="card">
+              <img
+                id="BG"
+                src="assets/img/boys.png"
+                class="card-img-top img-fluid"
+                onmouseover="changeImage5();"
+                onmouseout="defaultImage5();"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Kids</b></span
+                >
+                <br />
+                <span class="text-secondary">Top and down</span>
+                <br />
+                <small class="text-muted">$63</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-3">
+              <img
+                id="bags"
+                src="assets/img/bag1.jpg"
+                class="card-img-top img-fluid"
+                onmouseenter="changeImage6();"
+                onmouseleave="defaultImage6();"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Women's Bags</b></span
+                >
+                <br />
+                <span class="text-secondary">Prada</span>
+                <br />
+                <small class="text-muted">$48</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-4">
+              <img
+                id="W-tops"
+                src="assets/img/w-top2.png"
+                class="card-img-top img-fluid"
+                onmouseover="changeImage7();"
+                onmouseout="defaultImage7()"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Women's Jackets</b></span
+                >
+                <br />
+                <span class="text-secondary">Jeans jackets</span>
+                <br />
+                <small class="text-muted">$33</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-5">
+              <img
+                id="boys"
+                src="assets/img/boys1.png"
+                class="card-img-top img-fluid"
+                onmouseenter="changeImage();"
+                onmouseleave="defaultImage();"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Baby Boy</b></span
+                >
+                <br />
+                <span class="text-secondary">Americano</span>
+                <br />
+                <small class="text-muted">$89</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-6">
+              <img
+                id="girls"
+                src="assets/img/girls-1.png"
+                class="card-img-top img-fluid"
+                onmouseover="changeImage1();"
+                onmouseout="defaultImage1();"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Baby Girl</b></span
+                >
+                <br />
+                <span class="text-secondary">Americano</span>
+                <br />
+                <small class="text-muted">$87</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-7">
+              <img
+                id="men"
+                src="assets/img/men1.png"
+                class="card-img-top img-fluid"
+                onmouseenter="changeImage2();"
+                onmouseleave="defaultImage2();"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Men</b></span
+                >
+                <br />
+                <span class="text-secondary">Boxers</span>
+                <br />
+                <small class="text-muted">$50</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-8">
+              <img
+                id="women"
+                src="assets/img/women1.jpg"
+                class="card-img-top img-fluid"
+                onmouseover="changeImage3();"
+                onmouseout="defaultImage3()"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Women</b></span
+                >
+                <br />
+                <span class="text-secondary">Jeans Trousers</span>
+                <br />
+                <small class="text-muted">$66</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Best Sellers' Section-->
+    <section id="best sellers" class="py-5 bg-dark">
+      <h1 class="display-4 text-light text-center mb-5" style="opacity: 0.6;">
+        Best Sellers
+      </h1>
+      <div class="container">
+        <!--<div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img src="assets/img/image2.png" class="card-img-top img-fluid">
+            <div class="card-body">
+              <span class="lead"><b>Spainish Dress</b></span>
+              <br>
+              <span class="text-secondary">Hanier</span>
+              <br>
+              <small class="text-muted">$87</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img src="assets/img/T-shirt2.jpg" class="card-img-top img-fluid">
+            <div class="card-body">
+              <span class="lead"><b>Casual</b></span>
+              <br>
+              <span class="text-secondary">T-shirt</span>
+              <br>
+              <small class="text-muted">$60</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img src="assets/img/dress.png " class="card-img-top img-fluid">
+            <div class="card-body">
+              <span class="lead"><b>Spainish Dress</b></span>
+              <br>
+              <span class="text-secondary">Hanier</span>
+              <br>
+              <small class="text-muted">$84</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img src="assets/img/T-shirt.jpg" class="card-img-top img-fluid">
+            <div class="card-body">
+              <span class="lead"><b>Casual</b></span>
+              <br>
+              <span class="text-secondary">T-shirt</span>
+              <br>
+              <small class="text-muted">$60</small>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+        <div class="row mt-3">
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card">
+              <img
+                id="transform"
+                src="assets/img/shoe2.png"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Leather shoes</b></span
+                >
+                <br />
+                <span class="text-secondary">Adidas</span>
+                <br />
+                <small class="text-muted">$70</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-9">
+              <img
+                id="transform"
+                src="assets/img/polo.png"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Polo Shirts</b></span
+                >
+                <br />
+                <span class="text-secondary">Polos</span>
+                <br />
+                <small class="text-muted">$83</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-10">
+              <img
+                id="transform"
+                src="assets/img/shoe.png"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Sneakers</b></span
+                >
+                <br />
+                <span class="text-secondary">Men</span>
+                <br />
+                <small class="text-muted">$78</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-11">
+              <img
+                id="transform"
+                src="assets/img/short.png"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Shorts</b></span
+                >
+                <br />
+                <span class="text-secondary">Women</span>
+                <br />
+                <small class="text-muted">$55</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card">
+              <img
+                id="transform"
+                src="assets/img/kids1.png"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Boys' Outfits</b></span
+                >
+                <br />
+                <span class="text-secondary">Italiano</span>
+                <br />
+                <small class="text-muted">$73</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-12">
+              <img
+                id="transform"
+                src="assets/img/rubbers.png"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>White Sneakers</b></span
+                >
+                <br />
+                <span class="text-secondary">Kariekoo</span>
+                <br />
+                <small class="text-muted">$68</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-13">
+              <img
+                id="transform"
+                src="assets/img/kids3.png"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Well Dressed</b></span
+                >
+                <br />
+                <span class="text-secondary">Boys</span>
+                <br />
+                <small class="text-muted">$78</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-14">
+              <img
+                id="transform"
+                src="assets/img/kids4.png"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <span class="lead" style="font-size: 15px; font-weight: bold;"
+                  ><b>Cute</b></span
+                >
+                <br />
+                <span class="text-secondary">Girls</span>
+                <br />
+                <small class="text-muted">$67</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="text-center py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-muted">Sign Up For Our Newsletter</h1>
+            <p
+              class="lead text-light"
+              style="font-size: 17px; opacity: 0.5;"
+            >
+              Get alerted, stay updated.
+            </p>
+            <form class="form-inline justify-content-center">
+              <input
+                type="text"
+                class="form-control mb-2 mr-2"
+                placeholder="Enter Name"
+              />
+              <input
+                type="email"
+                class="form-control mb-2 mr-2"
+                placeholder="Enter Email"
+              />
+              <button class="btn btn-outline-warning mb-2 px-4" id="sub">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="main-footer" class="pb-5 bg-dark">
+        <div class="container d-flex justify-content-center flex-column">
+          <div class="text-left">
+            <div class="d-flex justify-content-center">
+              <div class="p-4">
+                <a href="http://facebook.com">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </a>
+              </div>
+              <div class="p-4">
+                <a href="http://twitter.com">
+                  <i class="fab fa-twitter fa-lg"></i>
+                </a>
+              </div>
+              <div class="p-4">
+                <a href="http://instagram.com">
+                  <i class="fab fa-instagram fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <p class="">
+            <i class="fab fa-cc-mastercard fa-2x" style="cursor: pointer;"></i>
+            <i class="fab fa-cc-paypal fa-2x" style="cursor: pointer;"></i>
+            <i class="fab fa-cc-stripe fa-2x" style="cursor: pointer;"></i>
+            <i class="fab fa-cc-visa fa-2x" style="cursor: pointer;"></i>
+            <i class="fab fa-cc-amex fa-2x" style="cursor: pointer;"></i>
+            <i class="fab fa-cc-amazon-pay fa-2x" style="cursor: pointer;"></i>
+            <i class="fab fa-cc-discover fa-2x" style="cursor: pointer;"></i>
+          </p>
+          <div class="container">
+          <hr>
+          </div>
+            <span
+            class="lead text-light"
+            style="opacity: 0.5; font-size: 15px;"
+          >
+            &copy; Amazing <span id="year"></span>, All rights reserved
+          </span>
+          </div>
+
+          <div class="text-center">
+              <div class="mt-3">
+                  <!--GO TO TOP BUTTON-->
+                  <a href="#home" id="Top">
+                    <i
+                      class="fas fa-chevron-circle-up text-secondary"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Go to Top"
+                      id="go-top"
+                    ></i>
+                  </a>
+                </div>
+          </div>
+
+          
+        </div>
+     
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+
+      // Init tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+
+      // Add smooth scrolling
+      $("#main-header a, #Bottom, #Top").on("click", function(e) {
+        // check for hash value
+        if (this.hash !== "") {
+          // Prevent default behaviour of an a tag
+          e.preventDefault();
+
+          // Store hash
+          const hash = this.hash;
+
+          // Animate smooth scroll
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            900,
+            function() {
+              // Add hash to URL after scroll
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+
+      // Configure slider
+      $(".carousel").carousel({
+        interval: 10000,
+        pause: "hover"
+      });
+
+      // iMAGE OPACITY
+      //document.getElementById('showcase').style.opacity = 0.3;
+    </script>
+  </body>
+</html>
