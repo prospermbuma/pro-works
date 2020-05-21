@@ -13,9 +13,17 @@ body {
 	border: none;
 }
 
+/* .card-body {
+	background: #fff;
+} */
+
 .card-img-top {
 	cursor: pointer;
 }
+
+/* .card-body {
+	transition: all 1s  ease-in-out;
+} */
 
 .btn {
 	transition: 0.8s;
@@ -334,6 +342,16 @@ body {
 #best-sellers .card {
 	box-shadow: 0px 4px 4px 0px #d3d3d3;
 }
+
+#best-sellers .card {
+	border: none;
+	background: #d3d3d3;
+}
+
+#best-sellers .card-body {
+	background: #fff;
+}
+
 
 @media (min-width: 600px) and (max-width: 750px) {
 	#best-sellers #card-1, #best-sellers #card-2, #best-sellers #card-4, #best-sellers #card-5 {
