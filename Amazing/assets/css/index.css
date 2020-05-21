@@ -43,8 +43,8 @@ body {
 .header #signin, .header #signup {
 	text-decoration: none;
 	transition: 0.7s;
-	font-size: 18px;
-	font-family: 'Abel', sans-serif;
+	/* font-size: 18px; */
+	font-family: "Nanum Gothic", sans-serif;
 }
 
 .header .fa-users, .header .fa-search, .header.fa-cart-plus {
@@ -138,6 +138,7 @@ body {
     .navbar #signin, .navbar #signup {
 		font-size: 14px;
 		text-decoration: none;
+	    font-family: "Nanum Gothic", sans-serif;
 	}
 
 	.navbar .fa-cart-plus {
@@ -208,8 +209,7 @@ body {
 }
 
 .carousel-caption .btn {
-	font-size: 18px;
-	font-family: 'Abel', sans-serif;
+	font-family: "Nanum Gothic", sans-serif;
 }
 
 /* Media Screen of 768px and less*/
@@ -261,6 +261,7 @@ body {
 
 	.carousel-caption .btn {
 		font-size: 20px;
+	    font-family: "Nanum Gothic", sans-serif;
 		margin: 0 auto;
 	}
 
