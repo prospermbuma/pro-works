@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
   margin: 0px;
   padding: 0px;
-  background: #f8f9fa;
+  background: #fff;
   font-family: 'Comfortaa', sans-serif;	
 }
 
@@ -13,17 +13,9 @@ body {
 	border: none;
 }
 
-/* .card-body {
-	background: #fff;
-} */
-
 .card-img-top {
 	cursor: pointer;
 }
-
-/* .card-body {
-	transition: all 1s  ease-in-out;
-} */
 
 .btn {
 	transition: 0.8s;
@@ -55,10 +47,10 @@ body {
 	font-family: "Nanum Gothic", sans-serif;
 }
 
-.header .fa-users, .header .fa-search, .header.fa-cart-plus {
-	cursor: pointer;
+.header .fa-users, .header .fa-search, .header .fa-cart-plus {
 	transition-duration: 0.7s;
 	color: #f8f9fa;
+	cursor: pointer;
 }
 
 .header .fa-users:hover, .header .fa-search:hover , .header .fa-cart-plus:hover {
@@ -66,7 +58,7 @@ body {
 }
 
 .header .fa-cart-plus {
-	animation: sideToside 1s infinite alternate;
+	animation: sideToside 1.5s infinite alternate;
 	transition: all 1s;
 }
 
@@ -134,13 +126,14 @@ body {
 
     .navbar .fa-users, .navbar .fa-search, .navbar .fa-cart-plus {
 		font-size: 14px;
-		cursor: pointer;
 	    transition-duration: 0.7s;
-	    color: #f8f9fa;
+		color: #f8f9fa;
+		cursor: pointer;		
 	}
 	
 	.navbar .fa-users, .navbar .fa-search, .navbar .fa-cart-plus:hover {
 		color: #d3d3d3;
+		cursor: pointer;
     }
 
     .navbar #signin, .navbar #signup {
@@ -150,7 +143,7 @@ body {
 	}
 
 	.navbar .fa-cart-plus {
-		animation: sideToside 1s infinite alternate;
+		animation: sideToside 1.5s infinite alternate;
 		transition: all 1s;
 	}
 	
@@ -295,7 +288,7 @@ body {
 #new-arrivals-header .fa-chevron-circle-down {
 	animation: slideDown 1s infinite alternate;
 	font-size: 40px;
-	margin-top: 6px;
+	margin-top: 15px;
 }
 
 @keyframes slideDown {
@@ -314,20 +307,20 @@ body {
 	transition: all 1s;
 }
 
-#new #card-1, #new #card-2, #new #card-3, #new #card-4, #new #card-5, #new #card-6, #new #card-7, #new #card-8 {
+#new .card {
 	overflow: hidden;
 	box-shadow: 0px 4px 4px 0px #d3d3d3;
 }
 
 @media (min-width: 600px) and (max-width: 750px) {
-	#new #card-1, #new #card-2, #new #card-4, #new #card-5 {
+	#new #card-1, #new #card-2, #new #card-3, #new #card-5, #new #card-6, #new #card-7  {
 		margin-bottom: 25px;
 	}
 }
 
 /* Media Screen of 567px and less*/
 @media (max-width: 576px) {
-	#new #card-1, #new #card-2, #new #card-4, #new #card-5 {
+	#new #card-1, #new #card-2, #new #card-3, #new #card-5, #new #card-6, #new #card-7 {
 		margin-bottom: 20px;
 	}
 }
@@ -336,14 +329,11 @@ body {
 # Best Sellers
 ============================================*/
 #best-sellers {
-	background: rgba(236, 234, 230, 0.849);
+	background: rgba(236, 234, 230, 0.9);
 }
 
 #best-sellers .card {
 	box-shadow: 0px 4px 4px 0px #d3d3d3;
-}
-
-#best-sellers .card {
 	border: none;
 	background: #d3d3d3;
 }
@@ -351,7 +341,6 @@ body {
 #best-sellers .card-body {
 	background: #fff;
 }
-
 
 @media (min-width: 600px) and (max-width: 750px) {
 	#best-sellers #card-1, #best-sellers #card-2, #best-sellers #card-4, #best-sellers #card-5 {
@@ -361,7 +350,7 @@ body {
 
 /* Media Screen of 567px and less*/
 @media (max-width: 576px) {
-	#best-sellers #card-1, #best-sellers #card-2, #best-sellers #card-4,  #best-sellers #card-5 {
+	#best-sellers #card-1, #best-sellers #card-2, #best-sellers #card-4, #best-sellers #card-5 {
 		margin-bottom: 20px;
 	}
 }

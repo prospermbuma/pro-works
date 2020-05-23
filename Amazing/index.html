@@ -46,6 +46,7 @@
     />
     <script src="assets/js/index.js"></script>
   </head>
+  
   <body id="home">
     <!--HEADER_SECTION-->
     <div
@@ -258,7 +259,7 @@
     <section id="new" class="bg-light pt-4 pb-5">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div id="card-1" class="card">
               <img
                 id="sneakers"
@@ -277,7 +278,7 @@
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div id="card-2" class="card">
               <img
                 id="BG"
@@ -296,11 +297,11 @@
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div class="card" id="card-3">
               <img
                 id="bags"
-                src="assets/img/simple-8.jpg"
+                src="assets/img/new-5.jpg"
                 class="card-img-top img-fluid"
               />
               <div class="card-body">
@@ -314,11 +315,30 @@
               </div>
             </div>
           </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card" id="card-41">
+                <img
+                  id="bags"
+                  src="assets/img/trouser-0.jpg"
+                  class="card-img-top img-fluid"
+                />
+                <div class="card-body">
+                  <span class="lead" style="font-size: 15px; font-weight: bold;"
+                    ><b>Women's Bags</b></span
+                  >
+                  <br />
+                  <span class="text-secondary">Prada</span>
+                  <br />
+                  <small class="text-muted">$48</small>
+                </div>
+              </div>
+            </div>
         </div>
 
         <div class="row mt-4">
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="card" id="card-4">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-5">
               <img
                 id="boys"
                 src="assets/img/sandals-1.jpg"
@@ -336,8 +356,8 @@
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="card" id="card-5">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-6">
               <img
                 id="girls"
                 src="assets/img/shirts-4.jpg"
@@ -355,11 +375,11 @@
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="card" id="card-6">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" id="card-7">
               <img
                 id="men"
-                src="assets/img/simple-9.jpg"
+                src="assets/img/simple-15.jpg"
                 class="card-img-top img-fluid"
               />
               <div class="card-body">
@@ -373,6 +393,25 @@
               </div>
             </div>
           </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div class="card" id="card-8">
+                <img
+                  id="men"
+                  src="assets/img/trouser.jpg"
+                  class="card-img-top img-fluid"
+                />
+                <div class="card-body">
+                  <span class="lead" style="font-size: 15px; font-weight: bold;"
+                    ><b>Men</b></span
+                  >
+                  <br />
+                  <span class="text-secondary">Boxers</span>
+                  <br />
+                  <small class="text-muted">$50</small>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -426,7 +465,7 @@
             <div class="card" id="card-3">
               <img
                 id="transform-2"
-                src="assets/img/simple-7.jpg"
+                src="assets/img/simple-11.jpg"
                 class="card-img-top img-fluid"
               />
               <div class="card-body">
@@ -446,7 +485,7 @@
           <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div class="card" id="card-4">
               <img
-                id="transform-4"
+                id="transform-3"
                 src="assets/img/sandals.jpg"
                 class="card-img-top img-fluid"
               />
@@ -465,8 +504,8 @@
           <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div class="card" id="card-5">
               <img
-                id="transform-5"
-                src="assets/img/new-4.jpg"
+                id="transform-4"
+                src="assets/img/simple-13.jpg"
                 class="card-img-top img-fluid"
               />
               <div class="card-body">
@@ -484,8 +523,8 @@
           <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div class="card" id="card-6">
               <img
-                id="transform-6"
-                src="assets/img/simple-3.jpg"
+                id="transform-5"
+                src="assets/img/simple-12.jpg"
                 class="card-img-top img-fluid"
               />
               <div class="card-body">
@@ -644,6 +683,7 @@
       // Change an images on hover
       $(document).ready(function() {
 
+       /* Card Image-1 */  
       // onmouseenter
       $("#transform").mouseenter(
         function() {
@@ -670,6 +710,152 @@
         });
 
       });
+
+
+      /* Card Image-2 */
+       // onmouseenter
+       $("#transform-1").mouseenter(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/simple-6.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/simple-6.jpg");
+        });
+      });
+
+      // onmouseleave
+      $("#transform-1").mouseleave(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/simple-5.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/simple-5.jpg");
+        });
+
+      });
+
+
+      /* Card Image-3 */
+       // onmouseenter
+       $("#transform-2").mouseenter(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/simple-10.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/simple-10.jpg");
+        });
+      });
+
+      // onmouseleave
+      $("#transform-2").mouseleave(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/simple-11.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/simple-11.jpg");
+        });
+
+      });
+
+
+      /* Card Image-4 */
+       // onmouseenter
+       $("#transform-3").mouseenter(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/sandals-0.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/sandals-0.jpg");
+        });
+      });
+
+      // onmouseleave
+      $("#transform-3").mouseleave(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/sandals.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/sandals.jpg");
+        });
+
+      });
+
+
+      /* Card Image-5 */
+       // onmouseenter
+       $("#transform-4").mouseenter(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/simple-14.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/simple-14.jpg");
+        });
+      });
+
+      // onmouseleave
+      $("#transform-4").mouseleave(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/simple-13.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/simple-13.jpg");
+        });
+
+      });
+
+
+      /* Card Image-6 */
+       // onmouseenter
+       $("#transform-5").mouseenter(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/simple-3.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/simple-3.jpg");
+        });
+      });
+
+      // onmouseleave
+      $("#transform-5").mouseleave(
+        function() {
+        
+        $(this).fadeOut(500, function() {
+          $(this).attr('src', "assets/img/simple-12.jpg");
+        });
+
+        $(this).fadeIn(500, function() {
+          $(this).attr('src', "assets/img/simple-12.jpg");
+        });
+
+      });
+
     });
 
     </script>
