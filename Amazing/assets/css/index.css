@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
   margin: 0px;
   padding: 0px;
-  background: #fff;
+  background: #343434;
   font-family: 'Comfortaa', sans-serif;	
 }
 
@@ -161,6 +161,7 @@ body {
 .carousel-item {
 	height: 410px;
 	position: relative!important;
+	transition: all linear 1s;
 }
 
 .dark-overlay {
@@ -177,6 +178,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	transition: all linear 1s;
 }
 
 .carousel-image-2 {
@@ -184,13 +186,15 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	transition: all linear 1s;
 }
 
 .carousel-image-3 {
-	background: url('../img/Product.png');
+	background: url('../img/trouser-0.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	transition: all linear 1s;
 }
 
 .carousel-caption {
