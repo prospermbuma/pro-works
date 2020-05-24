@@ -339,7 +339,7 @@ body {
 }
 
 #best-sellers img {
-	transition: all linear 0.7s;
+	transition: all linear 1s;
 }
 
 #best-sellers .card-img {
