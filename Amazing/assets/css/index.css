@@ -338,8 +338,33 @@ body {
 	background: #d3d3d3;
 }
 
+#best-sellers img {
+	transition: all linear 0.7s;
+}
+
+#best-sellers .card-img {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#best-sellers .card-img:hover img {
+	opacity: 0;
+}
+
+#best-sellers .card-img:hover img.transform {
+	opacity: 1;
+}
+
 #best-sellers .card-body {
 	background: #fff;
+}
+
+#best-sellers .transform {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
 }
 
 @media (min-width: 600px) and (max-width: 750px) {
