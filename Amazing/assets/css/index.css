@@ -51,7 +51,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background: #ffc107; 
 }
-  
+
+small {
+	font-weight: bold;
+}
 
 /*===========================================
 # Header
@@ -150,8 +153,40 @@ body {
 }
 
 /* Media Screen of 690px and less*/
-@media (max-width: 690px) {
+@media (max-width: 740px) {
+    .navbar .fa-users, .navbar .fa-search, .navbar .fa-cart-plus {
+		font-size: 14px;
+	    transition-duration: 0.7s;
+		color: #f8f9fa;
+		cursor: pointer;		
+	}
+	
+	.navbar .fa-users, .navbar .fa-search, .navbar .fa-cart-plus:hover {
+		color: #d3d3d3;
+		cursor: pointer;
+    }
 
+    .navbar #signin, .navbar #signup {
+		font-size: 14px;
+		text-decoration: none;
+	    font-family: "Nanum Gothic", sans-serif;
+	}
+
+	.navbar .fa-cart-plus {
+		animation: sideToside 1.5s infinite alternate;
+		transition: all 1s;
+	}
+	
+	@keyframes sideToside {
+		0% {transform: translateX(-10px);}
+	
+		100% {transform: translateX(1px); color: #ffc107;}
+	}
+    
+}
+
+/* Media Screen of 690px and less*/
+@media (max-width: 690px) {
     .navbar .fa-users, .navbar .fa-search, .navbar .fa-cart-plus {
 		font-size: 14px;
 	    transition-duration: 0.7s;
@@ -210,7 +245,7 @@ body {
 }
 
 .carousel-image-2 {
-	background: url('../img/new-3.jpg');
+	background: url('../img/woman.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -218,7 +253,7 @@ body {
 }
 
 .carousel-image-3 {
-	background: url('../img/trouser-0.jpg');
+	background: url('../img/new-3.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -329,19 +364,25 @@ body {
 	100% {transform: translateY(-10px);}
 }
 
-#new img {
+#new .card {
+	overflow: hidden;
+	box-shadow: 0px 4px 4px 0px #d3d3d3;
+}
+
+#new .card-img-top {
 	transition: all 1s;
 	overflow: hidden;
 }
 
-#new img:hover {
+#new .card-img-top:hover {
 	transform: scale(1.1);
 	transition: all 1s;
 }
 
-#new .card {
-	overflow: hidden;
-	box-shadow: 0px 4px 4px 0px #d3d3d3;
+@media (min-width: 760px) and (max-width: 768px) {
+	#new #card-1, #new #card-2, #new #card-5, #new #card-6 {
+		margin-bottom: 25px;
+	}
 }
 
 @media (min-width: 600px) and (max-width: 750px) {
@@ -361,30 +402,33 @@ body {
 # Best Sellers
 ============================================*/
 #best-sellers {
-	background: rgba(236, 234, 230, 0.9);
+	background: rgba(236, 172, 43, 0.9);
 }
 
 #best-sellers .card {
-	box-shadow: 0px 4px 4px 0px #d3d3d3;
+	box-shadow: 0px 2px 4px 0px #767676;
 	border: none;
 	background: #d3d3d3;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
 }
 
 #best-sellers img {
 	transition: all linear 1s;
 }
 
-#best-sellers .card-img {
+/* #best-sellers .card-img {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-}
+} */
 
-#best-sellers .card-img:hover img {
+#best-sellers .card:hover img.transformed {
 	opacity: 0;
 }
 
-#best-sellers .card-img:hover img.transform {
+#best-sellers .card:hover img.transform {
 	opacity: 1;
 }
 
@@ -408,6 +452,47 @@ body {
 /* Media Screen of 567px and less*/
 @media (max-width: 576px) {
 	#best-sellers #card-1, #best-sellers #card-2, #best-sellers #card-4, #best-sellers #card-5 {
+		margin-bottom: 20px;
+	}
+}
+
+/*===========================================
+# Featured
+============================================*/
+#featured {
+	background: #f8f9fa;
+}
+
+#featured img {
+	transition: all 1s;
+	overflow: hidden;
+}
+
+#featured img:hover {
+	transform: scale(1.1);
+	transition: all 1s;
+}
+
+#featured .card {
+	overflow: hidden;
+	box-shadow: 0px 4px 4px 0px #d3d3d3;
+}
+
+@media (min-width: 760px) and (max-width: 768px) {
+	#featured #card-1, #featured #card-2, #featured #card-5, #featured #card-6 {
+		margin-bottom: 25px;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 750px) {
+	#featured #card-1, #featured #card-2, #featured #card-3, #featured #card-5, #featured #card-6, #featured #card-7  {
+		margin-bottom: 25px;
+	}
+}
+
+/* Media Screen of 567px and less*/
+@media (max-width: 576px) {
+	#featured #card-1, #featured #card-2, #featured #card-3, #featured #card-5, #featured #card-6, #featured #card-7 {
 		margin-bottom: 20px;
 	}
 }
