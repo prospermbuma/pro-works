@@ -262,21 +262,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
 }
 
-/*#hero .btn-get-started {
-  color: #213b52;
-  border-radius: 50px;
-  padding: 8px 35px 10px 35px;
-  border: 2px solid #fdc134;
-  transition: all ease-in-out 0.3s;
-  display: inline-block;
-  background: #fdc134;
-}
-
-#hero .btn-get-started:hover {
-  background: transparent;
-  color: #fff;
-}*/
-
 @media (max-width: 991px) {
   #hero .hero-img {
     text-align: center;
@@ -510,6 +495,10 @@ section {
   min-height: 400px;
 }
 
+#about-p {
+  text-align: justify;
+}
+
 @media (max-width: 667px) {
   .about .image img {
     max-width: 100%;
@@ -679,6 +668,10 @@ section {
   color: #bababa;
   font-size: 18px;
   display: block;
+}
+
+.mitandao p {
+  text-align: justify;
 }
 
 .mitandao .get-started-btn {
