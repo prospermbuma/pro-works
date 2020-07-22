@@ -34,7 +34,6 @@ body {
   margin: 12px;
   padding: 0px;
   box-sizing: border-box;
-  overflow: hidden;
   border-radius: 0.25rem;
 }
 
@@ -52,6 +51,7 @@ body {
 
 .card-img {
   margin-top: 0;
+  overflow: hidden;
 }
 
 .card-img-top {
@@ -477,7 +477,7 @@ a#active {
 }
 
 #services .card-img-top:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 1s ease-in-out;
   cursor: pointer;
 }
