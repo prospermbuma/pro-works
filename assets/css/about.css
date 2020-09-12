@@ -1,0 +1,336 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Amita', cursive;
+    /* font-family: 'Lobster', cursive; */
+}
+
+/*=====================================
+#Header-Section
+======================================*/
+
+.navbar {
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Satisfy', cursive;
+    /* font-family: 'Srisakdi', cursive; */
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar #signin, .navbar #signup {
+    /* font-family: 'Srisakdi', cursive; */
+    /* font-family: 'Amita', cursive; */
+    font-family: 'Satisfy', cursive;
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    .navbar #signin {
+        margin-left: 16px;
+    }
+}
+
+.navbar #signup {
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+}
+
+/*=====================================
+#Hero-Section
+======================================*/
+
+#hero {
+    height: 500px;
+    background: url('../img/tz83.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* box-shadow: 0px 3px 3px 0px #000; */
+}
+
+#hero .contents {
+    background: rgba(0, 0, 0, 0.7);
+    height: 500px;
+}
+
+#hero .hero-text h1 {
+    margin-top: 250px;
+    font-family: 'Amita', cursive;
+    font-size: 65px;
+    color: #f8f9fa;
+}
+
+@media (max-width: 450px) {
+    #hero .hero-text h1 {
+        margin-top: 170px;
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 411px) {
+    #hero .hero-text h1 {
+        margin-top: 170px;
+        font-size: 69px;
+    }
+}
+
+@media (max-width: 375px) {
+    #hero .hero-text h1 {
+        margin-top: 170px;
+        font-size: 63px;
+    }
+}
+
+@media (max-width: 360px) {
+    #hero .hero-text h1 {
+        margin-top: 150px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    #hero .hero-text h1 {
+        margin-top: 150px;
+        font-size: 52px;
+    }
+}
+
+#hero .btn {
+    margin-top: 25px;
+    margin-left: 8px;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 18px;
+    transition: all 0.5s;
+    filter: grayscale(50%);
+}
+
+#hero .btn:hover {
+    background: transparent;
+    color: #ffc107;
+    filter: grayscale(10%);
+    transition: all 0.5s;
+}
+
+/*=====================================
+#Main-Section
+======================================*/
+
+#main img#slider {
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: scale(1.3);
+    }
+}
+
+#main h1 {
+    font-family: 'Lobster', cursive;
+}
+
+#main .card-img-top {
+    min-height: 250px;
+    max-height: 300px;
+}
+
+#main .card-img {
+    overflow: hidden;
+}
+
+#main .card-img img {
+    transition: all 1.5s ease;
+}
+
+#main .card-img:hover img {
+    transform: scale(1.3);
+}
+
+#main #testimonials {
+    background: url('../img/tz10.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#main #testimonials .testimony-contents {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#main #testimonials .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#main .name {
+    /* font-size: 32px; */
+    /* font-weight: 600; */
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#main .name::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+#main .name::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #fdc134;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+#main #testimonials .text {
+    padding-left: 180px;
+    padding-right: 180px;
+    line-height: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    #main #testimonials .text {
+        padding-left: 0px;
+        padding-right: 0px;
+        line-height: 1.8rem;
+    }
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    position: absolute;
+    bottom: 20px;
+    color: #d5122f;
+    border: 0;
+    background: none;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+@media (max-width: 768px) {
+    .slick-prev {
+        left: 0;
+        display: none;
+    }
+}
+
+.slick-prev::before {
+    content: "\f104";
+    font: 40px/1 'FontAwesome';
+}
+
+.slick-next {
+    right: 20px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .slick-next {
+        right: 0;
+        display: none;
+    }
+}
+
+.slick-next::before {
+    content: "\f105";
+    font: 40px/1 'FontAwesome';
+}
+
+.slick-prev:hover::before, .slick-next:hover::before {
+    color: #7e7e7e;
+}
+
+/*=====================================
+#Footer
+======================================*/
+
+#footer {
+    margin-top: -50px;
+}
+
+footer .fab {
+    color: #808080;
+    transition: 0.5s;
+}
+
+footer .fa-facebook:hover {
+    color: silver;
+    opacity: 0.8;
+}
+
+footer .fa-twitter:hover {
+    color: silver;
+    opacity: 0.8;
+}
+
+footer .fa-instagram:hover {
+    color: silver;
+    opacity: 0.8;
+}
+
+footer .fa-pinterest:hover {
+    color: silver;
+    opacity: 0.8;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    right: 30px;
+    bottom: 20px;
+    background: #17a2b8;
+    color: #fff;
+    transition: display 0.5s ease-in-out;
+    z-index: 99999;
+    transition: all ease-in-out 0.3s;
+    animation: topDown 1s infinite alternate;
+}
+
+@keyframes topDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.back-to-top i {
+    font-size: 24px;
+    position: absolute;
+    top: 12px;
+    left: 17px;
+}
+
+.back-to-top:hover {
+    color: #fff;
+    background: #28a745;
+}
