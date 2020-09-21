@@ -6,6 +6,10 @@ body {
 	box-sizing: border-box;	
 }
 
+p {
+	text-align: justify;
+}
+
 .nav-item, section, footer {
 	/* font-family: 'Comfortaa', cursive; */
 	/* font-family: 'Amatic SC', cursive; */
@@ -28,12 +32,17 @@ body {
 }
 
 #showcase .dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.5);
+	height: 400px;
 }
 
 .carousel-item {
 	height: 400px;
+	position: relative;
 }
 
 .carousel-image-1 {

@@ -6,6 +6,10 @@ body {
 	box-sizing: border-box;
 }
 
+p {
+	text-align: justify;
+}
+
 .nav-item, section, footer {
 	font-family: 'Fira Sans Condensed', sans-serif;
 	font-size: 18px;
