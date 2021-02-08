@@ -1,0 +1,124 @@
+/*==================================================
+# General
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Laila&family=Merienda:wght@700&display=swap');
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Laila', serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Laila', serif;
+}
+
+/*==================================================
+# Navigation
+==================================================*/
+
+.navbar {
+    background-color: rgba(9, 32, 6, 0.575);
+}
+
+/*==================================================
+# Hero
+==================================================*/
+
+.carousel-item {
+    height: 600px;
+    position: relative;
+}
+
+.dark-overlay {
+    height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-image-1 {
+    background: url(../img/hero/hero3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.carousel-image-2 {
+    background: url(../img/hero/hero4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.carousel-image-3 {
+    background: url(../img/hero/hero5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.paragragh {
+    position: relative;
+    margin-top: -50px;
+}
+
+.newsletter {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+    z-index: 100;
+}
+
+/*==================================================
+# Cards
+==================================================*/
+
+.footer {
+    position: relative;
+}
+
+.card-inner {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 1s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.6);
+}
+
+.badge {
+    text-decoration: none;
+}
+
+/*==================================================
+# Footer
+==================================================*/
+
+.go-top {
+    position: fixed;
+    right: 32;
+    bottom: 60px;
+    z-index: 99;
+    display: none;
+    font-size: 20px;
+}
