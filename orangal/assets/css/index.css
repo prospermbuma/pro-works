@@ -114,6 +114,43 @@ html {
 # Footer
 ==================================================*/
 
+.hr-1 {
+    width: 230px;
+    height: 30px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+
+.hr-2 {
+    width: 225px;
+    height: 5px;
+    margin-left: 15px;
+}
+
+.getYear {
+    margin-left: 15px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 55px;
+    margin-bottom: -40px;
+}
+
+.footer-nav span a {
+    text-decoration: none;
+    color: #6c757d;
+    transition: color .4s ease-in-out;
+}
+
+.footer-nav span a:hover {
+    color: #ffc107;
+}
+
 .go-top {
     position: fixed;
     right: 32;
