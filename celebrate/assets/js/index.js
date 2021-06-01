@@ -1,17 +1,24 @@
 /* ==================================================
 # Search Input
 ===================================================*/
-// const search_input = document.querySelector('#search');
+const search_input = document.querySelector('#search');
 
-// search_input.addEventListener('input', () => {
-//     const search_icon = document.querySelector('.fa-search');
-//     search_icon.style.display = "none";
-// })
+search_input.addEventListener('focus', (e) => {
+    e.preventDefault();
+    search_input.style.paddingRight = "90px";
+    search_input.style.transition = "all 0.3s";
+});
 
-// search_input.addEventListener('keydown', () => {
-//     const search_icon = document.querySelector('.fa-search');
-//     search_icon.style.display = "block";
-// })
+search_input.addEventListener('keypress', () => {
+    search_input.style.paddingRight = "90px";
+    search_input.style.transition = "all 0.3s";
+});
+
+search_input.addEventListener('blur', (e) => {
+    e.preventDefault();
+    search_input.style.paddingRight = "30px";
+    search_input.style.transition = "all 0.3s";
+});
 
 /* ==================================================
 # Getting the current year
@@ -46,21 +53,6 @@ window.addEventListener('scroll', () => {
         goTop.classList.add('active');
     } else {
         goTop.classList.remove('active');
-    }
-});
-
-/* ==================================================
-# Toggling navbar on scroll
-===================================================*/
-const navbar = document.querySelector('.navbar');
-const section = document.querySelector('section');
-
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > section.offsetHeight) {
-        navbar.classList.add('toggle');
-    }
-    else {
-        navbar.classList.remove('toggle');
     }
 });
 

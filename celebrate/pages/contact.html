@@ -13,7 +13,7 @@
     <!-- Font Awesome Online -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="../assets/css/mybookings.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
     <!-- Utilities CSS -->
     <link rel="stylesheet" href="../assets/css/utilities.css">
     <!-- Title -->
@@ -52,10 +52,10 @@
                 <a href="reviews.html" class="nav-link">Reviews</a>
             </li>
             <li class="nav-item">
-                <a href="#home" class="nav-link active">My Bookings</a>
+                <a href="mybookings.html" class="nav-link">My Bookings</a>
             </li>
             <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link active">Contact</a>
             </li>
         </ul>
         <div class="search-cart-user">
@@ -77,30 +77,66 @@
     <!-- ====== Main ====== -->
     <main>
 
-        <!-- Bookings -->
-        <section id="bookings" class="text-black bg-white">
+      
+        <!-- Contact -->
+        <section id="contact" class="text-black bg-white">
             <div class="container">
-                <div class="row flex even-columns pt-5 pb-3">
-                    <div class="bookings">
-                        <div class="upcoming active">Upcoming bookings</div>
-                        <div class="all">All bookings</div>
+                <h2 class="display-4 text-center text-primary">Please fill in the form below to contact us</h2>
+                <div class="row flex even-columns pt-4 pb-3">
+                    <div class="col col-form order-1">
+                        <div class="contact-form">
+                            <form action="#">
+                                <div class="inputs-text-box">
+                                    <input type="text" name="fulname" id="fulname" placeholder="Full Name" required>
+                                    <input type="text" name="email" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="inputs-text-box">
+                                    <input type="tel" name="text" id="tel" placeholder="Phone Number" required>
+                                    <input type="text" name="subject" id="fname" placeholder="Subject" required>
+                                </div>
+                                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message"
+                                    required></textarea>
+                                <input type="submit" value="Send Message">
+                            </form>
+                        </div>
                     </div>
-                </div>
-                <div class="row flex even-columns pb-3">
-                    <div class="back-to-service">
-                        <a href="../index.html" class="back-link">
-                            <i class="fas fa-arrow-left"></i> Back To Services
-                        </a>
-                    </div>
-                </div>
-                <div class="row flex even-columns pt-0 pb-3">
-                    <div class="bookings-content">
-                        <p>There are no appointments yet. Press the "Book Now" button to make appointment.</p>
+                    <div class="col col-address card bg-light">
+                        <div class="contact-address p-3">
+                            <div class="addr-wrap">
+                                <i class="fas fa-map-marked"></i>
+                                <div class="addr">
+                                    <h3>Address</h3>
+                                    <p>
+                                        Box 261 Kinondoni, Dar es salaam, Tanzania
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="addr-wrap">
+                                <i class="fas fa-envelope"></i>
+                                <div class="addr">
+                                    <h3>Email</h3>
+                                    <p>
+                                        prospermbuma@gmail.com
+                                        mbumaprosper@hotmail.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="addr-wrap">
+                                <i class="fas fa-phone"></i>
+                                <div class="addr">
+                                    <h3>Call</h3>
+                                    <p>
+                                        +255 686 389 908
+                                        +255 716 491 716
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Bookings -->
+        <!-- End Contact -->
 
     </main>
     <!-- End Main -->
@@ -120,8 +156,8 @@
                     <nav class="footer-nav">
                         <a href="../index.html">Home</a>
                         <a href="reviews.html">Reviews</a>
-                        <a href="#home">My Bookings</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="mybookings.html">My Bookings</a>
+                        <a href="#home">Contact</a>
                     </nav>
                 </div>
                 <div class="col">
@@ -176,7 +212,7 @@
     <!-- jQuery Offline -->
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <!-- Main JS -->
-    <script src="../assets/js/mybookings.js"></script>
+    <script src="../assets/js/contact.js"></script>
     <!-- End Scripts -->
 </body>
 

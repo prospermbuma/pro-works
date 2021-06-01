@@ -386,106 +386,181 @@ section .display-4 {
 
 /* ======= End Queries ======== */
 
+
 /* ==================================================
-# Bookings
+# Contact
 ===================================================*/
 
-#bookings {
+#contact {
     padding-top: 80px;
     padding-bottom: 60px;
 }
 
-#bookings .bookings {
-    display: flex;
-    justify-content: stretch;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 1.5rem;
-    padding: 20px 30px;
-    background: var(--light-color);
-    border-left: 10px solid var(--primary-color);
+#contact .container {
+    padding-top: 60px;
+}
+
+#contact .display-4 {
+    position: relative;
+    font-size: 30px;
+}
+
+#contact p.lead {
+    font-size: 18px;
+}
+
+#contact .display-4::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 2px;
+    margin-left: -116px;
+    margin-top: 20px;
+    background: var(--gray-color);
+}
+
+#contact .display-4::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 2px;
+    margin-left: 19px;
+    margin-top: 20px;
+    background: var(--gray-color);
+}
+
+#contact .col-form {
+    flex-basis: 70%;
+}
+
+#contact .col-address {
+    flex-basis: 30%;
+}
+
+#contact .contact-form form input, #contact .contact-form textarea {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 12px 24px;
+    outline: none;
+    border: none;
     border-radius: 5px;
+    background: var(--white-color);
 }
 
-#bookings .bookings-content {
+#contact .contact-form form .inputs-text-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 15px 30px;
-    background: var(--warning-color);
-    border-radius: 5px;
+    justify-content: space-between;
+    gap: 0.7em;
+    margin-bottom: 10px;
 }
 
-#bookings .bookings div.active {
-    color: var(--black-color);
+#contact .contact-form form input[type=submit] {
+    margin-top: 10px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    transition: all 0.5s ease;
 }
 
-#bookings .bookings .upcoming {
-    color: var(--gray-color);
-    transition: all .3S;
-}
-
-#bookings .bookings .all {
-    color: var(--gray-color);
-    border-left: 3px solid var(--primary-color);
-    padding-left: 20px;
-}
-
-#bookings .bookings .upcoming:hover, #bookings .bookings .all:hover {
-    color: var(--danger-color);
+#contact .contact-form form input[type=submit]:hover {
+    color: var(--light-gray-color);
     cursor: pointer;
 }
 
-#bookings .back-to-service .back-link {
-    font-size: 16px;
-    text-decoration: none;
+#contact .card {
+    margin: 0px;
+}
+
+#contact .col-address {
+    border-radius: 5px;
+}
+
+#contact .contact-address h3 {
     color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 650;
+    line-height: 3.0rem;
+}
+
+#contact .contact-address .addr-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.0em;
+}
+
+#contact .contact-address .addr-wrap .fas {
+    font-size: 25px;
+    color: var(--secondary-color);
+    margin-top: -37px;
 }
 
 /* ======= Media Queries ======= */
 
+@media only screen and (max-width: 1060px) {
+    #contact .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
-    #bookings .col-form {
+    #contact .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #contact .col-form {
         width: 100%;
     }
-    #bookings .col-bookings {
+    #contact .col-address {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    #bookings .container {
-        padding: 0 20px;
+    #contact .container {
+        padding: 40px 30px;
     }
-    #bookings .display-4 {
-        font-size: 35px;
-        padding: 0 40px;
-    }
-    #bookings p.lead {
+    #contact p.lead {
         font-size: 16px;
     }
-    #bookings .col-bookings .bookings {
-        align-items: center
+    #contact .contact-address .addr-wrap .addr {
+        font-size: 14px;
     }
-    #bookings .col-bookings .card {
-        padding: 20px;
-        gap: .5rem;
+    #contact .display-4 {
+        font-size: 30px;
+        padding: 0 40px;
     }
-    #bookings .bookings-form form .inputs-text-box {
+    #contact .display-4::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: -58px;
+        margin-top: 24px;
+        background: var(--gray-color);
+    }
+    #contact .display-4::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 24px;
+        background: var(--gray-color);
+    }
+    #contact .contact-form form .inputs-text-box {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        /* gap: 1em; */
         margin-bottom: 11px;
     }
 }
 
 @media only screen and (max-width: 326px) {
-    #bookings .display-4 {
+    #contact .display-4 {
         font-size: 30px;
     }
-    #bookings .display-4::before {
+    #contact .display-4::before {
         position: absolute;
         content: '';
         width: 30px;
@@ -494,7 +569,7 @@ section .display-4 {
         margin-top: 20px;
         background: var(--gray-color);
     }
-    #bookings .display-4::after {
+    #contact .display-4::after {
         position: absolute;
         content: '';
         width: 30px;
@@ -506,6 +581,7 @@ section .display-4 {
 }
 
 /* ======= End Queries ======== */
+
 
 /* ==================================================
 # Footer

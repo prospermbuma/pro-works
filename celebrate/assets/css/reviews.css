@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 body {
@@ -563,6 +563,12 @@ section .display-4 {
 }
 
 @media only screen and (max-width: 576px) {
+    #reviews .row-2 {
+        margin-top: -40px;
+    }
+     #reviews .col-2 {
+        margin-top: -60px;
+    }
     #reviews .container {
         padding: 0 20px;
     }
@@ -707,7 +713,13 @@ footer .newsletters .newsletters-form form input[type=submit]:hover {
     color: var(--light-gray-color);
 }
 
+/* ======= Media Queries ======= */
+
 @media only screen and (max-width: 1060px) {
+    footer .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
     footer .nav-brand {
         margin-left: -40px;
     }
@@ -720,6 +732,10 @@ footer .newsletters .newsletters-form form input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    footer .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
     footer .social {
         margin-top: 20px;
     }
@@ -735,6 +751,10 @@ footer .newsletters .newsletters-form form input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 576px) {
+    footer .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     footer .nav-brand {
         margin-left: -221px;
     }
@@ -796,6 +816,8 @@ footer .newsletters .newsletters-form form input[type=submit]:hover {
         width: 50px;
     }
 }
+
+/* ======= End Queries ======== */
 
 /* == Go-Top == */
 
