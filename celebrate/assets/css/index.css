@@ -307,7 +307,7 @@ section .display-4 {
         display: grid;
         position: absolute;
         top: 0;
-        margin-top: 330px;
+        margin-top: 320px;
         width: 100%;
         background: var(--white-color);
         padding-top: 0px;
@@ -458,7 +458,7 @@ section .display-4 {
         margin-bottom: 0px;
     }
     #hero .container {
-        padding-top: 100px;
+        padding-top: 120px;
     }
     #hero .hero-text h2 {
         font-size: 60px;
@@ -467,7 +467,7 @@ section .display-4 {
 
 @media only screen and (max-width: 376px) {
     #hero .container {
-        padding-top: 95px;
+        padding-top: 120px;
     }
     #hero .hero-text h2 {
         font-size: 50px;
@@ -476,7 +476,7 @@ section .display-4 {
 
 @media only screen and (max-width: 366px) {
     #hero .container {
-        padding-top: 95px;
+        padding-top: 115px;
     }
     #hero .hero-text h2 {
         font-size: 50px;
@@ -485,7 +485,7 @@ section .display-4 {
 
 @media only screen and (max-width: 325px) {
     #hero .container {
-        padding-top: 95px;
+        padding-top: 105px;
     }
     #hero .hero-text h2 {
         font-size: 40px;
