@@ -654,6 +654,10 @@ section .display-4 {
     background: var(--gray-color);
 }
 
+#mcs .card h3 {
+    margin-bottom: 5px;
+}
+
 #mcs .add-cart-price {
     margin-top: 20px;
     display: flex;
@@ -736,22 +740,22 @@ section .display-4 {
 /* ======= End Queries ======== */
 
 /* ==================================================
-# Beds
+# Better It
 ===================================================*/
 
-#beds {
+#better_it {
     padding: 60px 0;
 }
 
-#beds .row {
+#better_it .row {
     gap: 6em;
 }
 
-#beds .display-4 {
+#better_it .display-4 {
     position: relative;
 }
 
-#beds .display-4::before {
+#better_it .display-4::before {
     position: absolute;
     content: '';
     width: 100px;
@@ -761,7 +765,7 @@ section .display-4 {
     background: var(--primary-color);
 }
 
-#beds .display-4::after {
+#better_it .display-4::after {
     position: absolute;
     content: '';
     width: 100px;
@@ -771,7 +775,7 @@ section .display-4 {
     background: var(--primary-color);
 }
 
-#beds .btn {
+#better_it .btn {
     text-decoration: none;
     line-height: 1.8rem;
     margin-top: 25px;
@@ -780,10 +784,10 @@ section .display-4 {
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 576px) {
-    #beds .display-4 {
+    #better_it .display-4 {
         font-size: 35px;
     }
-    #beds .display-4::before {
+    #better_it .display-4::before {
         position: absolute;
         content: '';
         width: 50px;
@@ -792,7 +796,7 @@ section .display-4 {
         margin-top: 24px;
         background: var(--primary-color);
     }
-    #beds .display-4::after {
+    #better_it .display-4::after {
         position: absolute;
         content: '';
         width: 50px;
@@ -804,10 +808,10 @@ section .display-4 {
 }
 
 @media only screen and (max-width: 326px) {
-    #beds .display-4 {
+    #better_it .display-4 {
         font-size: 30px;
     }
-    #beds .display-4::before {
+    #better_it .display-4::before {
         position: absolute;
         content: '';
         width: 30px;
@@ -816,7 +820,7 @@ section .display-4 {
         margin-top: 20px;
         background: var(--primary-color);
     }
-    #beds .display-4::after {
+    #better_it .display-4::after {
         position: absolute;
         content: '';
         width: 30px;
@@ -830,24 +834,24 @@ section .display-4 {
 /* ======= End Queries ======== */
 
 /* ==================================================
-# Chairs
+# For You
 ===================================================*/
 
-#chairs {
+#for_you {
     padding: 60px 0;
 }
 
-#chairs .row {
+#for_you .row {
     gap: 6em;
 }
 
-#chairs .display-4 {
+#for_you .display-4 {
     position: relative;
 }
 
-#chairs .display-4::before {
+#for_you .display-4::before {
     position: absolute;
-    content: '';
+    content: '';    
     width: 100px;
     height: 3px;
     margin-left: -116px;
@@ -855,7 +859,7 @@ section .display-4 {
     background: var(--gray-color);
 }
 
-#chairs .display-4::after {
+#for_you .display-4::after {
     position: absolute;
     content: '';
     width: 100px;
@@ -865,7 +869,7 @@ section .display-4 {
     background: var(--gray-color);
 }
 
-#chairs .btn {
+#for_you .btn {
     text-decoration: none;
     line-height: 1.8rem;
     margin-top: 25px;
@@ -875,16 +879,16 @@ section .display-4 {
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 768px) {
-    #chairs .col-text {
+    #for_you .col-text {
         margin-top: -25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    #chairs .display-4 {
+    #for_you .display-4 {
         font-size: 35px;
     }
-    #chairs .display-4::before {
+    #for_you .display-4::before {
         position: absolute;
         content: '';
         width: 50px;
@@ -893,7 +897,7 @@ section .display-4 {
         margin-top: 24px;
         background: var(--gray-color);
     }
-    #chairs .display-4::after {
+    #for_you .display-4::after {
         position: absolute;
         content: '';
         width: 50px;
@@ -905,10 +909,10 @@ section .display-4 {
 }
 
 @media only screen and (max-width: 326px) {
-    #chairs .display-4 {
+    #for_you .display-4 {
         font-size: 30px;
     }
-    #chairs .display-4::before {
+    #for_you .display-4::before {
         position: absolute;
         content: '';
         width: 30px;
@@ -917,7 +921,7 @@ section .display-4 {
         margin-top: 20px;
         background: var(--gray-color);
     }
-    #chairs .display-4::after {
+    #for_you .display-4::after {
         position: absolute;
         content: '';
         width: 30px;
@@ -931,22 +935,22 @@ section .display-4 {
 /* ======= End Queries ======== */
 
 /* ==================================================
-# Closets
+# Schedule Yours
 ===================================================*/
 
-#closets {
+#schedule {
     padding: 60px 0;
 }
 
-#closets .row {
+#schedule .row {
     gap: 6em;
 }
 
-#closets .display-4 {
+#schedule .display-4 {
     position: relative;
 }
 
-#closets .display-4::before {
+#schedule .display-4::before {
     position: absolute;
     content: '';
     width: 100px;
@@ -956,7 +960,7 @@ section .display-4 {
     background: var(--primary-color);
 }
 
-#closets .display-4::after {
+#schedule .display-4::after {
     position: absolute;
     content: '';
     width: 100px;
@@ -966,7 +970,7 @@ section .display-4 {
     background: var(--primary-color);
 }
 
-#closets .btn {
+#schedule .btn {
     text-decoration: none;
     line-height: 1.8rem;
     margin-top: 25px;
@@ -975,11 +979,11 @@ section .display-4 {
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 576px) {
-    #closets .display-4 {
+    #schedule .display-4 {
         font-size: 35px;
         padding: 0 40px;
     }
-    #closets .display-4::before {
+    #schedule .display-4::before {
         position: absolute;
         content: '';
         width: 50px;
@@ -988,7 +992,7 @@ section .display-4 {
         margin-top: 24px;
         background: var(--primary-color);
     }
-    #closets .display-4::after {
+    #schedule .display-4::after {
         position: absolute;
         content: '';
         width: 50px;
@@ -1000,10 +1004,10 @@ section .display-4 {
 }
 
 @media only screen and (max-width: 326px) {
-    #closets .display-4 {
+    #schedule .display-4 {
         font-size: 30px;
     }
-    #closets .display-4::before {
+    #schedule .display-4::before {
         position: absolute;
         content: '';
         width: 30px;
@@ -1012,7 +1016,7 @@ section .display-4 {
         margin-top: 20px;
         background: var(--primary-color);
     }
-    #closets .display-4::after {
+    #schedule .display-4::after {
         position: absolute;
         content: '';
         width: 30px;
