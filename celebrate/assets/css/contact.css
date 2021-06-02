@@ -148,9 +148,9 @@ section .display-4 {
 
 #contact .contact-address .addr-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     align-items: center;
-    gap: 2.0em;
+    gap: 3.0em;
 }
 
 #contact .contact-address .addr-wrap .fas {
@@ -173,6 +173,9 @@ section .display-4 {
         padding-left: 60px;
         padding-right: 60px;
     }
+    #contact .display-4 {
+        padding: 0 160px;
+    }
     #contact .col-form {
         width: 100%;
     }
@@ -193,7 +196,7 @@ section .display-4 {
     }
     #contact .display-4 {
         font-size: 30px;
-        padding: 0 40px;
+        padding: 0 80px;
     }
     #contact .display-4::before {
         position: absolute;
@@ -224,6 +227,7 @@ section .display-4 {
 @media only screen and (max-width: 326px) {
     #contact .display-4 {
         font-size: 30px;
+        padding: 0 40px;
     }
     #contact .display-4::before {
         position: absolute;
@@ -242,6 +246,9 @@ section .display-4 {
         margin-left: 12px;
         margin-top: 20px;
         background: var(--gray-color);
+    }
+    #contact .contact-address .addr-wrap {
+        gap: 1.0em;
     }
 }
 

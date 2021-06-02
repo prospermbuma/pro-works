@@ -159,7 +159,7 @@ section .display-4 {
 
 @media only screen and (max-width: 300px) {
     #hero .container {
-        padding-top: 40px;
+        padding-top: 105px;
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -184,10 +184,6 @@ section .display-4 {
 
 #about .display-4 {
     position: relative;
-}
-
-#about p.lead {
-    font-size: 18px;
 }
 
 #about .display-4::before {
@@ -220,11 +216,6 @@ section .display-4 {
 
 #about .col-text .mission-para {
     font-size: 17px;
-}
-
-#about .card {
-    border-left: 5px solid var(--primary-color);
-    margin: 15px 0;
 }
 
 #about .social {
@@ -497,10 +488,16 @@ section .display-4 {
     background: var(--primary-color);
 }
 
+#better_it .better-text {
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
 #better_it .btn {
     text-decoration: none;
     line-height: 1.8rem;
-    margin-top: 25px;
+    margin-top: 23px;
+    padding: 9px 30px;
 }
 
 /* ======= Media Queries ======= */
@@ -609,10 +606,16 @@ section .display-4 {
     background: var(--gray-color);
 }
 
+#for_you .you-text {
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
 #for_you .btn {
     text-decoration: none;
     line-height: 1.8rem;
-    margin-top: 25px;
+    margin-top: 23px;
+    padding: 9px 30px;
     color: var(--light-color);
 }
 
@@ -725,10 +728,16 @@ section .display-4 {
     background: var(--primary-color);
 }
 
+#schedule .schedule-text {
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
 #schedule .btn {
     text-decoration: none;
     line-height: 1.8rem;
-    margin-top: 25px;
+    margin-top: 23px;
+    padding: 9px 30px;
 }
 
 /* ======= Media Queries ======= */
@@ -892,9 +901,9 @@ section .display-4 {
 
 #contact .contact-address .addr-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     align-items: center;
-    gap: 2.0em;
+    gap: 3.0em;
 }
 
 #contact .contact-address .addr-wrap .fas {
@@ -961,7 +970,6 @@ section .display-4 {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        /* gap: 1em; */
         margin-bottom: 11px;
     }
 }
@@ -987,6 +995,9 @@ section .display-4 {
         margin-left: 12px;
         margin-top: 20px;
         background: var(--gray-color);
+    }
+    #contact .contact-address .addr-wrap {
+        gap: 1.0em;
     }
 }
 
