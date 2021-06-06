@@ -218,7 +218,7 @@
 
 .bg-gray, .btn-gray {
     background: var(--gray-color);
-    color: var(--black-color);
+    color: var(--white-color);
 }
 .bg-light-gray, .btn-light-gray {
     background: var(--light-gray-color);
@@ -232,6 +232,11 @@
 .bg-warning, .btn-warning {
     background: var(--warning-color);
     color: var(--black-color);
+}
+
+.bg-danger, .btn-danger {
+    background: var(--danger-color);
+    color: var(--white-color);
 }
 
 .bg-primary a, .btn-primary a, .bg-secondary a, .btn-secondary a, .bg-dark a, .btn-dark a {
