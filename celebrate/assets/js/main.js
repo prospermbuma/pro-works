@@ -1,4 +1,18 @@
 /* ==================================================
+# Body
+===================================================*/
+const body = document.querySelector('#home');
+const font = "'Source Sans Pro', sans-serif";
+const font2 = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+window.addEventListener('load', () => {
+    if (!font) {
+        body.style.fontFamily = font2;
+    }
+    else {
+        body.style.fontFamily = font;
+    }
+})
+/* ==================================================
 # Search Input
 ===================================================*/
 const search_input = document.querySelector('#search');
