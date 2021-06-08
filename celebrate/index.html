@@ -13,7 +13,8 @@
     <!-- Font Awesome Online -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" class="fonts-link">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"
+        class="fonts-link">
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
     <!-- Header-Footer CSS -->
@@ -67,12 +68,42 @@
                 <i class="fas fa-search"></i>
                 <input type="search" name="search" id="search" placeholder="Search...">
             </div>
-            <div class="cart">
-                <div class="badge">9</div>
-                <i class="fas fa-shopping-basket"></i>
-            </div>
+            <a href="pages/mybookings.html" class="cart-link">
+                <div class="cart">
+                    <div class="badge">9</div>
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+            </a>
             <div class="user">
                 <i class="fas fa-user"></i>
+                <div class="user-account">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="password" name="pswd" id="pswd" placeholder="Password" required>
+                            <i class="fas fa-eye text-gray"></i>
+                        </div>
+                        <div class="sign-in-up">
+                            <input type="submit" name="signin" value="Sign In" class="btn btn-gray" id="sign_in">
+                            <p class="forgot">
+                                <a href="#">Forgot password?</a>
+                            </p>
+                            <a href="" class="btn btn-danger" id="sign_up">Sign Up</a>
+                        </div>
+                        <p>Or</p>
+                        <div class="user-social">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </nav>
@@ -96,42 +127,8 @@
         </section>
         <!-- End Hero -->
 
-        <!-- About Us -->
-        <section id="about" class="bg-light">
-            <div class="container">
-                <h2 class="display-4 text-center text-black">About Us</h2>
-                <div class="row flex even-columns py-5">
-                    <div class="col">
-                        <img src="assets/img/hero/hero6.svg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col col-text">
-                        <h3 class="mission-heading">Our Mission</h3>
-                        <p class="mission-para">
-                            Making your ceremony memorable with the greatest master of ceremony of your choice, and
-                            bringing the greatest heart's satisfaction and joy to celebrate.
-                        </p>
-                        <div class="social">
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-pinterest"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End About -->
-
         <!-- MCs -->
-        <section id="mcs" class="text-black bg-white">
+        <section id="mcs" class="text-black bg-light">
             <div class="container">
                 <h2 class="display-4 text-center text-primary">Masters of Ceremony</h2>
                 <div class="row flex even-columns pt-3 pb-0">
@@ -192,7 +189,7 @@
         <!-- End MCs -->
 
         <!-- Better It -->
-        <section id="better_it" class="bg-light text-black">
+        <section id="better_it" class="bg-white text-black">
             <div class="container">
                 <h2 class="display-4 text-center text-black">Let's Better It</h2>
                 <div class="row flex even-columns py-5">
@@ -213,7 +210,7 @@
         <!-- End Better It -->
 
         <!-- For you -->
-        <section id="for_you" class="text-black bg-white">
+        <section id="for_you" class="text-black bg-light">
             <div class="container">
                 <h2 class="display-4 text-center text-primary">Just For You</h2>
 
@@ -236,7 +233,7 @@
         <!-- End For You -->
 
         <!-- Schedule Yours -->
-        <section id="schedule" class="bg-light text-black">
+        <section id="schedule" class="bg-white text-black">
             <div class="container">
                 <h2 class="display-4 text-center text-black">Schedule Your Ceremony</h2>
                 <div class="row flex even-columns py-5">
@@ -256,78 +253,6 @@
         </section>
         <!-- End Schedule -->
 
-        <!-- Contact -->
-        <section id="contact" class="text-black bg-white">
-            <div class="container">
-                <h2 class="display-4 text-center text-primary">Contact Us</h2>
-                <div class="row flex even-columns pt-5 pb-3">
-                    <div class="col col-form order-1">
-                        <div class="contact-form">
-                            <form action="#">
-                                <div class="inputs-text-box">
-                                    <input type="text" name="fulname" id="fulname" placeholder="Full Name" required>
-                                    <input type="text" name="email" id="email" placeholder="Email" required>
-                                </div>
-                                <div class="inputs-text-box">
-                                    <input type="tel" name="text" id="tel" placeholder="Phone Number" required>
-                                    <input type="text" name="subject" id="fname" placeholder="Subject" required>
-                                </div>
-                                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message"
-                                    required></textarea>
-                                <input type="submit" value="Send Message">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col col-address card bg-light">
-                        <div class="contact-address p-3">
-                            <div class="addr-wrap">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="addr">
-                                    <h3>Address</h3>
-                                    <p>
-                                        Box 261 Kinondoni,
-                                        <br>
-                                        Dar es salaam, Tanzania
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="addr-wrap">
-                                <i class="fas fa-envelope"></i>
-                                <div class="addr">
-                                    <h3>Email</h3>
-                                    <p>
-                                        info@celebrate.co.tz
-                                        <br>
-                                        celebrate@gmail.com
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="addr-wrap">
-                                <i class="fas fa-globe"></i>
-                                <div class="addr">
-                                    <h3>Website</h3>
-                                    <p>
-                                        www.celebrate.co.tz
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="addr-wrap">
-                                <i class="fas fa-phone-alt"></i>
-                                <div class="addr">
-                                    <h3>Call</h3>
-                                    <p>
-                                        +255 686 389 908
-                                        <br>
-                                        +255 716 491 716
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Contact -->
 
     </main>
     <!-- End Main -->

@@ -124,6 +124,10 @@
     transition: all 0.3s;
 }
 
+.navbar .cart-link {
+    text-decoration: none;
+}
+
 .navbar .cart:hover, .navbar .user:hover {
     cursor: pointer;
     border: 1px solid var(--danger-color);
@@ -192,6 +196,119 @@
 
 .navbar .menu .menu-bar:nth-child(3) {
     width: 5px;
+}
+
+.navbar .user:hover .user-account {
+    display: block;
+    animation: .7s up;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.navbar .user-account {
+    background: var(--white-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px;
+    width: 23%;
+    z-index: 10;
+    position: absolute;
+    display: none;
+    margin-top: 423px;
+    margin-right: 300px;
+}
+
+.navbar .user-account ::placeholder {
+    font-size: 15px;
+}
+
+.navbar .user-account p {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.navbar .user-account .forgot a {
+    text-decoration: none;
+    color: var(--black-color);
+    transition: all .3s;
+}
+
+.navbar .user-account .forgot a:hover {
+    color: var(--primary-color);
+}
+
+.navbar .user-account .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: .5rem;
+}
+
+.navbar .user-account .input-group input {
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 15px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar .user-account .input-group .fa-eye {
+    position: absolute;
+    margin-top: 40px;
+    right: 0;
+    margin-right: 60px;
+}
+
+.navbar .user-account .sign-in-up {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    margin-top: 22px;
+}
+
+.navbar .user-account .sign-in-up #sign_in {
+    font-size: 14px;
+}
+
+.navbar .user-account .sign-in-up #sign_up {
+    margin-top: 10px;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar .user-account .user-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: .9rem;
+}
+
+.navbar .user-account .user-social a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all .3s;
+}
+
+.navbar .user-account .user-social a:hover {
+    color: var(--gray-color);
 }
 
 /* ======= Media Queries ======= */
