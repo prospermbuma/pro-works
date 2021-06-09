@@ -1,4 +1,41 @@
 /* ==================================================
+# User-account
+===================================================*/
+
+const user = document.querySelector('.navbar .user');
+const user_account = document.querySelector('.navbar .user-account');
+
+user.addEventListener('mouseenter', () => {
+    user_account.style.display = 'block';
+    user_account.classList.add('animate-up');
+})
+
+user_account.addEventListener('mouseleave', () => {
+    user_account.style.display = 'none';
+})
+
+/* ==== User Password And Eyes ==== */
+const password = document.querySelector('#pswd');
+const passwordValue = password.value;
+const email = document.querySelector('#email');
+const p_eye = document.querySelector('.fa-eye');
+const p_eye_slash = document.querySelector('.fa-eye-slash');
+p_eye.addEventListener('click', function () {
+    p_eye.style.display = 'none';
+    p_eye_slash.style.display = 'block';
+    if (password.getAttribute("type") === "password") {
+        password.setAttribute("type", "text");
+    }
+})
+p_eye_slash.addEventListener('click', function () {
+    p_eye_slash.style.display = 'none';
+    p_eye.style.display = 'block';
+    if (password.getAttribute("type") === "text") {
+        password.setAttribute("type", "password");
+    }
+})
+
+/* ==================================================
 # Search Input
 ===================================================*/
 const search_input = document.querySelector('#search');

@@ -198,8 +198,12 @@
     width: 5px;
 }
 
-.navbar .user:hover .user-account {
+/* .navbar .user:hover .user-account {
     display: block;
+    animation: .7s up;
+} */
+
+.animate-up {
     animation: .7s up;
 }
 
@@ -211,6 +215,21 @@
     to {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+.animate-down {
+    animation: .7s down;
+}
+
+@keyframes down {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(10px);
+        opacity: 0;
     }
 }
 
@@ -264,6 +283,14 @@
 }
 
 .navbar .user-account .input-group .fa-eye {
+    position: absolute;
+    margin-top: 40px;
+    right: 0;
+    margin-right: 60px;
+}
+
+.navbar .user-account .input-group .fa-eye-slash {
+    display: none;
     position: absolute;
     margin-top: 40px;
     right: 0;
@@ -395,6 +422,66 @@
         height: 4px;
         margin: 0 2px
     }
+    .navbar .user-account {
+        width: 30%;
+        margin-top: -350px;
+        margin-right: 0px;
+        margin-left: 380px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .user-account {
+        width: 40%;
+        margin-top: -350px;
+        margin-right: 0px;
+        margin-left: 380px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar .user-account {
+        width: 85%;
+        margin-top: -380px;
+        margin-right: 0px;
+        margin-left: 438px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .navbar .user-account {
+        width: 85%;
+        margin-top: -380px;
+        margin-right: 0px;
+        margin-left: 314px;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .navbar .user-account {
+        width: 85%;
+        margin-top: -380px;
+        margin-right: 0px;
+        margin-left: 312px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .navbar .user-account {
+        width: 85%;
+        margin-top: -380px;
+        margin-right: 0px;
+        margin-left: 275px;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .navbar .user-account {
+        width: 85%;
+        margin-top: -380px;
+        margin-right: 0px;
+        margin-left: 260px;
+    }
 }
 
 @media only screen and (max-width: 326px) {
@@ -421,6 +508,12 @@
         height: 4px;
         margin: 0 2px
     }
+    .navbar .user-account {
+        width: 85%;
+        margin-top: -380px;
+        margin-right: 0px;
+        margin-left: 220px;
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -446,6 +539,13 @@
         background: var(--primary-color);
         height: 4px;
         margin: 0 2px
+    }
+    .navbar .user-account {
+        width: 85%;
+        margin-top: -380px;
+        margin-right: 0px;
+        margin-left: 180px;
+        padding: 25px;
     }
 }
 
