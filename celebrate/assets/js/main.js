@@ -1,7 +1,22 @@
 /* ==================================================
+# Cart-Checkout
+===================================================*/
+const cart = document.querySelector('.navbar .cart');
+const carts_checkout = document.querySelector('.navbar .carts');
+
+cart.addEventListener('mouseenter', () => {
+    carts_checkout.style.display = 'block';
+    carts_checkout.classList.add('animate-up');
+    user_account.style.display = 'none';
+})
+
+carts_checkout.addEventListener('mouseleave', () => {
+    carts_checkout.style.display = 'none';
+})
+
+/* ==================================================
 # User-account
 ===================================================*/
-
 const user = document.querySelector('.navbar .user');
 const user_account = document.querySelector('.navbar .user-account');
 
@@ -14,10 +29,31 @@ user_account.addEventListener('mouseleave', () => {
     user_account.style.display = 'none';
 })
 
+/* ==== User Email ==== */
+const email = document.querySelector('#email');
+
+email.addEventListener('focus', () => {
+    email.style.borderBottom = '2px solid var(--light-gray-color)';
+    email.style.transition = 'all 1s';
+})
+
+email.addEventListener('blur', () => {
+    email.style.borderBottom = '2px solid var(--primary-color)';
+    email.style.transition = 'all 1s';
+})
+
 /* ==== User Password And Eyes ==== */
 const password = document.querySelector('#pswd');
-const passwordValue = password.value;
-const email = document.querySelector('#email');
+ password.addEventListener('focus', () => {
+     password.style.borderBottom = '2px solid var(--light-gray-color)';
+     password.style.transition = 'all 1s';
+})
+
+ password.addEventListener('blur', () => {
+     password.style.borderBottom = '2px solid var(--primary-color)';
+     password.style.transition = 'all 1s';
+})
+
 const p_eye = document.querySelector('.fa-eye');
 const p_eye_slash = document.querySelector('.fa-eye-slash');
 p_eye.addEventListener('click', function () {
@@ -27,6 +63,7 @@ p_eye.addEventListener('click', function () {
         password.setAttribute("type", "text");
     }
 })
+
 p_eye_slash.addEventListener('click', function () {
     p_eye_slash.style.display = 'none';
     p_eye.style.display = 'block';

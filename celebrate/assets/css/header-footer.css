@@ -139,15 +139,15 @@
 
 .navbar .cart .badge {
     position: absolute;
-    margin-left: 33px;
-    margin-top: -30px;
+    margin-left: 18px;
+    margin-top: -15px;
     z-index: 1;
     background: red;
     color: var(--white-color);
     font-size: 10px;
-    font-weight: 500;
-    width: 17px;
-    height: 17px;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -198,11 +198,6 @@
     width: 5px;
 }
 
-/* .navbar .user:hover .user-account {
-    display: block;
-    animation: .7s up;
-} */
-
 .animate-up {
     animation: .7s up;
 }
@@ -233,6 +228,46 @@
     }
 }
 
+.navbar .carts {
+    background: var(--white-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 25px;
+    width: 25%;
+    z-index: 10;
+    position: absolute;
+    display: none;
+    margin-top: 371px;
+    margin-right: 300px;
+}
+
+.navbar .carts .cart-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    background: var(--light-color);
+    padding: 9px 15px;
+    border-bottom: 2px solid var(--gray-color);
+}
+
+.navbar .carts .cart-img {
+    width: 60px;
+    height: 45px;
+}
+
+.navbar .cart-checkout-btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navbar .cart-checkout-btns button {
+    font-size: 14px;
+}
+
 .navbar .user-account {
     background: var(--white-color);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -253,11 +288,13 @@
 .navbar .user-account p {
     padding-top: 10px;
     font-size: 15px;
+    color: var(--gray-color);
+    font-weight: 600;
 }
 
 .navbar .user-account .forgot a {
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--gray-color);
     transition: all .3s;
 }
 
