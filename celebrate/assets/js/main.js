@@ -10,7 +10,7 @@ cart.addEventListener('mouseenter', () => {
     user_account.style.display = 'none';
 })
 
-carts_checkout.addEventListener('mouseleave', () => {
+carts_checkout.addEventListener('mousedown', () => {
     carts_checkout.style.display = 'none';
 })
 
@@ -20,7 +20,7 @@ carts_checkout.addEventListener('mouseleave', () => {
 const user = document.querySelector('.navbar .user');
 const user_account = document.querySelector('.navbar .user-account');
 
-user.addEventListener('mouseenter', () => {
+user.addEventListener('mouseup', () => {
     user_account.style.display = 'block';
     user_account.classList.add('animate-up');
 })

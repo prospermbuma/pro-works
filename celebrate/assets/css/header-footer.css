@@ -145,7 +145,7 @@
     background: red;
     color: var(--white-color);
     font-size: 10px;
-    font-weight: 700;
+    font-weight: bold;
     width: 18px;
     height: 18px;
     border-radius: 50px;
@@ -239,6 +239,7 @@
     display: none;
     margin-top: 371px;
     margin-right: 300px;
+    /* pointer-events: none; */
 }
 
 .navbar .carts .cart-details {
@@ -247,7 +248,7 @@
     align-items: center;
     gap: .5rem;
     background: var(--light-color);
-    padding: 9px 15px;
+    padding: 9px 10px;
     border-bottom: 2px solid var(--gray-color);
 }
 
@@ -266,7 +267,12 @@
 
 .navbar .cart-checkout-btns button {
     font-size: 14px;
+    /* pointer-events: all; */
 }
+
+/* .navbar .cart-details .fa-trash-alt {
+    pointer-events: all;
+} */
 
 .navbar .user-account {
     background: var(--white-color);
@@ -459,7 +465,7 @@
         height: 4px;
         margin: 0 2px
     }
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 30%;
         margin-top: -350px;
         margin-right: 0px;
@@ -468,7 +474,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 40%;
         margin-top: -350px;
         margin-right: 0px;
@@ -477,7 +483,7 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -486,7 +492,7 @@
 }
 
 @media only screen and (max-width: 415px) {
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -495,7 +501,7 @@
 }
 
 @media only screen and (max-width: 412px) {
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -504,7 +510,7 @@
 }
 
 @media only screen and (max-width: 376px) {
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -513,7 +519,7 @@
 }
 
 @media only screen and (max-width: 366px) {
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -545,11 +551,18 @@
         height: 4px;
         margin: 0 2px
     }
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
         margin-left: 220px;
+    }
+    .navbar .carts .cart-details {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+    .navbar .carts .cart-checkout-btns .btn {
+        font-size: 11px;
     }
 }
 
@@ -577,12 +590,19 @@
         height: 4px;
         margin: 0 2px
     }
-    .navbar .user-account {
+    .navbar .user-account, .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
         margin-left: 180px;
         padding: 25px;
+    }
+    .navbar .carts .cart-details {
+        padding: 9px 8px;
+        font-size: 10px;
+    }
+    .navbar .carts .cart-checkout-btns .btn {
+        font-size: 7px;
     }
 }
 
