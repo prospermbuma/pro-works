@@ -265,14 +265,10 @@
     gap: .5rem;
 }
 
-.navbar .cart-checkout-btns button {
+.navbar .cart-checkout-btns button, .navbar .cart-checkout-btns a {
     font-size: 14px;
-    /* pointer-events: all; */
+    text-decoration: none;
 }
-
-/* .navbar .cart-details .fa-trash-alt {
-    pointer-events: all;
-} */
 
 .navbar .user-account {
     background: var(--white-color);

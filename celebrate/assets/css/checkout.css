@@ -62,21 +62,26 @@ section .display-4 {
 }
 
 #sign_up .display-4 {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
+    background: var(--light-color);
+    padding: 20px 40px;
     margin-bottom: 10px;
+    border-left: 10px solid var(--primary-color);
+    border-radius: 5px;
 }
 
 #sign_up .user-account {
     background: var(--white-color);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    color: var(--black-color);
     border-radius: 5px;
-    padding: 40px;
+    padding: 20px 10px;
     width: 100%;
 }
 
 #sign_up .user-account ::placeholder {
     font-size: 15px;
+    color: var(--gray-color);
 }
 
 #sign_up .user-account p {
@@ -103,39 +108,13 @@ section .display-4 {
     font-size: 15px;
     border: 2px solid var(--light-gray-color);
     border-radius: 5px;
-}
-
-#sign_up .user-account .input-group .radios {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 20%;
-    gap: 1.0rem;
-}
-
-#sign_up .user-account .input-group .radio {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    gap: .5rem;
-}
-
-#sign_up .user-account .radios input {
-    width: 10%;
-}
-
-#sign_up .user-account .radios label {
-    width: 100%;
-    font-size: 15px;
+    color: var(--gray-color);
 }
 
 #sign_up .user-account .input-group .eye {
     position: absolute;
     margin-top: -27px;
-    left: 0;
-    margin-left: 665px;
+    left: 665px;
 }
 
 #sign_up .user-account .input-group .eyes {
@@ -147,9 +126,11 @@ section .display-4 {
 
 #sign_up .user-account .input-group .fa-eye {
     display: block;
+    color: var(--gray-color);
 }
 
 #sign_up .user-account .input-group .fa-eye-slash {
+    color: var(--gray-color);
     display: none;
 }
 
@@ -199,7 +180,7 @@ section .display-4 {
 }
 
 #sign_up .user-account .forgot a:hover {
-    color: var(--primary-color);
+    color: var(--light-blue-color);
 }
 
 #sign_up .user-account .user-social {
@@ -270,9 +251,6 @@ section .display-4 {
         margin-right: 93px;
         font-size: 14px;
     }
-    #sign_up .user-account .input-group .radios {
-        width: 50%;
-    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -305,9 +283,6 @@ section .display-4 {
         right: 0;
         margin-right: 73px;
         font-size: 14px;
-    }
-    #sign_up .user-account .input-group .radios {
-        width: 100%;
     }
 }
 
@@ -346,8 +321,8 @@ section .display-4 {
         margin-left: 231px;
     }
     #sign_up .user-account p {
-        font-size: 13px;
-    }
+    font-size: 13px;
+}
 }
 
 @media only screen and (max-width: 300px) {

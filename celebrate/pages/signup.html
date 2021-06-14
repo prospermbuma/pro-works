@@ -97,7 +97,7 @@
                     </div>
                     <div class="cart-checkout-btns">
                         <button class="btn btn-gray">View Carts</button>
-                        <button class="btn btn-danger">Checkout</button>
+                        <a href="checkout.html" class="btn btn-danger">Checkout</a>
                     </div>
                 </div>
             </div>
@@ -144,16 +144,25 @@
         <section id="sign_up" class="text-black bg-white">
             <div class="container">
                 <div class="row flex even-columns pt-4 pb-0">
-                    <h2 class="display-4">Create an account</h2>
+                    <h2 class="display-4">Get registered</h2>
                 </div>
                 <div class="row flex even-columns pt-1 pb-1">
                     <div class="user-account">
-                        <h2 class="pb-1">New Customer</h2>
+                        <h2 class="pb-1">Create Account</h2>
                         <form action="">
                             <div class="input-group">
-                                <input type="text" name="fname" id="fname" placeholder="First Name" required>
-                                <input type="text" name="lname" id="lname" placeholder="Last Name" required>
-                                <input type="email" name="email" id="email" placeholder="Email" required>
+                                <input type="text" name="fname" id="fname" placeholder="Username" required>
+                                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                <div class="radios">
+                                    <div class="radio">
+                                        <input type="radio" name="mc" id="mc" checked>
+                                        <label for="mc">Master of Ceremony</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="nc" id="nc">
+                                        <label for="nc">New Customer</label>
+                                    </div>
+                                </div>
                                 <div class="pswd-1">
                                     <input type="password" name="pswd" id="pswd_1" placeholder="Password" required>
                                     <div class="eyes">

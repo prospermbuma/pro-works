@@ -10,7 +10,7 @@ cart.addEventListener('mouseenter', () => {
     user_account.style.display = 'none';
 })
 
-carts_checkout.addEventListener('mousedown', () => {
+carts_checkout.addEventListener('mouseleave', () => {
     carts_checkout.style.display = 'none';
 })
 
