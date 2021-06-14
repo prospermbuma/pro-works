@@ -7,9 +7,10 @@
     --white-color: #fff;
     --light-color: #f8f9fa;
     --danger-color: #bd4343;
-    --redish-color: #f05416;
+    --redish-color: #cf450e;
     --success-color: #6fbb67;
     --warning-color: #f8b706f1;
+    --light-blue-color: #075fb8;
     --gray-color: #808080;
     --light-gray-color: #d8d3d3;
     --light-gray-color-2: #e3e3e3;
@@ -186,7 +187,7 @@
 }
 
 .btn:hover {
-    transform: scale(0.98);
+    background: var(--light-blue-color);
 }
 
 /* Backgrounds and colored buttons */
@@ -239,6 +240,11 @@
 
 .bg-danger, .btn-danger {
     background: var(--danger-color);
+    color: var(--white-color);
+}
+
+.btn-danger:hover {
+    background: var(--redish-color);
     color: var(--white-color);
 }
 
