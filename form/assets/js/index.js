@@ -106,5 +106,7 @@ form.onsubmit = (e) => {
     if (!eField.classList.contains("error") && !pField.classList.contains("error")) {
         window.location.href = "#";
         console.log("Form Submitted");
+        pInput.value = "";
+        eInput.value = "";
     }
 }
