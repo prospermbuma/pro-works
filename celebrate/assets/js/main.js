@@ -5,13 +5,11 @@ const cart = document.querySelector('.navbar .cart');
 const carts_checkout = document.querySelector('.navbar .carts');
 
 cart.addEventListener('mouseenter', () => {
-    carts_checkout.style.display = 'block';
-    carts_checkout.classList.add('animate-up');
-    user_account.style.display = 'none';
+    carts_checkout.classList.add('show', 'animate-up');
 })
 
 carts_checkout.addEventListener('mouseleave', () => {
-    carts_checkout.style.display = 'none';
+    carts_checkout.classList.remove('show', 'animate-up');
 })
 
 /* ==================================================
@@ -21,52 +19,51 @@ const user = document.querySelector('.navbar .user');
 const user_account = document.querySelector('.navbar .user-account');
 
 user.addEventListener('mouseup', () => {
-    user_account.style.display = 'block';
-    user_account.classList.add('animate-up');
+    user_account.classList.add('show', 'animate-up');
 })
 
 user_account.addEventListener('mouseleave', () => {
-    user_account.style.display = 'none';
+    user_account.classList.remove('show', 'animate-up');
 })
 
 /* ==== User Email ==== */
 const email = document.querySelector('#email');
 
 email.addEventListener('focus', () => {
-    email.style.borderBottom = '2px solid var(--light-gray-color)';
-    email.style.transition = 'all 1s';
+    email.classList.add('animate-gray');
+    email.classList.remove('animate-primary');
 })
 
 email.addEventListener('blur', () => {
-    email.style.borderBottom = '2px solid var(--primary-color)';
-    email.style.transition = 'all 1s';
+    email.classList.remove('animate-gray');
+    email.classList.add('animate-primary');
 })
 
 /* ==== User Password And Eyes ==== */
 const password = document.querySelector('#pswd');
- password.addEventListener('focus', () => {
-     password.style.borderBottom = '2px solid var(--light-gray-color)';
-     password.style.transition = 'all 1s';
+password.addEventListener('focus', () => {
+    password.classList.add('animate-gray');
+    password.classList.remove('animate-primary');
 })
 
- password.addEventListener('blur', () => {
-     password.style.borderBottom = '2px solid var(--primary-color)';
-     password.style.transition = 'all 1s';
+password.addEventListener('blur', () => {
+    password.classList.remove('animate-gray');
+    password.classList.add('animate-primary');
 })
 
 const p_eye = document.querySelector('.fa-eye');
 const p_eye_slash = document.querySelector('.fa-eye-slash');
 p_eye.addEventListener('click', function () {
-    p_eye.style.display = 'none';
-    p_eye_slash.style.display = 'block';
+    p_eye.classList.add('hide');
+    p_eye_slash.classList.add('show');
     if (password.getAttribute("type") === "password") {
         password.setAttribute("type", "text");
     }
 })
 
 p_eye_slash.addEventListener('click', function () {
-    p_eye_slash.style.display = 'none';
-    p_eye.style.display = 'block';
+    p_eye_slash.classList.remove('show');
+    p_eye.classList.remove('hide');
     if (password.getAttribute("type") === "text") {
         password.setAttribute("type", "password");
     }
@@ -79,19 +76,19 @@ const search_input = document.querySelector('#search');
 
 search_input.addEventListener('focus', (e) => {
     e.preventDefault();
-    search_input.style.paddingRight = "90px";
-    search_input.style.transition = "all 0.3s";
+    search_input.classList.add('max-padding-right');
+    search_input.classList.remove('min-padding-right');
 });
 
 search_input.addEventListener('keypress', () => {
-    search_input.style.paddingRight = "90px";
-    search_input.style.transition = "all 0.3s";
+    search_input.classList.add('max-padding-right');
+    search_input.classList.remove('min-padding-right');
 });
 
 search_input.addEventListener('blur', (e) => {
     e.preventDefault();
-    search_input.style.paddingRight = "30px";
-    search_input.style.transition = "all 0.3s";
+    search_input.classList.remove('max-padding-right');
+    search_input.classList.add('min-padding-right');
 });
 
 /* ==================================================
@@ -134,7 +131,7 @@ window.addEventListener('scroll', () => {
 # Making navbar smaller as the document's height is greater than 100px.
 # And it should only be applied to the big screens with width than 768px.
 =========================================================================*/
-const smaller_navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.navbar');
 const navBrand_text = document.querySelector('.navbar .nav-brand .brand-text');
 const navBrand_logo = document.querySelector('.navbar .nav-brand .brand-logo');
 const nav_links = document.querySelectorAll('.navbar .navbar-nav .nav-item .nav-link');
@@ -143,17 +140,23 @@ window.addEventListener('scroll', function () {
     $(document).ready(function () {
         if ($(window).width() > 1060) {
             if (window.pageYOffset > 100) {
-                smaller_navbar.style.height = '65px';
-                navBrand_text.style.fontSize = '17px';
+                navbar.classList.add('min-height');
+                navbar.classList.remove('max-height');
+                navBrand_text.classList.add('min-font');
+                navBrand_text.classList.remove('max-font');
                 nav_links.forEach(navLink => {
-                    navLink.style.fontSize = '16px';
+                    navLink.classList.add('min-fonts');
+                    navLink.classList.remove('max-fonts');
                 });
             }
             else {
-                smaller_navbar.style.height = '70px';
-                navBrand_text.style.fontSize = '20px';
+                navbar.classList.remove('min-height');
+                navbar.classList.add('max-height');
+                navBrand_text.classList.remove('min-font');
+                navBrand_text.classList.add('max-font');
                 nav_links.forEach(navLink => {
-                    navLink.style.fontSize = '17px';
+                    navLink.classList.remove('min-fonts');
+                    navLink.classList.add('max-fonts');
                 });
             }
         }

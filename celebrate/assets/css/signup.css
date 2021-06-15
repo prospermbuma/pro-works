@@ -75,6 +75,21 @@ section .display-4 {
     width: 100%;
 }
 
+#sign_up .user-account form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 1.0rem;
+}
+
+#sign_up .user-account .names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
 #sign_up .user-account ::placeholder {
     font-size: 15px;
 }
@@ -86,17 +101,9 @@ section .display-4 {
     font-weight: 600;
 }
 
-#sign_up .user-account .input-group {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-flow: column wrap;
-    gap: 1.0rem;
-}
-
 #sign_up .user-account .input-group input {
     width: 100%;
-    padding: 8px 12px;
+    padding: 8px 40px;
     outline: none;
     border: none;
     background: none;
@@ -105,44 +112,32 @@ section .display-4 {
     border-radius: 5px;
 }
 
-#sign_up .user-account .input-group .radios {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 20%;
-    gap: 1.0rem;
+#sign_up .user-account .input-group .name, #sign_up .user-account .input-group .email-group, #sign_up .user-account .input-group .pswd-1, #sign_up .user-account .input-group .pswd-2 {
+    position: relative;
 }
 
-#sign_up .user-account .input-group .radio {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    gap: .5rem;
+#sign_up .user-account .input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#sign_up .user-account .radios input {
-    width: 10%;
-}
 
-#sign_up .user-account .radios label {
-    width: 100%;
-    font-size: 15px;
+#sign_up .user-account .input-group .icon {
+    left: 15px;
+    color: var(--gray-color);
 }
 
 #sign_up .user-account .input-group .eye {
-    position: absolute;
-    margin-top: -27px;
-    left: 0;
-    margin-left: 665px;
+    right: 15px;
 }
 
-#sign_up .user-account .input-group .eyes {
-    position: absolute;
-    margin-top: -27px;
-    right: 0;
-    margin-right: 302px;
+#sign_up .user-account .input-group .eye.show {
+    display: block;
+}
+
+#sign_up .user-account .input-group .eye.hide {
+    display: none;
 }
 
 #sign_up .user-account .input-group .fa-eye {
@@ -179,105 +174,14 @@ section .display-4 {
     background: var(--light-blue-color);
 }
 
-#sign_up .user-account p {
-    padding-top: 0px;
-    font-size: 15px;
-    color: var(--gray-color);
-    font-weight: 600;
-}
-
-#sign_up .user-account .forgot-social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#sign_up .user-account .forgot a {
-    text-decoration: none;
-    color: var(--gray-color);
-    transition: all .3s;
-}
-
-#sign_up .user-account .forgot a:hover {
-    color: var(--primary-color);
-}
-
-#sign_up .user-account .user-social {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: .9rem;
-    margin-top: 10px;
-}
-
-#sign_up .user-account .user-social a {
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: all .3s;
-}
-
-#sign_up .user-account .user-social a:hover {
-    color: var(--gray-color);
-}
-
 /* ======= Media Queries ======= */
-
-@media only screen and (max-width: 1400px) {
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 588px;
-    }
-    #sign_up .user-account .input-group .eyes {
-        position: absolute;
-        margin-top: -25px;
-        right: 0;
-        margin-right: 228px;
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 1060px) {
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 418px;
-    }
-    #sign_up .user-account .input-group .eyes {
-        position: absolute;
-        margin-top: -25px;
-        right: 0;
-        margin-right: 93px;
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 658px;
-    }
-    #sign_up .user-account .input-group .eyes {
-        position: absolute;
-        margin-top: -25px;
-        right: 0;
-        margin-right: 93px;
-        font-size: 14px;
-    }
-    #sign_up .user-account .input-group .radios {
-        width: 50%;
-    }
-}
 
 @media only screen and (max-width: 576px) {
     #sign_up .container {
         padding: 0 25px;
+    }
+    #sign_up .user-account {
+        order: 1;
     }
     #sign_up .display-4 {
         text-align: center;
@@ -293,58 +197,19 @@ section .display-4 {
     #sign_up .user-account h2 {
         text-align: center;
     }
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 449px;
-    }
-    #sign_up .user-account .input-group .eyes {
-        position: absolute;
-        margin-top: -25px;
-        right: 0;
-        margin-right: 73px;
-        font-size: 14px;
-    }
-    #sign_up .user-account .input-group .radios {
-        width: 100%;
-    }
 }
 
-@media only screen and (max-width: 416px) {
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 322px;
-    }
-}
-
-@media only screen and (max-width: 376px) {
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 285px;
-    }
-}
-
-@media only screen and (max-width: 366px) {
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 270px;
+@media only screen and (max-width: 476px) {
+    #sign_up .user-account .names {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        gap: 1.0rem;
     }
 }
 
 @media only screen and (max-width: 326px) {
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 231px;
-    }
     #sign_up .user-account p {
         font-size: 13px;
     }
@@ -357,18 +222,179 @@ section .display-4 {
     #sign_up .user-account {
         padding: 25px;
     }
-    #sign_up .user-account .input-group .eye {
-        position: absolute;
-        margin-top: -27px;
-        left: 0;
-        margin-left: 212px;
+}
+
+/* ======= End Queries ======== */
+
+/* ==================================================
+# Sign Up - user-account-2
+===================================================*/
+
+#sign_up .user-account-2 {
+    background: var(--warning-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px;
+    width: 100%;
+}
+
+#sign_up .user-account-2 form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 1.0rem;
+}
+
+#sign_up .user-account-2 .names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+#sign_up .user-account-2 ::placeholder {
+    font-size: 15px;
+    color: var(--gray-color);
+}
+
+#sign_up .user-account-2 .input-group input {
+    width: 100%;
+    padding: 8px 40px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 15px;
+    border: 2px solid var(--light-color);
+    border-radius: 5px;
+    background: var(--light-color);
+}
+
+#sign_up .user-account-2 .input-group input#img {
+    padding: 8px 12px;
+}
+
+#sign_up .user-account-2 .user-img {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: .6rem;
+}
+
+#sign_up .user-account-2 .user-img input:hover {
+    cursor: pointer;
+}
+
+#sign_up .user-account-2 .user-img label {
+    font-weight: 600;
+}
+
+#sign_up .user-account-2 .input-group .name, #sign_up .user-account-2 .input-group .email-group, #sign_up .user-account-2 .input-group .pswd-1, #sign_up .user-account-2 .input-group .pswd-2 {
+    position: relative;
+}
+
+#sign_up .user-account-2 .input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#sign_up .user-account-2 .input-group .icon {
+    left: 15px;
+    color: var(--gray-color);
+}
+
+#sign_up .user-account-2 .input-group .eye {
+    right: 15px;
+}
+
+#sign_up .user-account-2 .input-group .eye.show {
+    display: block;
+}
+
+#sign_up .user-account-2 .input-group .eye.hide {
+    display: none;
+}
+
+#sign_up .user-account-2 .input-group .fa-eye {
+    display: block;
+}
+
+#sign_up .user-account-2 .input-group .fa-eye-slash {
+    display: none;
+}
+
+#sign_up .user-account-2 .input-group .fa-eye:hover, #sign_up .user-account-2 .input-group .fa-eye-slash:hover {
+    cursor: pointer;
+}
+
+#sign_up .user-account-2 .sign-in-up {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    margin-top: 8px;
+}
+
+#sign_up .user-account-2 .sign-in-up #sign_up {
+    margin-top: 12px;
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#sign_up .user-account-2 .sign-in-up #sign_up:hover {
+    background: var(--light-blue-color);
+}
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #sign_up .container {
+        padding: 0 25px;
     }
-    #sign_up .user-account .input-group .eyes {
-        position: absolute;
-        margin-top: -25px;
-        right: 0;
-        margin-right: 53px;
-        font-size: 14px;
+    #sign_up .display-4 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    #sign_up .user-order-1 {
+        order: 1;
+    }
+    #sign_up .user-account-2 {
+        padding: 35px;
+    }
+    #sign_up .user-account-2 h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    #sign_up .user-account-2 .names {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        gap: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #sign_up .user-account-2 p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #sign_up .container {
+        padding: 0 15px;
+    }
+    #sign_up .user-account-2 {
+        padding: 25px;
     }
 }
 

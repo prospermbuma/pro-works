@@ -107,9 +107,11 @@
                     <form action="">
                         <div class="input-group">
                             <input type="email" name="email" id="email" placeholder="Email" required>
-                            <input type="password" name="pswd" id="pswd" placeholder="Password" required>
-                            <i class="fas fa-eye text-gray"></i>
-                            <i class="fas fa-eye-slash text-gray"></i>
+                            <div class="pass-eyes">
+                                <input type="password" name="pswd" id="pswd" placeholder="Password" required>
+                                <i class="eye fas fa-eye text-gray"></i>
+                                <i class="eye fas fa-eye-slash text-gray"></i>
+                            </div>
                         </div>
                         <div class="sign-in-up">
                             <input type="submit" name="signin" value="Sign In" class="btn btn-primary" id="sign_in">
@@ -144,39 +146,94 @@
         <section id="sign_up" class="text-black bg-white">
             <div class="container">
                 <div class="row flex even-columns pt-4 pb-0">
-                    <h2 class="display-4">Get registered</h2>
+                    <h2 class="display-4">Create an account</h2>
                 </div>
-                <div class="row flex even-columns pt-1 pb-1">
+                <div class="row flex even-columns pt-2 pb-1">
                     <div class="user-account">
-                        <h2 class="pb-1">Create Account</h2>
+                        <h2 class="pb-1">Regular Customer</h2>
                         <form action="">
                             <div class="input-group">
-                                <input type="text" name="fname" id="fname" placeholder="Username" required>
-                                <input type="email" name="email" id="email" placeholder="Email Address" required>
-                                <div class="radios">
-                                    <div class="radio">
-                                        <input type="radio" name="mc" id="mc" checked>
-                                        <label for="mc">Master of Ceremony</label>
+                                <div class="names">
+                                    <div class="name">
+                                        <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                                        <i class="icon fas fa-user-alt"></i>
                                     </div>
-                                    <div class="radio">
-                                        <input type="radio" name="nc" id="nc">
-                                        <label for="nc">New Customer</label>
+                                    <div class="name">
+                                        <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                                        <i class="icon fas fa-user-alt"></i>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="email-group">
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                    <i class="icon fas fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
                                 <div class="pswd-1">
                                     <input type="password" name="pswd" id="pswd_1" placeholder="Password" required>
-                                    <div class="eyes">
-                                        <i class="fas fa-eye text-gray"></i>
-                                        <i class="fas fa-eye-slash text-gray"></i>
-                                    </div>
+                                    <i class="icon fas fa-lock"></i>
+                                    <i class="eye fas fa-eye text-gray"></i>
+                                    <i class="eye fas fa-eye-slash text-gray"></i>
                                 </div>
+                            </div>
+                            <div class="input-group">
                                 <div class="pswd-2">
                                     <input type="password" name="pswd" id="pswd_2" placeholder="Confirm Password"
                                         required>
-                                    <div class="eyes">
-                                        <i class="fas fa-eye text-gray"></i>
-                                        <i class="fas fa-eye-slash text-gray"></i>
+                                    <i class="icon fas fa-lock"></i>
+                                    <i class="eye fas fa-eye text-gray"></i>
+                                    <i class="eye fas fa-eye-slash text-gray"></i>
+                                </div>
+                            </div>
+                            <div class="sign-in-up">
+                                <a href="signup.html" class="btn btn-primary" id="sign_up">Create account</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="user-account-2">
+                        <h2 class="pb-1">Master of Ceremony</h2>
+                        <form action="">
+                            <div class="input-group">
+                                <div class="names">
+                                    <div class="name">
+                                        <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                                        <i class="icon fas fa-user-alt"></i>
                                     </div>
+                                    <div class="name">
+                                        <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                                        <i class="icon fas fa-user-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="email-group">
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                    <i class="icon fas fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="pswd-1">
+                                    <input type="password" name="pswd" id="pswd_1" placeholder="Password" required>
+                                    <i class="icon fas fa-lock"></i>
+                                    <i class="eye fas fa-eye text-gray"></i>
+                                    <i class="eye fas fa-eye-slash text-gray"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="pswd-2">
+                                    <input type="password" name="pswd" id="pswd_2" placeholder="Confirm Password"
+                                        required>
+                                    <i class="icon fas fa-lock"></i>
+                                    <i class="eye fas fa-eye text-gray"></i>
+                                    <i class="eye fas fa-eye-slash text-gray"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="user-img">
+                                    <label for="img">Profile picture:</label>
+                                    <input type="file" name="img" id="img">
                                 </div>
                             </div>
                             <div class="sign-in-up">
