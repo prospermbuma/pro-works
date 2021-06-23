@@ -62,7 +62,7 @@ section .display-4 {
 }
 
 #sign_up .display-4 {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
     margin-bottom: 10px;
 }
@@ -251,6 +251,10 @@ section .display-4 {
     justify-content: space-between;
     align-items: center;
     gap: .5rem;
+}
+
+#sign_up .user-account-2 .names .name {
+    width: 100%;
 }
 
 #sign_up .user-account-2 ::placeholder {
