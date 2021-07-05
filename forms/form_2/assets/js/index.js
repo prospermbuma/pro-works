@@ -292,3 +292,51 @@ function checkInputs() {
     }
 
 }
+
+/* ====================================================
+# Address Dropdown List
+=====================================================*/
+
+// const regions = [
+//     {
+//         Dsm: ["Temeke", "Kinondoni", "Ilala", "Ubungo", "Kigmaboni"]
+//     },
+//     {
+//         Iringa: ["Iringa Mjini", "Iringa Vijijini", "Kilolo", "Mufindi"]
+//     },
+//     {
+//         Kagera: ["Bukoba Mjini", "Bukoba Vijijini", "Bihalamulo"]
+//     },
+//     {
+//         Tanga: ["Handeni", "Lushoto", "Pangani", "Kilindi", "Muhenza"]
+//     },
+//     {
+//         Mara: ["Bunda", "Serengeti", "Rorya", "Tarime", "Musoma Mjini", "Musoma Vijijini", "Butihama"]
+//     },
+// ];
+
+// window.onload = () => {
+//     const region_select = document.querySelector("#region"),
+//         district_select = document.queryselector("#district");
+//     for (let region in regions) {
+//         region_select.options[region_select.options.length] = new Option(region, region);
+//     }
+
+//     region_select.addEventListener('change', () => {
+//         district_select.length = 1 // Remove all options bar first
+//         if (this.selectedIndex < 1) return; // done
+//         for (let distri in regions[this.value]) {
+//             district_select.options[district_select.options.length] = new Option(distri, distri);
+//         }
+//     })
+    // region_select.onchange(); // reset in case page is reloaded
+
+    // district_select.addEventListener('change', () => {
+    //     district_select.length = 1 // Remove all options bar first
+    //     if (this.selectedIndex < 1) return; // done
+    //     let districts = regions[region_select.value][this.value];
+    //     for (let district of districts) {
+    //         district_select.options[district_select.options.length] = new Option(district, district);
+    //     }
+    // })
+// }

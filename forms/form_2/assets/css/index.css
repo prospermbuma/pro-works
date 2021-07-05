@@ -108,6 +108,17 @@ form input {
     outline: none;
 }
 
+form select {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    padding: 0px 45px;
+    outline: none;
+}
+
 form .calendar .calendar-text {
     text-align: left;
     padding-bottom: 10px;

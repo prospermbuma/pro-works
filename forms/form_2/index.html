@@ -30,7 +30,8 @@
         <input type="checkbox" name="check" id="check">
         <ul class="navbar-nav">
             <li class="nav-item"><a href="#" class="nav-link active"><i class="fas fa-home"></i> Nyumbani</a></li>
-            <li class="nav-item"><a href="pages/view_data.html" class="nav-link"><i class="far fa-comment-dots"></i> Angalia Maoni</a></li>
+            <li class="nav-item"><a href="pages/view_data.html" class="nav-link"><i class="far fa-comment-dots"></i>
+                    Angalia Maoni</a></li>
         </ul>
     </nav>
     <!-- End nav -->
@@ -58,7 +59,7 @@
                                         <i class="error error-icon fas fa-exclamation-circle"></i>
                                         <i class="success success-icon fas fa-check-circle"></i>
                                     </div>
-                                    <div class="error error-txt">Jina la kwanza linahitajika</div>
+                                    <div class="error error-txt">Jina la Kwanza linahitajika</div>
                                 </div>
                                 <div class="field name-2">
                                     <div class="input-area">
@@ -90,15 +91,26 @@
                                     <div class="error error-txt">Namba ya simu inahitajika</div>
                                 </div>
                             </div>
-                            <div class="field address">
-                                <div class="addresses">
-                                    <div class="input-area">
-                                        <input type="text" name="address" id="address" placeholder="Anuani">
-                                        <i class="icon fas fa-map"></i>
-                                        <i class="error error-icon fas fa-exclamation-circle"></i>
-                                        <i class="success success-icon fas fa-check-circle"></i>
+                            <div class="joint-fields">
+                                <div class="field region">
+                                    <div class="regions">
+                                        <div class="input-area">
+                                            <select name="region" id="region">
+                                                <option value="Mkoa" selected="selected">Chagua Mkoa</option>
+                                            </select>
+                                            <i class="icon fas fa-map-marker-alt"></i>
+                                        </div>
                                     </div>
-                                    <div class="error error-txt">Anuani inahitajika</div>
+                                </div>
+                                <div class="field district" id="response">
+                                    <div class="districts">
+                                        <div class="input-area">
+                                            <select name="district" id="district">
+                                                <option value="Wilaya" selected="selected">Chagua Wilaya</option>
+                                            </select>
+                                            <i class="icon fas fa-map-marker-alt"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="field calendar">
