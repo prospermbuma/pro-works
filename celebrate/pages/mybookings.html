@@ -116,7 +116,7 @@
                         <div class="sign-in-up">
                             <input type="submit" name="signin" value="Sign In" class="btn btn-primary" id="sign_in">
                             <p class="forgot">
-                                <a href="#">Forgot password?</a>
+                                <a href="forgot_pass.html">Forgot password?</a>
                             </p>
                             <a href="signup.html" class="btn btn-danger" id="sign_up">Sign Up</a>
                         </div>
@@ -165,12 +165,11 @@
                 </div>
                 <div class="row flex even-columns pt-0 pb-0 bookings-row">
                     <div class="bookings-table">
-                        <!-- <div class="card"> -->
                         <table>
                             <tr id="t-header">
                                 <th id="moc">MC's Image</th>
                                 <th id="moc">MC's Name</th>
-                                <th id="moc">Booking Options</th>
+                                <th id="moc">Booking Actions</th>
                                 <th id="booking-price">Booking Unit Price</th>
                                 <th id="total">Total</th>
                             </tr>
@@ -183,10 +182,15 @@
                                 </td>
                                 <td>
                                     <div class="booking-btns">
-                                        <button class="btn btn-gray btn-update" title="update"><i
-                                                class="fas fa-sync-alt"></i></button>
-                                        <button class="btn btn-danger btn-remove" title="remove"><i
-                                                class="fas fa-times-circle"></i></button>
+                                        <button class="btn btn-gray btn-update tooltip"><i class="fas fa-sync-alt"></i>
+                                            <span class="tooltiptext">
+                                                Update
+                                            </span></button>
+                                        <button class="btn btn-danger btn-remove tooltip"><i
+                                                class="fas fa-times-circle"></i>
+                                            <span class="tooltiptext">
+                                                Remove
+                                            </span></button>
                                     </div>
                                 </td>
                                 <td>TZS 3,500,000</td>
@@ -201,10 +205,15 @@
                                 </td>
                                 <td>
                                     <div class="booking-btns">
-                                        <button class="btn btn-gray btn-update" title="update"><i
-                                                class="fas fa-sync-alt"></i></button>
-                                        <button class="btn btn-danger btn-remove" title="remove"><i
-                                                class="fas fa-times-circle"></i></button>
+                                        <button class="btn btn-gray btn-update tooltip"><i class="fas fa-sync-alt"></i>
+                                            <span class="tooltiptext">
+                                                Update
+                                            </span></button>
+                                        <button class="btn btn-danger btn-remove tooltip"><i
+                                                class="fas fa-times-circle"></i>
+                                            <span class="tooltiptext">
+                                                Remove
+                                            </span></button>
                                     </div>
                                 </td>
                                 <td>TZS 1,500,000</td>
@@ -219,17 +228,21 @@
                                 </td>
                                 <td>
                                     <div class="booking-btns">
-                                        <button class="btn btn-gray btn-update" title="update"><i
-                                                class="fas fa-sync-alt"></i></button>
-                                        <button class="btn btn-danger btn-remove" title="remove"><i
-                                                class="fas fa-times-circle"></i></button>
+                                        <button class="btn btn-gray btn-update tooltip"><i class="fas fa-sync-alt"></i>
+                                            <span class="tooltiptext">
+                                                Update
+                                            </span></button>
+                                        <button class="btn btn-danger btn-remove tooltip"><i
+                                                class="fas fa-times-circle"></i>
+                                            <span class="tooltiptext">
+                                                Remove
+                                            </span></button>
                                     </div>
                                 </td>
                                 <td>TZS 2,500,000</td>
                                 <td>TZS 2,500,000</td>
                             </tr>
                         </table>
-                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="row flex even-columns pt-0 pb-0 bookings-row-totals">
@@ -259,7 +272,7 @@
                     </div>
                 </div>
                 <div class="row flex even-columns pt-0 pb-0 bookings-row-btns">
-                    <div class="booking-actions flex-space-between mt-2">
+                    <div class="booking-actions mt-2">
                         <button class="btn btn-danger btn-remove">Continue Booking</button>
                         <button class="btn btn-gray btn-update">CHECKOUT</button>
                     </div>

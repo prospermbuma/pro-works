@@ -90,6 +90,10 @@ section .display-4 {
     gap: .5rem;
 }
 
+#sign_up .user-account .names .name {
+    width: 100%;
+}
+
 #sign_up .user-account ::placeholder {
     font-size: 15px;
 }
@@ -284,6 +288,7 @@ section .display-4 {
     align-items: stretch;
     flex-flow: column wrap;
     gap: .6rem;
+    margin-top: -5px;
 }
 
 #sign_up .user-account-2 .user-img input:hover {
@@ -333,16 +338,37 @@ section .display-4 {
     cursor: pointer;
 }
 
+#sign_up .user-account-2 .input-group .mc-type-radios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    margin-top: 8px;
+}
+
+#sign_up .user-account-2 .input-group .mc-type-radio {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+#sign_up .user-account-2 .input-group .mc-type-radio .radio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+}
+
 #sign_up .user-account-2 .sign-in-up {
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-flow: column wrap;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 #sign_up .user-account-2 .sign-in-up #sign_up {
-    margin-top: 12px;
     padding: 8px 12px;
     outline: none;
     border: none;

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* ==================================================
+# General
+===================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+body {
+    background: var(--white-color);
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+section .display-4 {
+    font-weight: 400;
+}
+
+.toggle {
+    animation: 0.6s toggle ease-in-out;
+    opacity: 0;
+}
+
+@keyframes toggle {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 768px) {
+    .col-text {
+        margin-top: -55px;
+    }
+}
+
+/* ==== End Query ===== */
+
+/* ==================================================
+# Sign Up
+===================================================*/
+
+#sign_up {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+#sign_up .display-4 {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#sign_up .user-account {
+    background: var(--white-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px;
+    width: 100%;
+}
+
+#sign_up .user-account form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 1.0rem;
+}
+
+#sign_up .user-account .names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+#sign_up .user-account .names .name {
+    width: 100%;
+}
+
+#sign_up .user-account ::placeholder {
+    font-size: 15px;
+}
+
+#sign_up .user-account p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: var(--gray-color);
+    font-weight: 600;
+}
+
+#sign_up .user-account .input-group input {
+    width: 100%;
+    padding: 8px 40px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 15px;
+    border: 2px solid var(--light-gray-color);
+    border-radius: 5px;
+}
+
+#sign_up .user-account .input-group .email-group {
+    position: relative;
+}
+
+#sign_up .user-account .input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#sign_up .user-account .input-group .icon {
+    left: 15px;
+    color: var(--gray-color);
+}
+
+#sign_up .user-account .sign-in-up {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    margin-top: 8px;
+}
+
+#sign_up .user-account .sign-in-up #sign_up {
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#sign_up .user-account .sign-in-up #sign_up:hover {
+    background: var(--light-blue-color);
+}
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #sign_up .container {
+        padding: 0 25px;
+    }
+    #sign_up .user-account {
+        order: 1;
+    }
+    #sign_up .display-4 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    #sign_up .user-order-1 {
+        order: 1;
+    }
+    #sign_up .user-account {
+        padding: 35px;
+    }
+    #sign_up .user-account h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    #sign_up .user-account .names {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        gap: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #sign_up .user-account p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #sign_up .container {
+        padding: 0 15px;
+    }
+    #sign_up .user-account {
+        padding: 25px;
+    }
+}
+
+/* ======= End Queries ======== */
