@@ -136,7 +136,16 @@ section .display-4 {
     margin-right: 15px;
 }
 
-.navbar .notify, .navbar .user {
+.navbar .notify-user h4 {
+    white-space: nowrap;
+}
+
+.navbar .notify {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.navbar .user {
     margin: 0 10px;
 }
 
@@ -282,6 +291,9 @@ section .display-4 {
         padding: 9px 8px;
         font-size: 10px;
     }
+    .navbar .notify-user h4 {
+        font-size: 13px;
+    }
 }
 
 /* ======= End Queries ======== */
@@ -300,6 +312,7 @@ section .display-4 {
     width: 200px;
     margin-top: 70px;
     padding: 40px 20px;
+    z-index: 1030;
     color: var(--white-color);
 }
 
@@ -350,6 +363,7 @@ section .display-4 {
     margin-bottom: 10px;
     border-left: 10px solid var(--primary-color);
     border-radius: 5px;
+    white-space: nowrap;
 }
 
 #mc .mc-details {
@@ -625,6 +639,8 @@ section .display-4 {
     align-items: center;
     gap: .5rem;
     color: var(--gray-color);
+    white-space: nowrap;
+    width: 100%;
 }
 
 #mc .mc-account .number-bookings .fas {
@@ -653,11 +669,17 @@ section .display-4 {
         flex-flow: column wrap;
         gap: 1.0rem;
     }
+    #mc .display-4 {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 326px) {
     #mc .mc-account p {
         font-size: 13px;
+    }
+    #mc .display-4 {
+        font-size: 25px;
     }
 }
 
