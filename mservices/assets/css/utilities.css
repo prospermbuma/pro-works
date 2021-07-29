@@ -229,13 +229,16 @@
     background: var(--gray-color);
     color: var(--white-color);
 }
+
 .btn-gray:hover {
     background: var(--primary-color);
 }
+
 .bg-light-gray, .btn-light-gray {
     background: var(--light-gray-color);
     color: var(--black-color);
 }
+
 .bg-light-gray-2, .btn-light-gray-2 {
     background: var(--light-gray-color-2);
     color: var(--black-color);
@@ -252,6 +255,11 @@
 }
 
 .btn-danger:hover {
+    background: var(--redish-color);
+    color: var(--white-color);
+}
+
+.bg-redish, .btn-redish {
     background: var(--redish-color);
     color: var(--white-color);
 }

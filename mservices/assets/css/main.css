@@ -36,7 +36,7 @@ html {
     right: 0;
     z-index: 1030;
     width: 100%;
-    border: 1px solid #767676;
+    border: 1px solid #ddd;
 }
 
 .navbar .nav-brand {
@@ -44,6 +44,7 @@ html {
 }
 
 .navbar .nav-brand .nav-brand-text {
+    white-space: nowrap;
     text-decoration: none;
     color: #000;
     font-size: 20px;
@@ -167,4 +168,246 @@ html {
 
 main {
     margin-top: 70px;
+}
+
+/* ==================================================
+# Footer
+===================================================*/
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/21.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+footer .lead {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+footer h1 {
+    line-height: 5.5rem;
+    color: var(--light-gray-color);
+}
+
+footer h3 {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 3.0em;
+    color: var(--light-gray-color);
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #d8d3d3;
+}
+
+footer .footer-brand {
+    display: flex;
+    white-space: nowrap;
+    gap: .5rem;
+    align-items: center;
+    color: var(--gray-color);
+}
+
+footer .social a {
+    text-decoration: none;
+    color: var(--gray-color);
+    font-size: 24px;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: var(--light-gray-color);
+}
+
+footer .footer-nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .footer-nav a {
+    text-decoration: none;
+    margin: 8px 0;
+    font-size: 15px;
+    color: var(--gray-color);
+    transition: color 0.3s ease;
+}
+
+footer .footer-nav a:hover {
+    color: var(--light-gray-color);
+}
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 1060px) {
+    footer .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    footer .nav-brand {
+        margin-left: -40px;
+    }
+    footer .nav-brand .brand-text {
+        font-size: 17px;
+    }
+    footer .nav-brand .brand-logo {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    footer .social {
+        margin-top: 20px;
+    }
+    footer .nav-brand {
+        margin-left: -445px;
+    }
+    footer .nav-brand .brand-text {
+        font-size: 17px;
+    }
+    footer .nav-brand .brand-logo {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    footer .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    footer .nav-brand {
+        margin-left: -221px;
+    }
+    footer .nav-brand .brand-text {
+        font-size: 17px;
+    }
+    footer .nav-brand .brand-logo {
+        width: 50px;
+    }
+    footer .lead {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    footer .nav-brand {
+        margin-left: -92px;
+    }
+    footer .nav-brand .brand-text {
+        font-size: 17px;
+    }
+    footer .nav-brand .brand-logo {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    footer .nav-brand {
+        margin-left: -55px;
+    }
+    footer .nav-brand .brand-text {
+        font-size: 17px;
+    }
+    footer .nav-brand .brand-logo {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    footer .nav-brand {
+        margin-left: -42px;
+    }
+    footer .nav-brand .brand-text {
+        font-size: 17px;
+    }
+    footer .nav-brand .brand-logo {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    footer .nav-brand {
+        margin-left: 0px;
+    }
+    footer .nav-brand .brand-text {
+        font-size: 17px;
+    }
+    footer .nav-brand .brand-logo {
+        width: 50px;
+    }
+}
+
+/* ======= End Queries ======== */
+
+/* == Go-Top == */
+
+.go_top {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.go_top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.go_top a {
+    background: var(--danger-color);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 27px;
+    transition: all .5s;
+    animation: colur 1s infinite alternate;
+}
+
+.go_top .fa-angle-up {
+    margin-top: 12px;
+    margin-left: 17px;
+}
+
+@keyframes colur {
+    from {
+        color: var(--light-gray-color);
+    }
+    to {
+        color: var(--light-color);
+    }
+}
+
+.go_top a:hover {
+    background: var(--redish-color);
+    color: var(--light-color);
+    transition: all .5s;
+    animation: colour 1s infinite alternate;
+}
+
+@keyframes colour {
+    from {
+        color: var(--light-color);
+    }
+    to {
+        color: var(--light-gray-color);
+    }
 }
