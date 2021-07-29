@@ -1,0 +1,170 @@
+/* =======================================================
+# General
+======================================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: var(--white-color);
+}
+
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =======================================================
+# Header | Navigation
+======================================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: #fff;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+    border: 1px solid #767676;
+}
+
+.navbar .nav-brand {
+    margin-left: 40px;
+}
+
+.navbar .nav-brand .nav-brand-text {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.navbar .btn {
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav .nav-item {
+    list-style: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: #000;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #85390d;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all .3s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #a52a2a;
+}
+
+.navbar #check-btn {
+    font-size: 25px;
+    color: #85390d;
+    display: none;
+}
+
+.navbar #check {
+    display: none;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    .navbar .nav-brand {
+        margin-left: 20px;
+    }
+    .navbar #check-btn {
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        flex-direction: column;
+        background: #fff;
+        top: 0;
+        left: -150%;
+        height: 700px;
+        width: 100%;
+        margin-top: 70px;
+        padding: 40px 40px;
+        transition: all .8s;
+    }
+    .navbar .btn-call {
+        position: absolute;
+        margin-top: 350px;
+        top: 0;
+        left: -150%;
+        margin-left: 40px;
+    }
+    .navbar #check:checked~.navbar-nav, .navbar #check:checked~.btn-call {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar .nav-brand .nav-brand-text {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    .navbar .nav-brand .nav-brand-text {
+        font-size: 12px;
+    }
+    .navbar #check-btn {
+        font-size: 22px;
+    }
+    .navbar .navbar-nav {
+        padding: 40px 25px;
+    }
+    .navbar .btn-call {
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar .nav-brand .nav-brand-text {
+        font-size: 10px;
+    }
+    .navbar #check-btn {
+        font-size: 18px;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main
+======================================================= */
+
+main {
+    margin-top: 70px;
+}
