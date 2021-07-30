@@ -177,7 +177,7 @@ main {
 footer {
     padding-top: 60px;
     padding-bottom: 90px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/21.jpg);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/75.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -191,7 +191,7 @@ footer .lead {
 }
 
 footer h1 {
-    line-height: 5.5rem;
+    line-height: 3.5rem;
     color: var(--light-gray-color);
 }
 
@@ -216,11 +216,15 @@ footer .footer-brand {
     color: var(--gray-color);
 }
 
+footer .social {
+    display: flex;
+    gap: 1.5rem;
+}
+
 footer .social a {
     text-decoration: none;
     color: var(--gray-color);
     font-size: 24px;
-    margin: 0 5px;
     transition: color 0.3s ease;
 }
 
@@ -237,7 +241,7 @@ footer .footer-nav {
 footer .footer-nav a {
     text-decoration: none;
     margin: 8px 0;
-    font-size: 15px;
+    font-size: 17px;
     color: var(--gray-color);
     transition: color 0.3s ease;
 }
