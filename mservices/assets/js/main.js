@@ -33,3 +33,18 @@ window.addEventListener('scroll', () => {
         goTop.classList.remove('active');
     }
 });
+
+/* ==================================================
+# Sticky Social
+===================================================*/
+// const social = document.querySelector('#hero .social');
+// if (window.innerWidth > 768) {
+//     window.onscroll = () => {
+//         if (window.pageYOffset > 5100) {
+//             social.style.position = 'absolute';
+//         }
+//         else {
+//             social.style.position = 'fixed';
+//         }
+//     }
+// }

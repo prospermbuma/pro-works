@@ -164,6 +164,16 @@
         line-height: 3.5rem;
         font-size: 40px;
     }
+    #hero .social::before {
+        margin-top: 0px;
+        margin-right: 205px;
+        width: 20px;
+    }
+    #hero .social::after {
+        margin-top: 18px;
+        margin-left: 205px;
+        width: 20px;
+    }
 }
 
 /* ==== End Queries ==== */
@@ -190,6 +200,63 @@
     line-height: 1.5rem;
     font-size: 18px;
 }
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #maintenance .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #maintenance .maintain-img img {
+        width: 100%;
+    }
+    #maintenance .maintain-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #maintenance .maintain-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #maintenance .container {
+        padding: 0 30px;
+    }
+    #maintenance .maintain-img img {
+        width: 100%;
+    }
+    #maintenance .maintain-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #maintenance .maintain-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #maintenance .maintain-text h1 {
+        margin-top: -0px;
+        font-size: 35px;
+        line-height: 3.0rem;
+    }
+    #maintenance .maintain-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+    }
+}
+
+/* ==== End Queries ==== */
 
 /* =======================================================
 # main | Commercial
@@ -350,10 +417,10 @@
 
 @media only screen and (max-width: 576px) {
     #commercial {
-        height: 700px;
+        height: 500px;
     }
     #commercial .commercial-text {
-        margin-top: 10px;
+        margin-top: 50px;
         width: 100%;
     }
     #commercial .commercial-text h1 {
@@ -390,7 +457,7 @@
 }
 
 #testimonials h1 {
-    color: var(--light-gray-color);
+    color: var(--light-color);
     line-height: 1.5rem;
     position: relative;
     letter-spacing: 2px;
@@ -427,6 +494,64 @@
     font-weight: bold;
 }
 
+@media only screen and (max-width: 1060px) {
+    #testimonials h1 {
+        font-size: 60px;
+    }
+    #testimonials h1::before {
+        margin-left: 12px;
+        margin-top: 58px;
+    }
+    #testimonials .rate-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #testimonials .rate-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row nowrap;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #testimonials .container {
+        padding: 0 25px;
+    }
+    #testimonials h1 {
+        font-size: 30px;
+    }
+    #testimonials h1::before {
+        height: 4px;
+        margin-left: 8px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #testimonials .rate-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #testimonials h1 {
+        font-size: 25px;
+    }
+    #testimonials h1::before {
+        margin-left: 6px;
+        margin-top: 38px;
+    }
+}
+
 /* =======================================================
 # main | Partners
 ======================================================= */
@@ -456,4 +581,26 @@
 
 #partners img {
     width: 250px;
+}
+
+@media only screen and (max-width: 576px) {
+    #partners h1::before {
+        height: 4px;
+        margin-top: 52px;
+    }
+    #partners img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #partners h1 {
+        line-height: 1.5rem;
+        font-size: 35px;
+    }
+    #partners h1::before {
+        height: 4px;
+        margin-left: 3px;
+        margin-top: 45px;
+    }
 }

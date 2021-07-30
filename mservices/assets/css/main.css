@@ -153,7 +153,7 @@ html {
 
 @media only screen and (max-width: 300px) {
     .navbar .nav-brand .nav-brand-text {
-        font-size: 10px;
+        font-size: 8px;
     }
     .navbar #check-btn {
         font-size: 18px;
@@ -177,7 +177,7 @@ main {
 footer {
     padding-top: 60px;
     padding-bottom: 90px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/75.jpg);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/62.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -351,6 +351,12 @@ footer .footer-nav a:hover {
     }
     footer .nav-brand .brand-logo {
         width: 50px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    footer .footer-brand {
+        font-size: 12px;
     }
 }
 
