@@ -4,26 +4,26 @@
 
 #hero {
     height: 700px;
-    animation: 50s slide infinite ease-in-out;
+    animation: 20s slide infinite ease-in-out;
 }
 
 @keyframes slide {
     0%, 100% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/34.jpg);
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/13.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
     }
     55% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/33.jpg);
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
     }
     75% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/32.jpg);
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/10.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
