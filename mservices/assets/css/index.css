@@ -78,7 +78,7 @@
     content: '';
     position: absolute;
     top: 1;
-    margin-top: -280px;
+    margin-top: -230px;
     width: 3px;
     height: 50px;
     background: #ddd;
@@ -88,7 +88,7 @@
     content: '';
     position: absolute;
     top: 0;
-    margin-top: 223px;
+    margin-top: 173px;
     width: 3px;
     height: 50px;
     background: #ddd;
@@ -123,8 +123,8 @@
         content: '';
         position: absolute;
         top: 1;
-        margin-top: 0px;
-        margin-right: 220px;
+        margin-top: 5px;
+        margin-right: 180px;
         width: 30px;
         height: 3px;
         background: #ddd;
@@ -133,8 +133,8 @@
         content: '';
         position: absolute;
         top: 0;
-        margin-top: 16px;
-        margin-left: 220px;
+        margin-top: 18px;
+        margin-left: 180px;
         width: 30px;
         height: 3px;
         background: #ddd;
@@ -166,36 +166,36 @@
     }
     #hero .social::before {
         margin-top: 0px;
-        margin-right: 205px;
-        width: 20px;
+        margin-right: 175px;
+        width: 25px;
     }
     #hero .social::after {
         margin-top: 18px;
-        margin-left: 205px;
-        width: 20px;
+        margin-left: 175px;
+        width: 25px;
     }
 }
 
 /* ==== End Queries ==== */
 
 /* =======================================================
-# main | Maintenance
+# main | Electrical Installation
 ======================================================= */
 
-#maintenance {
+#electric-install {
     padding: 90px 0;
 }
 
-#maintenance .maintain-img img {
+#electric-install .electric-img img {
     width: 430px;
 }
 
-#maintenance .maintain-text h1 {
+#electric-install .electric-text h1 {
     margin-top: -70px;
     line-height: 6.5rem;
 }
 
-#maintenance .maintain-text p {
+#electric-install .electric-text p {
     margin-top: -70px;
     line-height: 1.5rem;
     font-size: 18px;
@@ -204,21 +204,21 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 1060px) {
-    #maintenance .container {
+    #electric-install .container {
         padding: 0 60px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #maintenance .maintain-img img {
+    #electric-install .electric-img img {
         width: 100%;
     }
-    #maintenance .maintain-text h1 {
+    #electric-install .electric-text h1 {
         margin-top: -0px;
         font-size: 45px;
         line-height: 3.0rem;
     }
-    #maintenance .maintain-text p {
+    #electric-install .electric-text p {
         margin-top: -15px;
         line-height: 1.5rem;
         font-size: 18px;
@@ -226,18 +226,18 @@
 }
 
 @media only screen and (max-width: 576px) {
-    #maintenance .container {
+    #electric-install .container {
         padding: 0 30px;
     }
-    #maintenance .maintain-img img {
+    #electric-install .electric-img img {
         width: 100%;
     }
-    #maintenance .maintain-text h1 {
+    #electric-install .electric-text h1 {
         margin-top: -0px;
         font-size: 45px;
         line-height: 3.0rem;
     }
-    #maintenance .maintain-text p {
+    #electric-install .electric-text p {
         margin-top: -15px;
         line-height: 1.5rem;
         font-size: 18px;
@@ -245,12 +245,172 @@
 }
 
 @media only screen and (max-width: 300px) {
-    #maintenance .maintain-text h1 {
+    #electric-install .electric-text h1 {
         margin-top: -0px;
         font-size: 35px;
         line-height: 3.0rem;
     }
-    #maintenance .maintain-text p {
+    #electric-install .electric-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Civil Work
+======================================================= */
+
+#civil-work {
+    padding: 90px 0;
+}
+
+#civil-work .civil-img img {
+    width: 430px;
+}
+
+#civil-work .civil-text h1 {
+    margin-top: -70px;
+    line-height: 6.5rem;
+}
+
+#civil-work .civil-text p {
+    margin-top: -70px;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #civil-work .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #civil-work .civil-img img {
+        width: 100%;
+    }
+    #civil-work .civil-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #civil-work .civil-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #civil-work .container {
+        padding: 0 30px;
+    }
+    #civil-work .civil-img img {
+        width: 100%;
+    }
+    #civil-work .civil-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #civil-work .civil-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #civil-work .civil-text h1 {
+        margin-top: -0px;
+        font-size: 35px;
+        line-height: 3.0rem;
+    }
+    #civil-work .civil-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Renewable Energy
+======================================================= */
+
+#renewable-energy {
+    padding: 90px 0;
+}
+
+#renewable-energy .renewable-img img {
+    width: 430px;
+}
+
+#renewable-energy .renewable-text h1 {
+    margin-top: -70px;
+    line-height: 6.5rem;
+}
+
+#renewable-energy .renewable-text p {
+    margin-top: -70px;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #renewable-energy .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #renewable-energy .renewable-img img {
+        width: 100%;
+    }
+    #renewable-energy .renewable-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #renewable-energy .renewable-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #renewable-energy .container {
+        padding: 0 30px;
+    }
+    #renewable-energy .renewable-img img {
+        width: 100%;
+    }
+    #renewable-energy .renewable-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #renewable-energy .renewable-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #renewable-energy .renewable-text h1 {
+        margin-top: -0px;
+        font-size: 35px;
+        line-height: 3.0rem;
+    }
+    #renewable-energy .renewable-text p {
         margin-top: -15px;
         line-height: 1.5rem;
     }
@@ -443,6 +603,86 @@
 /* ==== End Queries ==== */
 
 /* =======================================================
+# main | Substation Construction
+======================================================= */
+
+#sub-construction {
+    padding: 90px 0;
+}
+
+#sub-construction .sub-img img {
+    width: 430px;
+}
+
+#sub-construction .sub-text h1 {
+    margin-top: -70px;
+    line-height: 6.5rem;
+}
+
+#sub-construction .sub-text p {
+    margin-top: -70px;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #sub-construction .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #sub-construction .sub-img img {
+        width: 100%;
+    }
+    #sub-construction .sub-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #sub-construction .sub-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #sub-construction .container {
+        padding: 0 30px;
+    }
+    #sub-construction .sub-img img {
+        width: 100%;
+    }
+    #sub-construction .sub-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #sub-construction .sub-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #sub-construction .sub-text h1 {
+        margin-top: -0px;
+        font-size: 35px;
+        line-height: 3.0rem;
+    }
+    #sub-construction .sub-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
 # main | Testimonials
 ======================================================= */
 
@@ -477,7 +717,16 @@
 
 #testimonials .card {
     padding: 20px 30px;
+    transition: all .3s;
     position: relative;
+}
+
+#testimonials .card:hover {
+    background: var(--redish-color);
+}
+
+#testimonials .card:hover > * {
+    color: var(--light-color);
 }
 
 #testimonials .card img {
@@ -490,8 +739,8 @@
     z-index: 10;
 }
 
-#testimonials .rate-name small {
-    font-weight: bold;
+#testimonials .rate-name {
+    margin-top: -22px;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -549,58 +798,5 @@
     #testimonials h1::before {
         margin-left: 6px;
         margin-top: 38px;
-    }
-}
-
-/* =======================================================
-# main | Partners
-======================================================= */
-
-#partners {
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
-#partners h1 {
-    line-height: 1.5rem;
-    position: relative;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-#partners h1::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 6px;
-    top: 1;
-    margin-left: 5px;
-    margin-top: 60px;
-    background: var(--danger-color);
-}
-
-#partners img {
-    width: 250px;
-}
-
-@media only screen and (max-width: 576px) {
-    #partners h1::before {
-        height: 4px;
-        margin-top: 52px;
-    }
-    #partners img {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 326px) {
-    #partners h1 {
-        line-height: 1.5rem;
-        font-size: 35px;
-    }
-    #partners h1::before {
-        height: 4px;
-        margin-left: 3px;
-        margin-top: 45px;
     }
 }

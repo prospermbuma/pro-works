@@ -1,0 +1,304 @@
+/* =======================================================
+# main | Contact
+======================================================= */
+
+#contact {
+    height: 500px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contact .contact-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#contact .contact-social a {
+    text-decoration: none;
+    color: var(--gray-color);
+    transition: all .3s;
+    font-size: 25px;
+}
+
+#contact .contact-social a:hover {
+    color: var(--light-gray-color);
+}
+
+#contact .contact-text {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    color: #fff;
+}
+
+#contact .contact-text p {
+    margin-top: -25px;
+    width: 100%;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.5rem;
+}
+
+#contact .contact-text .btn {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+#contact .social {
+    position: absolute;
+    margin-top: 200px;
+    right: 0;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+}
+
+#contact .social a {
+    color: #ddd;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+#contact .social a:hover {
+    color: var(--redish-color);
+}
+
+#contact .social::before {
+    content: '';
+    position: absolute;
+    top: 1;
+    margin-top: -280px;
+    width: 3px;
+    height: 50px;
+    background: #ddd;
+}
+
+#contact .social::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin-top: 223px;
+    width: 3px;
+    height: 50px;
+    background: #ddd;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 768px) {
+    #contact .contact-text {
+        margin-top: 100px;
+        width: 100%;
+    }
+    #contact .contact-text h1 {
+        line-height: 4.0rem;
+    }
+    #contact .contact-text p {
+        margin-top: -25px;
+        width: 100%;
+        font-size: 18px;
+    }
+    #contact .social {
+        position: relative;
+        margin-top: -15px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        gap: 1.5rem;
+    }
+    #contact .social::before {
+        content: '';
+        position: absolute;
+        top: 1;
+        margin-top: 0px;
+        margin-right: 220px;
+        width: 30px;
+        height: 3px;
+        background: #ddd;
+    }
+    #contact .social::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        margin-top: 16px;
+        margin-left: 220px;
+        width: 30px;
+        height: 3px;
+        background: #ddd;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #contact {
+        height: 420px;
+    }
+    #contact .contact-text {
+        margin-top: 50px;
+        width: 100%;
+    }
+    #contact .contact-text h1 {
+        line-height: 4.0rem;
+    }
+    #contact .contact-text p {
+        margin-top: -25px;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #contact .contact-text h1 {
+        line-height: 3.5rem;
+        font-size: 40px;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Contact Cards
+======================================================= */
+
+#contact-cards {
+    padding: 60px 0;
+}
+
+#contact-cards .side-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: .3rem;
+}
+
+#contact-cards .side-cards .card {
+    padding: 20px 30px;
+    border-radius: 0px;
+    border-left: 5px solid var(--danger-color);
+}
+
+#contact-cards .side-cards .card h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 0rem;
+    text-transform: uppercase;
+}
+
+#contact-cards .side-cards .card p {
+    margin-top: -10px;
+    font-size: 17px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #contact-cards .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #contact-cards .container {
+        padding: 0 30px;
+    }
+    #contact-cards .side-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Location
+======================================================= */
+
+#location {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/75.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#location h1 {
+    color: var(--light-color);
+    line-height: 1.5rem;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#location h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    top: 1;
+    margin-left: 10px;
+    margin-top: 80px;
+    background: var(--danger-color);
+}
+
+#location h3 {
+    line-height: .6rem;
+    text-transform: uppercase;
+}
+
+#location .card {
+    padding: 20px 20px;
+    border-radius: 0px;
+}
+
+#location iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+@media only screen and (max-width: 1060px) {
+    #location h1 {
+        font-size: 60px;
+    }
+    #location h1::before {
+        margin-left: 12px;
+        margin-top: 58px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #location .container {
+        padding: 0 25px;
+    }
+    #location h1 {
+        font-size: 30px;
+    }
+    #location h1::before {
+        height: 4px;
+        margin-left: 8px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #location h1 {
+        font-size: 25px;
+    }
+    #location h1::before {
+        margin-left: 6px;
+        margin-top: 38px;
+    }
+}

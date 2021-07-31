@@ -74,24 +74,24 @@ html {
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active {
-    color: #000;
+    color: var(--danger-color);
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
     text-decoration: none;
-    color: #85390d;
+    color: #000;
     font-weight: 700;
     font-size: 17px;
     transition: all .3s;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #a52a2a;
+    color: var(--redish-color);
 }
 
 .navbar #check-btn {
     font-size: 25px;
-    color: #85390d;
+    color: var(--danger-color);
     display: none;
 }
 
@@ -172,6 +172,59 @@ html {
 
 main {
     margin-top: 70px;
+}
+
+/* =======================================================
+# main | Partners
+======================================================= */
+
+#partners {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+#partners h1 {
+    line-height: 1.5rem;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#partners h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    top: 1;
+    margin-left: 5px;
+    margin-top: 55px;
+    background: var(--danger-color);
+}
+
+#partners img {
+    width: 250px;
+}
+
+@media only screen and (max-width: 576px) {
+    #partners h1::before {
+        height: 4px;
+        margin-top: 52px;
+    }
+    #partners img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #partners h1 {
+        line-height: 1.5rem;
+        font-size: 35px;
+    }
+    #partners h1::before {
+        height: 4px;
+        margin-left: 3px;
+        margin-top: 45px;
+    }
 }
 
 /* ==================================================
