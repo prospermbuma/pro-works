@@ -265,14 +265,6 @@ footer p {
     color: #d8d3d3;
 }
 
-footer .footer-brand {
-    display: flex;
-    white-space: nowrap;
-    gap: .5rem;
-    align-items: center;
-    color: var(--gray-color);
-}
-
 footer .social {
     display: flex;
     gap: 1.5rem;
@@ -299,12 +291,19 @@ footer .footer-nav a {
     text-decoration: none;
     margin: 8px 0;
     font-size: 17px;
-    color: var(--gray-color);
+    color: var(--light-gray-color);
     transition: color 0.3s ease;
 }
 
 footer .footer-nav a:hover {
-    color: var(--light-gray-color);
+    color: var(--gray-color);
+}
+
+footer .address p {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 16px;
 }
 
 /* ======= Media Queries ======= */
