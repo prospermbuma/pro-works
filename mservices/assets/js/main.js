@@ -9,7 +9,7 @@ currentYear.innerHTML = year;
 /* ==================================================
 # Smooth Scroll
 ===================================================*/
-$('.navbar a, .nav-brand, .go_top a').on('click', function (e) {
+$('.navbar a, .nav-brand, .go_top a, .footer-nav a').on('click', function (e) {
     if (this.hash !== '') {
         e.preventDefault();
 
@@ -33,21 +33,6 @@ window.addEventListener('scroll', () => {
         goTop.classList.remove('active');
     }
 });
-
-/* ==================================================
-# Sticky Social
-===================================================*/
-// const social = document.querySelector('#hero .social');
-// if (window.innerWidth > 768) {
-//     window.onscroll = () => {
-//         if (window.pageYOffset > 5100) {
-//             social.style.position = 'absolute';
-//         }
-//         else {
-//             social.style.position = 'fixed';
-//         }
-//     }
-// }
 
 /* ==================================================
 #  Initialize AOS

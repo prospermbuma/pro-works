@@ -1,9 +1,9 @@
 /* =======================================================
-# main | Services
+# main | Projects
 ======================================================= */
 
-#services {
-    height: 500px;
+#projects {
+    height: 400px;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/79.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,31 +11,14 @@
     background-attachment: fixed;
 }
 
-#services .services-social {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-#services .services-social a {
-    text-decoration: none;
-    color: var(--gray-color);
-    transition: all .3s;
-    font-size: 25px;
-}
-
-#services .services-social a:hover {
-    color: var(--light-gray-color);
-}
-
-#services .services-text {
+#projects .projects-text {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 60px;
     width: 100%;
     color: #fff;
 }
 
-#services .services-text p {
+#projects .projects-text p {
     margin-top: -25px;
     width: 100%;
     font-size: 18px;
@@ -43,12 +26,24 @@
     line-height: 1.5rem;
 }
 
-#services .services-text .btn {
-    margin-top: 15px;
-    text-decoration: none;
+#projects .projects-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-#services .social {
+#projects .projects-social a {
+    text-decoration: none;
+    color: var(--gray-color);
+    transition: all .3s;
+    font-size: 25px;
+}
+
+#projects .projects-social a:hover {
+    color: var(--light-gray-color);
+}
+
+#projects .social {
     position: absolute;
     margin-top: 200px;
     right: 0;
@@ -60,18 +55,18 @@
     gap: 1.5rem;
 }
 
-#services .social a {
+#projects .social a {
     color: #ddd;
     font-size: 25px;
     text-decoration: none;
     transition: all .3s;
 }
 
-#services .social a:hover {
+#projects .social a:hover {
     color: var(--redish-color);
 }
 
-#services .social::before {
+#projects .social::before {
     content: '';
     position: absolute;
     top: 1;
@@ -81,7 +76,7 @@
     background: #ddd;
 }
 
-#services .social::after {
+#projects .social::after {
     content: '';
     position: absolute;
     top: 0;
@@ -94,19 +89,19 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 768px) {
-    #services .services-text {
+    #projects .projects-text {
         margin-top: 100px;
         width: 100%;
     }
-    #services .services-text h1 {
+    #projects .projects-text h1 {
         line-height: 4.0rem;
     }
-    #services .services-text p {
+    #projects .projects-text p {
         margin-top: -25px;
         width: 100%;
         font-size: 18px;
     }
-    #services .social {
+    #projects .social {
         position: relative;
         margin-top: -15px;
         margin-right: 0px;
@@ -116,7 +111,7 @@
         flex-flow: row nowrap;
         gap: 1.5rem;
     }
-    #services .social::before {
+    #projects .social::before {
         content: '';
         position: absolute;
         top: 1;
@@ -126,7 +121,7 @@
         height: 3px;
         background: #ddd;
     }
-    #services .social::after {
+    #projects .social::after {
         content: '';
         position: absolute;
         top: 0;
@@ -139,17 +134,17 @@
 }
 
 @media only screen and (max-width: 576px) {
-    #services {
+    #projects {
         height: 420px;
     }
-    #services .services-text {
+    #projects .projects-text {
         margin-top: 50px;
         width: 100%;
     }
-    #services .services-text h1 {
+    #projects .projects-text h1 {
         line-height: 4.0rem;
     }
-    #services .services-text p {
+    #projects .projects-text p {
         margin-top: -25px;
         width: 100%;
         font-size: 18px;
@@ -157,7 +152,7 @@
 }
 
 @media only screen and (max-width: 300px) {
-    #services .services-text h1 {
+    #projects .projects-text h1 {
         line-height: 3.5rem;
         font-size: 40px;
     }
@@ -166,21 +161,21 @@
 /* ==== End Queries ==== */
 
 /* =======================================================
-# main | services Cards
+# main | projects Cards
 ======================================================= */
 
-#services-cards {
-    padding: 60px 0;
+#projects-cards {
+    padding: 35px 0 60px 0;
 }
 
-#services-cards h1 {
+#projects-cards h1 {
     line-height: 1.5rem;
     position: relative;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-#services-cards h1::before {
+#projects-cards h1::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -191,29 +186,52 @@
     background: var(--danger-color);
 }
 
-#services-cards .side-cards {
+#projects-cards .projects-links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.0rem;
+    background: var(--light-color);
+    margin-top: 70px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+#projects-cards .projects-links a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+#projects-cards .projects-links a.active {
+    color: var(--white-color);
+    background: var(--danger-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#projects-cards .side-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: .3rem;
 }
 
-#services-cards .side-cards .card {
+#projects-cards .side-cards .card {
     border-radius: 0px;
 }
 
-#services-cards .side-cards .card-body {
+#projects-cards .side-cards .card-body {
     padding: 5px 30px 20px 30px;
 }
 
-#services-cards .side-cards .card h4 {
+#projects-cards .side-cards .card h4 {
     font-size: 20px;
     letter-spacing: 0px;
     line-height: 0rem;
     text-transform: capitalize;
 }
 
-#services-cards .side-cards .card p {
+#projects-cards .side-cards .card p {
     margin-top: -7px;
     font-size: 17px;
 }
@@ -221,16 +239,25 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 1060px) {
-    #services-cards .container {
+    #projects-cards .container {
         padding: 0 60px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #projects-cards .side-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
+    }
+}
+
 @media only screen and (max-width: 576px) {
-    #services-cards .container {
+    #projects-cards .container {
         padding: 0 20px;
     }
-    #services-cards .side-cards {
+    #projects-cards .side-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);

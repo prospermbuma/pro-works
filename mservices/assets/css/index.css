@@ -267,11 +267,11 @@
 }
 
 #civil-work .civil-img img {
-    width: 430px;
+    width: 100%;
 }
 
 #civil-work .civil-text h1 {
-    margin-top: -70px;
+    margin-top: 0px;
     line-height: 6.5rem;
 }
 
@@ -722,7 +722,7 @@
 }
 
 #testimonials .card:hover {
-    background: var(--redish-color);
+    background: var(--danger-color);
 }
 
 #testimonials .card:hover > * {

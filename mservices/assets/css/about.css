@@ -3,12 +3,27 @@
 ======================================================= */
 
 #about {
-    height: 500px;
+    height: 400px;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+#about .about-text {
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+    color: #fff;
+}
+
+#about .about-text p {
+    margin-top: -25px;
+    width: 100%;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.5rem;
 }
 
 #about .about-social {
@@ -26,26 +41,6 @@
 
 #about .about-social a:hover {
     color: var(--light-gray-color);
-}
-
-#about .about-text {
-    text-align: center;
-    margin-top: 100px;
-    width: 100%;
-    color: #fff;
-}
-
-#about .about-text p {
-    margin-top: -25px;
-    width: 100%;
-    font-size: 18px;
-    color: #ddd;
-    line-height: 1.5rem;
-}
-
-#about .about-text .btn {
-    margin-top: 15px;
-    text-decoration: none;
 }
 
 #about .social {
@@ -166,6 +161,116 @@
 /* ==== End Queries ==== */
 
 /* =======================================================
+# main | About Cards
+======================================================= */
+
+#about-cards {
+    padding: 60px 0;
+}
+
+#about-cards h1 {
+    line-height: 1.5rem;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#about-cards h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    top: 1;
+    margin-left: 5px;
+    margin-top: 55px;
+    background: var(--danger-color);
+}
+
+#about-cards .side-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2.5rem;
+    padding: 0 20px;
+}
+
+#about-cards .side-cards .card {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#about-cards .side-cards .card-body {
+    padding: 10px 30px 10px 30px;
+}
+
+#about-cards .side-cards h4 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 0rem;
+    text-transform: uppercase;
+}
+
+#about-cards .side-cards p {
+    margin-top: -7px;
+    font-size: 17px;
+}
+
+#about-cards .side-cards ul {
+    margin-left: -40px;
+}
+
+#about-cards .side-cards ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 15px;
+}
+
+#about-cards .side-cards ul li .fa-bolt {
+    color: var(--danger-color);
+    font-size: 17px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #about-cards .container {
+        padding: 0 60px;
+    }
+    #about-cards .side-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #about-cards .container {
+        padding: 0 20px;
+    }
+    #about-cards .side-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
+    }
+    #about-cards h1 {
+        font-size: 25px;
+        margin-left: 16px;
+        white-space: nowrap;
+    }
+    #about-cards h1::before {
+        height: 4px;
+        margin-left: 4px;
+        margin-top: 42px;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
 # main | Mission & Vision
 ======================================================= */
 
@@ -214,7 +319,7 @@
 
 @media only screen and (max-width: 576px) {
     #mission-vision .container {
-        padding: 0 30px;
+        padding: 0 25px;
     }
     #mission-vision .mivi-img img {
         width: 100%;
@@ -260,19 +365,45 @@
     border-radius: 0px;
 }
 
+#core-values .side-cards .card::before {
+    content: '';
+    position: absolute;
+    top: 1;
+    width: 10px;
+    height: 40px;
+    background: var(--danger-color);
+}
+
 #core-values .side-cards .card-body {
-    padding: 5px 30px 20px 30px;
+    padding: 20px 30px 20px 30px;
 }
 
 #core-values .side-cards .card h4 {
     font-size: 20px;
     letter-spacing: 0px;
     line-height: 0rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 #core-values .side-cards .card p {
     margin-top: -7px;
+    font-size: 17px;
+}
+
+#core-values .side-cards .card ul {
+    margin-left: -40px;
+}
+
+#core-values .side-cards .card ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 8px;
+}
+
+#core-values .side-cards .card ul li .fa-lightbulb {
+    color: var(--danger-color);
     font-size: 17px;
 }
 
@@ -281,6 +412,12 @@
 @media only screen and (max-width: 1060px) {
     #core-values .container {
         padding: 0 60px;
+    }
+    #core-values .side-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
     }
 }
 
@@ -294,6 +431,16 @@
         grid-template-rows: repeat(1, 1fr);
         gap: .3rem;
     }
+    #core-values h1 {
+        font-size: 25px;
+        margin-left: 16px;
+        white-space: nowrap;
+    }
+    #core-values h1::before {
+        height: 4px;
+        margin-left: 4px;
+        margin-top: 42px;
+    }
 }
 
 /* ==== End Queries ==== */
@@ -304,16 +451,11 @@
 
 #team {
     padding-top: 60px;
-    padding-bottom: 140px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/33.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    padding-bottom: 90px;
 }
 
 #team h1 {
-    color: var(--light-color);
+    color: var(--black-color);
     line-height: 1.5rem;
     position: relative;
     letter-spacing: 2px;
@@ -326,8 +468,8 @@
     width: 100px;
     height: 6px;
     top: 1;
-    margin-left: 10px;
-    margin-top: 80px;
+    margin-left: 5px;
+    margin-top: 65px;
     background: var(--danger-color);
 }
 
@@ -336,19 +478,29 @@
     text-transform: uppercase;
 }
 
-#team .card {
-    padding: 20px 30px;
-    position: relative;
+#team .team-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
-#team .card img {
-    position: absolute;
-    top: -30px;
-    right: -10px;
-    width: 90px;
-    height: 90px;
+#team .team-card {
+    padding: 20px 30px;
+    text-align: center;
+}
+
+#team .team-card-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
     border-radius: 50%;
-    z-index: 10;
+}
+
+#team .team-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 #team .personnel small {
@@ -364,7 +516,7 @@
     text-decoration: none;
     color: var(--danger-color);
     transition: all .3s;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #team .personnel .personnel-social a:hover {
@@ -381,9 +533,9 @@
     }
     #team .personnel {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        flex-flow: column wrap;
+        flex-flow: row nowrap;
     }
 }
 
@@ -394,6 +546,10 @@
         align-items: center;
         flex-flow: row nowrap;
     }
+    #team h1 {
+        margin-left: 16px;
+        white-space: nowrap;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -402,11 +558,18 @@
     }
     #team h1 {
         font-size: 30px;
+        margin-left: 16px;
+        white-space: nowrap;
     }
     #team h1::before {
         height: 4px;
         margin-left: 8px;
         margin-top: 40px;
+    }
+    #team .team-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
     }
 }
 

@@ -3,12 +3,27 @@
 ======================================================= */
 
 #services {
-    height: 500px;
+    height: 400px;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/80.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+#services .services-text {
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+    color: #fff;
+}
+
+#services .services-text p {
+    margin-top: -25px;
+    width: 100%;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.5rem;
 }
 
 #services .services-social {
@@ -26,26 +41,6 @@
 
 #services .services-social a:hover {
     color: var(--light-gray-color);
-}
-
-#services .services-text {
-    text-align: center;
-    margin-top: 100px;
-    width: 100%;
-    color: #fff;
-}
-
-#services .services-text p {
-    margin-top: -25px;
-    width: 100%;
-    font-size: 18px;
-    color: #ddd;
-    line-height: 1.5rem;
-}
-
-#services .services-text .btn {
-    margin-top: 15px;
-    text-decoration: none;
 }
 
 #services .social {
@@ -223,6 +218,15 @@
 @media only screen and (max-width: 1060px) {
     #services-cards .container {
         padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #services-cards .side-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
     }
 }
 

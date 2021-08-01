@@ -265,6 +265,10 @@ footer p {
     color: #d8d3d3;
 }
 
+footer .btn-call {
+    text-decoration: none;
+}
+
 footer .social {
     display: flex;
     gap: 1.5rem;
