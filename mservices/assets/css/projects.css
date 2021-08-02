@@ -135,7 +135,7 @@
 
 @media only screen and (max-width: 576px) {
     #projects {
-        height: 420px;
+        height: 370px;
     }
     #projects .projects-text {
         margin-top: 50px;
@@ -168,6 +168,25 @@
     padding: 35px 0 60px 0;
 }
 
+#projects-cards #commercial-row, #projects-cards #residential-row, #projects-cards #industrial-row {
+    display: none;
+}
+
+.zoom-in {
+    animation: .5s zoomIn ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        /* transform: scale(0.9); */
+        margin-right: -100%;
+    }
+    to {
+        /* transform: scale(1.0); */
+        margin-right: 0%;
+    }
+}
+
 #projects-cards h1 {
     line-height: 1.5rem;
     position: relative;
@@ -190,23 +209,48 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 1.0rem;
+    gap: .3rem;
     background: var(--light-color);
     margin-top: 70px;
     padding: 15px 30px;
     border-radius: 5px;
+    overflow-x: auto;
 }
 
-#projects-cards .projects-links a {
-    text-decoration: none;
+#projects-cards .projects-links-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    border-bottom: 1px solid var(--light-gray-color);
+    overflow-x: auto;
+}
+
+#projects-cards .projects-links span {
+    outline: none;
+    transition: all .3s;
+    padding: 5px 15px;
     color: var(--black-color);
 }
 
-#projects-cards .projects-links a.active {
+#projects-cards .projects-links span:hover {
+    cursor: pointer;
     color: var(--white-color);
     background: var(--danger-color);
     padding: 5px 15px;
     border-radius: 5px;
+}
+
+#projects-cards .projects-links .active {
+    color: var(--white-color);
+    background: var(--danger-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#projects-cards .projects-links .active:hover {
+    background: var(--dark-color);
 }
 
 #projects-cards .side-cards {
@@ -214,10 +258,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: .3rem;
-}
-
-#projects-cards .side-cards .card {
-    border-radius: 0px;
 }
 
 #projects-cards .side-cards .card-body {
@@ -262,6 +302,14 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
         gap: .3rem;
+    }
+    #projects-cards h1 {
+        font-size: 30px;
+        margin-left: 16px;
+    }
+    #projects-cards h1::before {
+        margin-left: 5px;
+        margin-top: 45px;
     }
 }
 
