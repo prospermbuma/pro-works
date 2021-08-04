@@ -168,6 +168,9 @@
     padding: 35px 0 60px 0;
 }
 
+#projects-cards .row {
+    overflow: hidden;
+}
 #projects-cards #commercial-row, #projects-cards #residential-row, #projects-cards #industrial-row {
     display: none;
 }
@@ -180,10 +183,12 @@
     from {
         /* transform: scale(0.9); */
         margin-right: -100%;
+        /* transform: translateY(-10px); */
     }
     to {
         /* transform: scale(1.0); */
         margin-right: 0%;
+        /* transform: translateY(0px); */
     }
 }
 

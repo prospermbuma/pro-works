@@ -4,37 +4,15 @@
 
 #hero {
     height: 700px;
-    animation: 20s slide infinite ease-in-out;
-}
-
-@keyframes slide {
-    0%, 100% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/13.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    55% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    75% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/10.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
+    position: relative;
 }
 
 #hero .hero-text {
     margin-top: 120px;
     width: 20%;
     color: #fff;
+    position: relative;
+    z-index: 10;
 }
 
 #hero .hero-text p {
@@ -71,7 +49,7 @@
 }
 
 #hero .social a:hover {
-    color: var(--redish-color);
+    color: var(--danger-color);
 }
 
 #hero .social::before {
@@ -93,6 +71,122 @@
     height: 50px;
     background: #ddd;
 }
+
+/* --=== Something cool is sliding ===-- */
+
+#back1 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#back2 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/33.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#back3 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#back4 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/53.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.backgroundimg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 800px;
+    width: 100%;
+}
+
+@keyframes backgroundchangeFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes backgroundchangeFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#backgroundchange div:nth-of-type(1) {
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+#backgroundchange div:nth-of-type(2) {
+    animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+}
+
+#backgroundchange div:nth-of-type(3) {
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+}
+
+#backgroundchange div {
+    animation-name: backgroundchangeFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    -webkit-animation-name: backgroundchangeFadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 20s;
+}
+
+/* --=== End something cool ===-- */
 
 /* ==== Media Queries ==== */
 
@@ -267,7 +361,7 @@
 }
 
 #civil-work .civil-img img {
-    width: 100%;
+    width: 430px;
 }
 
 #civil-work .civil-text h1 {
@@ -424,45 +518,6 @@
 
 #commercial {
     height: 500px;
-    animation: 50s slider infinite ease-in-out;
-}
-
-@keyframes slider {
-    0%, 100% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/48.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    25% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/49.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    55% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/45.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    75% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/46.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    95% {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/50.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
 }
 
 #commercial .commercial-text {
@@ -725,7 +780,7 @@
     background: var(--danger-color);
 }
 
-#testimonials .card:hover > * {
+#testimonials .card:hover>* {
     color: var(--light-color);
 }
 

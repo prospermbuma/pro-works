@@ -194,7 +194,7 @@
     border: 1px solid var(--white-color);
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
     background: var(--dark-color);
 }
 

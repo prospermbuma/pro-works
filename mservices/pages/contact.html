@@ -87,36 +87,46 @@
                 <h1 class="display-4">Get In Touch</h1>
                 <p class="contact-para">Please fill in the form below to contact us</p>
                 <div class="row flex even-columns">
-                    <div class="form">
+                    <div class="form-wrapper">
                         <form action="#" method="post">
-                            <div class="field name">
-                                <div class="input-group">
-                                    <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                            <div class="multi-cross-fields">
+                                <div class="field names">
+                                    <div class="input-group">
+                                        <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                                        <i class="icon fas fa-user-alt"></i>
+                                    </div>
                                 </div>
-                                <div class="input-group">
-                                    <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                                <div class="field phone">
+                                    <div class="input-group">
+                                        <input type="text" name="phone" id="phone" placeholder="Phone">
+                                        <i class="icon fas fa-phone-alt"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="multi-cross-fields">
                                 <div class="field email">
                                     <div class="input-group">
-                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                                        <input type="email" name="email" id="email" placeholder="Email">
+                                        <i class="icon fas fa-envelope"></i>
                                     </div>
                                 </div>
                                 <div class="field subject">
                                     <div class="input-group">
-                                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                                        <i class="icon fas fa-comment"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="field message">
                                 <div class="input-group">
                                     <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"
-                                        required></textarea>
+                                    ></textarea>
+                                        <i class="icon fas fa-comments"></i>
                                 </div>
                             </div>
-                            <div class="input-group">
+                            <div class="submit-button-area">
                                 <input type="submit" value="Send Message" class="btn btn-send">
+                                <span>Sending your message...</span>
                             </div>
                         </form>
                     </div>

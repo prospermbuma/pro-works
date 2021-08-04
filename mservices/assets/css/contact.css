@@ -4,7 +4,7 @@
 
 #contact {
     height: 400px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/74.jpg);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/75.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -201,35 +201,72 @@
 
 #contact-form form .input-group {
     width: 100%;
+    position: relative;
+}
+
+#contact-form form .icon {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    color: var(--gray-color);
+    font-size: 18px;
 }
 
 #contact-form form ::placeholder {
     font-size: 16px;
+    color: var(--dark-color);
 }
 
-#contact-form form input[type=text], #contact-form form input[type=email], #contact-form form textarea {
+#contact-form form .field input, #contact-form form textarea {
     width: 100%;
     border-radius: 5px;
     outline: none;
-    border: none;
-    padding: 12px 0px 12px 24px;
+    border: 2px solid var(--light-gray-color);
+    padding: 12px 0px 12px 48px;
     font-size: 16px;
-    background: var(--light-gray-color);
+    background: var(--white-color);
 }
 
-#contact-form form .name, #contact-form form .multi-cross-fields {
+#contact-form form input:focus, #contact-form form textarea:focus {
+    border: 2px solid var(--primary-color);
+}
+
+#contact-form form input:focus~.icon, #contact-form form textarea:focus~.icon {
+    color: var(--primary-color);
+}
+
+#contact-form form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+}
+
+#contact-form form .multi-cross-fields {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 3.7rem;
+}
+
+#contact-form .submit-button-area {
+    display: flex;
+    align-items: center;
     gap: 2.0rem;
 }
 
-#contact-form form .btn-send {
+#contact-form .submit-button-area .btn-send {
     transition: all .3s;
     font-size: 16px;
 }
 
-#contact-form form .btn-send:hover {
+#contact-form .submit-button-area .btn-send:hover {
     cursor: pointer;
+}
+
+#contact-form .submit-button-area span {
+    font-size: 18px;
+    color: var(--gray-color);
+    display: none;
 }
 
 #contact-form .form-img {
@@ -265,8 +302,20 @@
     #contact-form .contact-para {
         margin-top: 40px;
     }
-    #contact-form form {
+    #contact-form .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+    }
+    /* #contact-form form .multi-cross-fields {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.7rem;
+    } */
+
+    #contact-form form textarea {
+        resize: none;
     }
 }
 

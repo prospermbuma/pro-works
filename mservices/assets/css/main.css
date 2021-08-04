@@ -12,6 +12,9 @@ body {
 
 * {
     font-family: 'Gowun Dodum', sans-serif;
+}
+
+:focus {
     outline: none;
 }
 
@@ -21,6 +24,32 @@ html {
 
 .row {
     overflow: hidden;
+}
+
+.fadeIn {
+    animation: faderIn 1s linear;
+}
+
+@keyframes faderIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    animation: faderOut 1s linear;
+}
+
+@keyframes faderOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 /* =======================================================
@@ -64,20 +93,11 @@ html {
     margin-right: 40px;
 }
 
-.navbar .btn {
-    margin-right: 40px;
-    text-decoration: none;
-}
-
-.navbar .navbar-nav .nav-item {
+.navbar .nav-item {
     list-style: none;
 }
 
-.navbar .navbar-nav .nav-item .nav-link.active {
-    color: var(--danger-color);
-}
-
-.navbar .navbar-nav .nav-item .nav-link {
+.navbar .nav-link {
     text-decoration: none;
     color: #000;
     font-weight: 700;
@@ -85,8 +105,17 @@ html {
     transition: all .3s;
 }
 
-.navbar .navbar-nav .nav-item .nav-link:hover {
+.navbar .nav-link:hover, .navbar .nav-link:focus {
     color: var(--redish-color);
+}
+
+.navbar .nav-link.active {
+    color: var(--danger-color);
+}
+
+.navbar .btn-call {
+    margin-right: 40px;
+    text-decoration: none;
 }
 
 .navbar #check-btn {
@@ -281,7 +310,7 @@ footer .social a {
     transition: color 0.3s ease;
 }
 
-footer .social a:hover {
+footer .social a:hover, footer .social a:focus {
     color: var(--light-gray-color);
 }
 
@@ -299,7 +328,7 @@ footer .footer-nav a {
     transition: color 0.3s ease;
 }
 
-footer .footer-nav a:hover {
+footer .footer-nav a:hover, footer .footer-nav a:focus {
     color: var(--gray-color);
 }
 
