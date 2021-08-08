@@ -5,7 +5,7 @@
 let commercial_slider = document.querySelector('#commercial');
 let images = ["49.jpg", "75.jpg", "82.jpg"],
     base = "assets/img/",
-    secs = 6;
+    secs = 8;
 images.forEach(function (img) {
     // caches images, avoiding white flash between background replacements
     new Image().src = base + img;

@@ -4,7 +4,7 @@
 
 #contact {
     height: 400px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/75.jpg);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/78.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -191,16 +191,11 @@
     margin-top: 70px;
 }
 
-#contact-form form {
-    width: 95%;
-}
-
 #contact-form form .field {
     margin-bottom: 15px;
 }
 
 #contact-form form .input-group {
-    width: 100%;
     position: relative;
 }
 
@@ -222,7 +217,7 @@
     border-radius: 5px;
     outline: none;
     border: 2px solid var(--light-gray-color);
-    padding: 12px 0px 12px 48px;
+    padding: 12px 48px 12px 48px;
     font-size: 16px;
     background: var(--white-color);
 }
@@ -242,10 +237,21 @@
     max-height: 300px;
 }
 
+#contact-form .contact-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10.0rem;
+}
+
+#contact-form .form-img {
+    width: 430px;
+}
+
 #contact-form form .multi-cross-fields {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3.7rem;
+    gap: 7.0rem;
 }
 
 #contact-form .submit-button-area {
@@ -265,12 +271,9 @@
 
 #contact-form .submit-button-area span {
     font-size: 18px;
-    color: var(--gray-color);
+    color:#0D6EFD;
+    /* color: var(--gray-color); */
     display: none;
-}
-
-#contact-form .form-img {
-    margin-top: -100px;
 }
 
 /* ==== Media Queries ==== */
@@ -283,7 +286,7 @@
 
 @media only screen and (max-width: 768px) {
     #contact-form .form-img {
-        margin-top: -20px;
+        width: 100%;
     }
 }
 
@@ -302,20 +305,19 @@
     #contact-form .contact-para {
         margin-top: 40px;
     }
-    #contact-form .form-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    /* #contact-form form .multi-cross-fields {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1.7rem;
-    } */
-
     #contact-form form textarea {
         resize: none;
+    }
+    #contact-form form .multi-cross-fields {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }
+    #contact-form .submit-button-area {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.0rem;
     }
 }
 

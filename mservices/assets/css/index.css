@@ -75,7 +75,7 @@
 /* --=== Something cool is sliding ===-- */
 
 #back1 {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/34.jpg);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/33.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -93,7 +93,7 @@
 }
 
 #back3 {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/13.jpg);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/34.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -102,7 +102,7 @@
 }
 
 #back4 {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/53.jpg);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/33.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -251,22 +251,15 @@
         width: 100%;
         font-size: 18px;
     }
+    #hero .social {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 300px) {
     #hero .hero-text h1 {
         line-height: 3.5rem;
         font-size: 40px;
-    }
-    #hero .social::before {
-        margin-top: 0px;
-        margin-right: 175px;
-        width: 25px;
-    }
-    #hero .social::after {
-        margin-top: 18px;
-        margin-left: 175px;
-        width: 25px;
     }
 }
 
