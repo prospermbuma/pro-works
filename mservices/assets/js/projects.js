@@ -1,27 +1,29 @@
 /* ==================================================
 # Display Projects
 ===================================================*/
-const all = document.querySelector('#all');
-const all_row = document.querySelector('#all-row');
-const commercial = document.querySelector('#commercial');
-const commercial_row = document.querySelector('#commercial-row');
-const residential = document.querySelector('#residential');
-const residential_row = document.querySelector('#residential-row');
-const industrial = document.querySelector('#industrial');
-const industrial_row = document.querySelector('#industrial-row');
-const projects_links = document.querySelector('.projects-links');
 
+// Get required elements (links (buttons) and rows)
+const all = document.querySelector('#all'),
+    all_row = document.querySelector('#all-row'),
+    commercial = document.querySelector('#commercial'),
+    commercial_row = document.querySelector('#commercial-row'),
+    residential = document.querySelector('#residential'),
+    residential_row = document.querySelector('#residential-row'),
+    industrial = document.querySelector('#industrial'),
+    industrial_row = document.querySelector('#industrial-row'),
+    projects_links = document.querySelector('.projects-links');
+
+// Projects Sticky Links
 window.onscroll = () => {
     if (window.pageYOffset > 550) {
         projects_links.classList.add('projects-links-sticky');
-        $('.project_links').slideDown();
     }
     else {
         projects_links.classList.remove('projects-links-sticky');
-        $('.project_links').slideUp();
     }
 }
 
+// On clicking "All" button (link)
 all.addEventListener('click', () => {
     all_row.style.display = 'block';
     commercial_row.style.display = 'none';
@@ -34,6 +36,7 @@ all.addEventListener('click', () => {
     industrial.classList.remove('active');
 })
 
+// On clicking "Commercial" button (link)
 commercial.addEventListener('click', () => {
     commercial_row.style.display = 'block';
     commercial.classList.add('active');
@@ -46,6 +49,7 @@ commercial.addEventListener('click', () => {
     industrial_row.style.display = 'none';
 })
 
+// On clicking "Residential" button (link)
 residential.addEventListener('click', () => {
     residential_row.style.display = 'block';
     residential_row.classList.add('zoom-in');
@@ -58,6 +62,7 @@ residential.addEventListener('click', () => {
     industrial.classList.remove('active');
 })
 
+// On clicking "Industrial" button (link)
 industrial.addEventListener('click', () => {
     industrial_row.style.display = 'block';
     industrial_row.classList.add('zoom-in');

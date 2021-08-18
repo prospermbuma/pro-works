@@ -358,7 +358,7 @@
 }
 
 #civil-work .civil-text h1 {
-    margin-top: 0px;
+    margin-top: 90px;
     line-height: 6.5rem;
 }
 
@@ -511,6 +511,30 @@
 
 #commercial {
     height: 500px;
+    position: relative;
+    z-index: 1030;
+}
+
+#commercial .prev-icon, #commercial .next-icon {
+    position: absolute;
+    margin-top: 60px;
+    transition: all .3s;
+    font-size: 35px;
+    color: var(--light-color);
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#commercial .prev-icon {
+    left: 160px;
+}
+
+#commercial .next-icon {
+    right: 160px;
+}
+
+#commercial .prev-icon:hover, #commercial .next-icon:hover {
+    color: var(--light-gray-color);
 }
 
 #commercial .commercial-text {
@@ -578,7 +602,19 @@
 
 /* ==== Media Queries ==== */
 
+@media only screen and (max-width: 1060px) {
+    #commercial .prev-icon {
+        left: 130px;
+    }
+    
+    #commercial .next-icon {
+        right: 130px;
+    }
+}
 @media only screen and (max-width: 768px) {
+    #commercial .prev-icon, #commercial .next-icon {
+        display: none;
+    }
     #commercial .commercial-text {
         margin-top: 100px;
         width: 100%;

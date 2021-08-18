@@ -73,24 +73,30 @@ html {
 }
 
 .navbar .nav-brand {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
-.navbar .nav-brand .nav-brand-text {
+.navbar .brand-logo {
+    width: 100px;
+}
+
+.navbar .nav-brand-logo-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     white-space: nowrap;
     text-decoration: none;
     color: #000;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
-    white-space: nowrap;
 }
 
 .navbar .navbar-nav {
     display: flex;
     gap: 1.5rem;
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .navbar .nav-item {
@@ -132,7 +138,7 @@ html {
 
 @media only screen and (max-width: 1060px) {
     .navbar .nav-brand {
-        margin-left: 20px;
+        margin-left: 5px;
     }
     .navbar #check-btn {
         display: block;
@@ -148,7 +154,7 @@ html {
         height: 700px;
         width: 100%;
         margin-top: 70px;
-        padding: 40px 40px;
+        padding: 40px 30px;
         transition: all .8s;
     }
     .navbar .btn-call {
@@ -156,7 +162,7 @@ html {
         margin-top: 350px;
         top: 0;
         left: -150%;
-        margin-left: 40px;
+        margin-left: 30px;
     }
     .navbar #check:checked~.navbar-nav, .navbar #check:checked~.btn-call {
         left: 0;
@@ -164,8 +170,8 @@ html {
 }
 
 @media only screen and (max-width: 576px) {
-    .navbar .nav-brand .nav-brand-text {
-        font-size: 13px;
+    .navbar .brand-text {
+        display: none;
     }
 }
 
@@ -261,6 +267,8 @@ main {
 ===================================================*/
 
 footer {
+    position: relative;
+    z-index: 1030;
     padding-top: 60px;
     padding-bottom: 90px;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/33.jpg);
@@ -273,7 +281,7 @@ footer {
 footer .lead {
     font-size: 15px;
     font-weight: 400;
-    color: var(--gray-color);
+    color: var(--light-gray-color);
 }
 
 footer h1 {
