@@ -38,7 +38,7 @@ images.forEach(function (img) {
 
 /* --==== Headings ====-- */
 let commercial_slider_heading = document.querySelector('#commercial h1');
-let headings = ["Commmercial Electrician", "Residential Electrician", "Industrial Electrician"];
+let headings = ["Commmercial Services", "Residential Services", "Industrial Services"];
 headings.forEach(() => {
     function headingSequence() {
         window.clearTimeout();

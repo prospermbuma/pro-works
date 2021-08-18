@@ -90,7 +90,7 @@
 
 @media only screen and (max-width: 768px) {
     #about .about-text {
-        margin-top: 100px;
+        margin-top: 60px;
         width: 100%;
     }
     #about .about-text h1 {
@@ -476,6 +476,7 @@
 #team h3 {
     line-height: .6rem;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 #team .team-info {
@@ -501,6 +502,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    filter: grayscale(100%);
 }
 
 #team .personnel small {
@@ -563,7 +565,7 @@
     }
     #team h1::before {
         height: 4px;
-        margin-left: 8px;
+        margin-left: 2px;
         margin-top: 40px;
     }
     #team .team-info {
@@ -574,6 +576,12 @@
 }
 
 @media only screen and (max-width: 326px) {
+    #team h1 {
+        font-size: 25px;
+    }
+    #team h1::before {
+        margin-top: 38px;
+    }
     #team .personnel {
         display: flex;
         justify-content: center;

@@ -90,7 +90,7 @@
 
 @media only screen and (max-width: 768px) {
     #projects .projects-text {
-        margin-top: 100px;
+        margin-top: 60px;
         width: 100%;
     }
     #projects .projects-text h1 {
@@ -263,7 +263,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1030;
+    z-index: 10;
     border-bottom: 1px solid var(--light-gray-color);
     overflow-x: auto;
 }
