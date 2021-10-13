@@ -17,11 +17,25 @@ images.forEach(function (img) {
         window.clearTimeout();
         let k = 0;
         prev_icon.addEventListener('click', () => {
-            k--;
+            for (let i = 0; i < images.length; i++) {
+                setTimeout(() => {
+                    commercial_slider.style.background = "center center linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(" + base + images[k] + ")";
+                    commercial_slider.style.backgroundSize = "cover";
+                    commercial_slider.style.backgroundAttachment = 'fixed';
+                    if ((k + 1) === images.length) { setTimeout(() => { backgroundSequence() }, (secs * 1000)) } else { k--; }
+                }, (secs * 1000) * i)
+            }
         })
 
         next_icon.addEventListener('click', () => {
-            k++;
+            for (let i = 0; i < images.length; i++) {
+                setTimeout(function () {
+                    commercial_slider.style.background = "center center linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(" + base + images[k] + ")";
+                    commercial_slider.style.backgroundSize = "cover";
+                    commercial_slider.style.backgroundAttachment = 'fixed';
+                    if ((k + 1) === images.length) { setTimeout(function () { backgroundSequence() }, (secs * 1000)) } else { k++; }
+                }, (secs * 1000) * i)
+            }
         })
         for (let i = 0; i < images.length; i++) {
             setTimeout(function () {
@@ -42,11 +56,11 @@ let headings = ["Commmercial Services", "Residential Services", "Industrial Serv
 headings.forEach(() => {
     function headingSequence() {
         window.clearTimeout();
-        let k = 0;
+        let h = 0;
         for (let i = 0; i < headings.length; i++) {
             setTimeout(function () {
-                commercial_slider_heading.innerHTML = headings[k]
-                if ((k + 1) === paragraphs.length) { setTimeout(function () { headingSequence() }, (secs * 1000)) } else { k++; }
+                commercial_slider_heading.innerHTML = headings[h]
+                if ((h + 1) === paragraphs.length) { setTimeout(function () { headingSequence() }, (secs * 1000)) } else { h++; }
             }, (secs * 1000) * i)
         }
     }
