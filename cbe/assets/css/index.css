@@ -1,0 +1,157 @@
+/* ========================================================
+# General
+======================================================== */
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cbe-logo {
+    width: 300px;
+}
+
+.cbe-head {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:768px) {
+    .cbe-logo {
+        width: 200px;
+    }
+    .cbe-head {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .container {
+        padding: 0 40px;
+    }
+    .cbe-logo {
+        width: 100px;
+    }
+    .cbe-head {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:476px) {
+    .container {
+        padding: 0 30px;
+    }
+    .cbe-head {
+        font-size: 20px;
+    }
+}
+
+
+/* ========================================================
+# Form
+======================================================== */
+
+.form-wrapper {
+    width: 100%;
+    background: #f8f9fa;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 45px 30px 45px;
+}
+
+.field {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.joint-fields {
+    display: flex;
+    gap: 1rem;
+}
+
+form h2 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+}
+
+form .field.submit {
+    margin-top: 15px;
+}
+
+form #fullname {
+    background: #ddd;
+}
+
+form #submit {
+    background: dodgerblue;
+    color: #fff;
+    font-size: 17px;
+    transition: .3s all;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+form #submit:hover {
+    background: rgb(50, 126, 201);
+    cursor: pointer;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:576px) {
+    form {
+        padding: 20px 35px 30px 35px;
+    }
+    .sign-up-text {
+        font-size: 20px;
+    }
+    .joint-fields {
+        display: flex;
+        gap: .3rem;
+        flex-flow: column wrap;
+    }
+}
