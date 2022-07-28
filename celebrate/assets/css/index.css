@@ -436,7 +436,7 @@ section .display-4 {
         height: 3px;
         margin-left: -58px;
         margin-top: 24px;
-        background: var(--primary-color);
+        background: var(--gray-color);
     }
     #better_it .display-4::after {
         position: absolute;
@@ -445,7 +445,7 @@ section .display-4 {
         height: 3px;
         margin-left: 12px;
         margin-top: 24px;
-        background: var(--primary-color);
+        background: var(--gray-color);
     }
 }
 
@@ -460,7 +460,7 @@ section .display-4 {
         height: 3px;
         margin-left: -39px;
         margin-top: 20px;
-        background: var(--primary-color);
+        background: var(--gray-color);
     }
     #better_it .display-4::after {
         position: absolute;
@@ -469,7 +469,7 @@ section .display-4 {
         height: 3px;
         margin-left: 12px;
         margin-top: 20px;
-        background: var(--primary-color);
+        background: var(--gray-color);
     }
 }
 
@@ -686,7 +686,7 @@ section .display-4 {
         height: 3px;
         margin-left: -58px;
         margin-top: 24px;
-        background: var(--primary-color);
+        background: var(--gray-color);
     }
     #schedule .display-4::after {
         position: absolute;
@@ -695,7 +695,7 @@ section .display-4 {
         height: 3px;
         margin-left: 12px;
         margin-top: 24px;
-        background: var(--primary-color);
+        background: var(--gray-color);
     }
 }
 
@@ -710,7 +710,7 @@ section .display-4 {
         height: 3px;
         margin-left: -39px;
         margin-top: 20px;
-        background: var(--primary-color);
+        background: var(--gray-color);
     }
     #schedule .display-4::after {
         position: absolute;
@@ -719,7 +719,7 @@ section .display-4 {
         height: 3px;
         margin-left: 12px;
         margin-top: 20px;
-        background: var(--primary-color);
+        background: var(--gray-color);
     }
 }
 
