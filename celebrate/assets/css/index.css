@@ -210,6 +210,18 @@ section .display-4 {
     gap: 0em;
 }
 
+.featured .col {
+    overflow: hidden;
+}
+
+.featured .img-fluid {
+    transition: transform 1s ease-in-out;
+}
+
+.featured .img-fluid:hover {
+    transform: scale(1.2);
+}
+
 #mcs .display-4 {
     position: relative;
 }
