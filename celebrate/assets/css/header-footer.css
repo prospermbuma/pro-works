@@ -512,7 +512,7 @@
     }
     .navbar #checkbtn {
         display: block;
-        margin-right: 15px;
+        margin-right: 10px;
         cursor: pointer;
     }
     .navbar label:hover {
