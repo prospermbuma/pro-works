@@ -17,7 +17,9 @@
     --black-color: #000;
 }
 
+
 /* End Custom properties */
+
 
 /* Utility classes */
 
@@ -67,18 +69,27 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .flex, .flex-space-around, .flex-space-between, .flex-space-evenly, .even-columns {
+    .flex,
+    .flex-space-around,
+    .flex-space-between,
+    .flex-space-evenly,
+    .even-columns {
         flex-flow: row wrap;
         justify-content: center;
     }
 }
 
 @media only screen and (max-width: 476px) {
-    .flex, .flex-space-around, .flex-space-between, .flex-space-evenly, .even-columns {
+    .flex,
+    .flex-space-around,
+    .flex-space-between,
+    .flex-space-evenly,
+    .even-columns {
         flex-flow: column wrap;
         justify-content: center;
     }
 }
+
 
 /* --- Grid --- */
 
@@ -105,6 +116,7 @@
     flex: 1 1 10em;
 }
 
+
 /* --- Content Sidebar --- */
 
 .content-sidebar {
@@ -121,6 +133,7 @@
     flex: 1 1 30%;
     min-width: 15ch;
 }
+
 
 /* --- Ordering --- */
 
@@ -173,7 +186,8 @@
     font-weight: 600;
 }
 
-.card-body p, .card-body a {
+.card-body p,
+.card-body a {
     line-height: 1.4em;
 }
 
@@ -198,55 +212,69 @@
     background: var(--light-blue-color);
 }
 
+
 /* Backgrounds and colored buttons */
 
-.bg-primary, .btn-primary {
+.bg-primary,
+.btn-primary {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
 
-.bg-secondary, .btn-secondary {
+.bg-secondary,
+.btn-secondary {
     background-color: var(--secondary-color);
     color: var(--white-color);
 }
 
-.bg-dark, .btn-dark {
+.bg-dark,
+.btn-dark {
     background-color: var(--dark-color);
     color: var(--white-color);
 }
 
-.bg-light, .btn-light {
+.bg-light,
+.btn-light {
     background-color: var(--light-color);
     color: var(--dark-color);
 }
 
-.bg-white, .btn-white {
+.bg-white,
+.btn-white {
     background-color: var(--white-color);
     color: var(--dark-color);
 }
 
-.bg-gray, .btn-gray {
+.bg-gray,
+.btn-gray {
     background: var(--gray-color);
     color: var(--white-color);
 }
+
 .btn-gray:hover {
     background: var(--primary-color);
 }
-.bg-light-gray, .btn-light-gray {
+
+.bg-light-gray,
+.btn-light-gray {
     background: var(--light-gray-color);
     color: var(--black-color);
 }
-.bg-light-gray-2, .btn-light-gray-2 {
+
+.bg-light-gray-2,
+.btn-light-gray-2 {
     background: var(--light-gray-color-2);
     color: var(--black-color);
 }
 
-.bg-warning, .btn-warning {
+.bg-warning,
+.btn-warning {
     background: var(--warning-color);
     color: var(--black-color);
 }
 
-.bg-danger, .btn-danger {
+.bg-danger,
+.btn-danger {
     background: var(--danger-color);
     color: var(--white-color);
 }
@@ -256,9 +284,15 @@
     color: var(--white-color);
 }
 
-.bg-primary a, .btn-primary a, .bg-secondary a, .btn-secondary a, .bg-dark a, .btn-dark a {
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
     color: var(--white-color);
 }
+
 
 /* === Text positions === */
 
@@ -277,6 +311,7 @@
 .text-right {
     text-align: right;
 }
+
 
 /* === Text colors === */
 
@@ -320,7 +355,9 @@
     color: var(--light-gray-color);
 }
 
+
 /* === Text sizes === */
+
 
 /* === Class lead === */
 
@@ -328,6 +365,7 @@
     font-size: 20px;
     font-weight: 300;
 }
+
 
 /* === End Class lead === */
 
@@ -348,7 +386,9 @@
     font-size: 4rem;
 }
 
+
 /* === Margins === */
+
 
 /* All over margins */
 
@@ -372,7 +412,9 @@
     margin: 4rem;
 }
 
+
 /* End All over */
+
 
 /* Top and Bottom margins */
 
@@ -396,7 +438,9 @@
     margin: 4rem 0;
 }
 
+
 /* End Top and Bottom */
+
 
 /* Left and right margins */
 
@@ -420,7 +464,9 @@
     margin: 0 4rem;
 }
 
+
 /* End left and right */
+
 
 /* Top margin */
 
@@ -444,7 +490,9 @@
     margin-top: 4rem;
 }
 
+
 /* End top margin */
+
 
 /* Bottom margin */
 
@@ -468,7 +516,9 @@
     margin-bottom: 4rem;
 }
 
+
 /* End bottom margin */
+
 
 /* Left margin */
 
@@ -492,7 +542,9 @@
     margin-left: 4rem;
 }
 
+
 /* End left margin */
+
 
 /* Right margin */
 
@@ -516,11 +568,15 @@
     margin-right: 4rem;
 }
 
+
 /* End right margin */
+
 
 /* === End margins === */
 
+
 /* === Paddings === */
+
 
 /* All over paddings */
 
@@ -544,7 +600,9 @@
     padding: 4rem;
 }
 
+
 /* End All over */
+
 
 /* Top and Bottom paddings */
 
@@ -568,7 +626,9 @@
     padding: 4rem 0;
 }
 
+
 /* End Top and Bottom */
+
 
 /* Top padding */
 
@@ -592,7 +652,9 @@
     padding-top: 4rem;
 }
 
+
 /* End Top */
+
 
 /* Bottom padding */
 
@@ -616,7 +678,9 @@
     padding-bottom: 4rem;
 }
 
+
 /* End Bottom padding */
+
 
 /* Left and right paddings */
 
@@ -640,7 +704,9 @@
     padding: 0 4rem;
 }
 
+
 /* End left and right */
+
 
 /* Left padding */
 
@@ -664,7 +730,9 @@
     padding-left: 4rem;
 }
 
+
 /* End left padding */
+
 
 /* right padding */
 
@@ -688,9 +756,12 @@
     padding-right: 4rem;
 }
 
+
 /* End right padding */
 
+
 /* === End paddings === */
+
 
 /* === Displays === */
 
@@ -713,5 +784,6 @@
     font-size: 50px;
     font-weight: 300;
 }
+
 
 /* === End displays === */

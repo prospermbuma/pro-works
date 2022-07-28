@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 /* ==================================================
 # General
 ===================================================*/
@@ -42,6 +43,7 @@ section .display-4 {
     }
 }
 
+
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 768px) {
@@ -50,7 +52,9 @@ section .display-4 {
     }
 }
 
+
 /* ==== End Query ===== */
+
 
 /* ==================================================
 # Mc
@@ -110,6 +114,7 @@ section .display-4 {
     border-radius: 5px;
 }
 
+
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 576px) {
@@ -144,5 +149,6 @@ section .display-4 {
         padding: 25px;
     }
 }
+
 
 /* ======= End Queries ======== */

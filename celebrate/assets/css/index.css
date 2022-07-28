@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 /* ==================================================
 # General
 ===================================================*/
@@ -42,6 +43,7 @@ section .display-4 {
     }
 }
 
+
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 768px) {
@@ -50,7 +52,9 @@ section .display-4 {
     }
 }
 
+
 /* ==== End Query ===== */
+
 
 /* ==================================================
 # Hero
@@ -63,7 +67,7 @@ section .display-4 {
 }
 
 #hero .container {
-    padding-top: 125px;
+    padding-top: 50px;
 }
 
 #hero .hero-text h2 {
@@ -76,7 +80,29 @@ section .display-4 {
     text-decoration: none;
     margin-top: 30px;
     line-height: 1.7em;
+    box-shadow: 0 3px 10px rgba(7, 103, 213, 0.7);
+    transition: all .3s ease-in;
+    animation: border-light 10s infinite forwards ease-in-out;
 }
+
+@keyframes border-light {
+    0% {
+        box-shadow: 0 3px 10px rgba(7, 103, 213, 0.7);
+    }
+    25% {
+        box-shadow: 0 3px 10px rgba(213, 12, 216, 0.7);
+    }
+    50% {
+        box-shadow: 0 3px 10px rgba(4, 134, 134, 0.7);
+    }
+    75% {
+        box-shadow: 0 3px 10px rgba(234, 13, 138, 0.83);
+    }
+    10% {
+        box-shadow: 0 3px 10px rgba(7, 103, 213, 0.7);
+    }
+}
+
 
 /* ======= Media Queries ======= */
 
@@ -168,7 +194,9 @@ section .display-4 {
     }
 }
 
+
 /* ======= End Queries ======== */
+
 
 /* ==================================================
 # MCs
@@ -243,6 +271,7 @@ section .display-4 {
     color: var(--light-gray-color);
 }
 
+
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 1060px) {
@@ -311,7 +340,9 @@ section .display-4 {
     }
 }
 
+
 /* ======= End Queries ======== */
+
 
 /* ==================================================
 # Better It
@@ -360,6 +391,7 @@ section .display-4 {
     margin-top: 23px;
     padding: 9px 30px;
 }
+
 
 /* ======= Media Queries ======= */
 
@@ -429,7 +461,9 @@ section .display-4 {
     }
 }
 
+
 /* ======= End Queries ======== */
+
 
 /* ==================================================
 # For You
@@ -479,6 +513,7 @@ section .display-4 {
     padding: 9px 30px;
     color: var(--light-color);
 }
+
 
 /* ======= Media Queries ======= */
 
@@ -551,7 +586,9 @@ section .display-4 {
     }
 }
 
+
 /* ======= End Queries ======== */
+
 
 /* ==================================================
 # Schedule Yours
@@ -600,6 +637,7 @@ section .display-4 {
     margin-top: 23px;
     padding: 9px 30px;
 }
+
 
 /* ======= Media Queries ======= */
 
@@ -672,5 +710,6 @@ section .display-4 {
         background: var(--primary-color);
     }
 }
+
 
 /* ======= End Queries ======== */
