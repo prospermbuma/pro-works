@@ -90,13 +90,13 @@ section .display-4 {
         box-shadow: 0 3px 10px rgba(7, 103, 213, 0.7);
     }
     25% {
-        box-shadow: 0 3px 10px rgba(213, 12, 216, 0.7);
+        box-shadow: 0 3px 10px rgba(13, 234, 219, 0.83);
     }
     50% {
         box-shadow: 0 3px 10px rgba(4, 134, 134, 0.7);
     }
     75% {
-        box-shadow: 0 3px 10px rgba(234, 13, 138, 0.83);
+        box-shadow: 0 3px 10px rgba(13, 234, 219, 0.83);
     }
     10% {
         box-shadow: 0 3px 10px rgba(7, 103, 213, 0.7);
