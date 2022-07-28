@@ -379,7 +379,7 @@ section .display-4 {
     height: 3px;
     margin-left: -116px;
     margin-top: 35px;
-    background: var(--primary-color);
+    background: var(--gray-color);
 }
 
 #better_it .display-4::after {
@@ -389,7 +389,7 @@ section .display-4 {
     height: 3px;
     margin-left: 19px;
     margin-top: 35px;
-    background: var(--primary-color);
+    background: var(--gray-color);
 }
 
 #better_it .better-text {
@@ -625,7 +625,7 @@ section .display-4 {
     height: 3px;
     margin-left: -116px;
     margin-top: 35px;
-    background: var(--primary-color);
+    background: var(--gray-color);
 }
 
 #schedule .display-4::after {
@@ -635,7 +635,7 @@ section .display-4 {
     height: 3px;
     margin-left: 19px;
     margin-top: 35px;
-    background: var(--primary-color);
+    background: var(--gray-color);
 }
 
 #schedule .schedule-text {
