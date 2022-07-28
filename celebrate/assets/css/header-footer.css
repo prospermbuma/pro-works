@@ -34,6 +34,12 @@
     outline: none;
 }
 
+.nav-brand .brand-img img {
+    transition: all 0.3s ease;
+    width: 180px;
+    margin-top: 20px;
+}
+
 .nav-brand .brand-text {
     font-size: 20px;
     color: var(--primary-color);
@@ -102,7 +108,8 @@
     font-weight: 600;
 }
 
-.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link.active:hover {
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link.active:hover {
     color: var(--primary-color);
 }
 
@@ -113,7 +120,9 @@
     margin-right: 50px;
 }
 
-.navbar .search, .navbar .cart, .navbar .user {
+.navbar .search,
+.navbar .cart,
+.navbar .user {
     margin: 0 10px;
 }
 
@@ -147,7 +156,8 @@
     font-size: 16px;
 }
 
-.navbar .cart, .navbar .user {
+.navbar .cart,
+.navbar .user {
     border-radius: 50%;
     border: 1px solid var(--black-color);
     height: 40px;
@@ -162,12 +172,14 @@
     text-decoration: none;
 }
 
-.navbar .cart:hover, .navbar .user:hover {
+.navbar .cart:hover,
+.navbar .user:hover {
     cursor: pointer;
     border: 1px solid var(--danger-color);
 }
 
-.navbar .cart:hover .fa-shopping-basket, .navbar .user:hover .fa-user {
+.navbar .cart:hover .fa-shopping-basket,
+.navbar .user:hover .fa-user {
     color: var(--danger-color);
 }
 
@@ -188,13 +200,15 @@
     align-items: center;
 }
 
-.navbar .fa-shopping-basket, .navbar .fa-user {
+.navbar .fa-shopping-basket,
+.navbar .fa-user {
     font-size: 20px;
     color: var(--black-color);
     transition: all 0.3s;
 }
 
-.navbar .fa-shopping-basket:hover, .navbar .fa-user:hover {
+.navbar .fa-shopping-basket:hover,
+.navbar .fa-user:hover {
     cursor: pointer;
 }
 
@@ -203,14 +217,17 @@
     padding: 10px 15px;
 }
 
-.navbar .menu-bar-group-1, .navbar .menu-bar-group-2, .navbar .menu-bar-group-3 {
+.navbar .menu-bar-group-1,
+.navbar .menu-bar-group-2,
+.navbar .menu-bar-group-3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 4px 0;
 }
 
-.navbar #check, .navbar #checkbtn {
+.navbar #check,
+.navbar #checkbtn {
     display: none;
 }
 
@@ -311,7 +328,8 @@
     gap: .5rem;
 }
 
-.navbar .cart-checkout-btns button, .navbar .cart-checkout-btns a {
+.navbar .cart-checkout-btns button,
+.navbar .cart-checkout-btns a {
     font-size: 14px;
     text-decoration: none;
     pointer-events: all;
@@ -462,6 +480,7 @@
     color: var(--gray-color);
 }
 
+
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 1060px) {
@@ -535,10 +554,13 @@
         margin-right: 0px;
         margin-left: 0px;
     }
-    .navbar .search, .navbar .cart, .navbar .user {
+    .navbar .search,
+    .navbar .cart,
+    .navbar .user {
         margin: 15px 0;
     }
-    #check:checked~.navbar-nav, #check:checked~.search-cart-user {
+    #check:checked~.navbar-nav,
+    #check:checked~.search-cart-user {
         left: 0;
     }
     .navbar .menu {
@@ -549,7 +571,8 @@
         height: 4px;
         margin: 0 2px
     }
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 30%;
         margin-top: -350px;
         margin-right: 0px;
@@ -558,7 +581,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 40%;
         margin-top: -350px;
         margin-right: 0px;
@@ -567,7 +591,8 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -576,7 +601,8 @@
 }
 
 @media only screen and (max-width: 415px) {
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -585,7 +611,8 @@
 }
 
 @media only screen and (max-width: 412px) {
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -594,7 +621,8 @@
 }
 
 @media only screen and (max-width: 376px) {
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -603,7 +631,8 @@
 }
 
 @media only screen and (max-width: 366px) {
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -635,7 +664,8 @@
         height: 4px;
         margin: 0 2px
     }
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -674,7 +704,8 @@
         height: 4px;
         margin: 0 2px
     }
-    .navbar .user-account, .navbar .carts {
+    .navbar .user-account,
+    .navbar .carts {
         width: 85%;
         margin-top: -380px;
         margin-right: 0px;
@@ -690,7 +721,9 @@
     }
 }
 
+
 /* ======= End Queries ======== */
+
 
 /* ==================================================
 # Footer
@@ -783,6 +816,7 @@ footer .newsletters .newsletters-form form input[type=submit]:hover {
     cursor: pointer;
     color: var(--light-gray-color);
 }
+
 
 /* ======= Media Queries ======= */
 
@@ -888,7 +922,9 @@ footer .newsletters .newsletters-form form input[type=submit]:hover {
     }
 }
 
+
 /* ======= End Queries ======== */
+
 
 /* == Go-Top == */
 
