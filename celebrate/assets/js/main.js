@@ -53,7 +53,7 @@ password.addEventListener('blur', () => {
 
 const p_eye = document.querySelector('.fa-eye');
 const p_eye_slash = document.querySelector('.fa-eye-slash');
-p_eye.addEventListener('click', function () {
+p_eye.addEventListener('click', function() {
     p_eye.classList.add('hide');
     p_eye_slash.classList.add('show');
     if (password.getAttribute("type") === "password") {
@@ -61,7 +61,7 @@ p_eye.addEventListener('click', function () {
     }
 })
 
-p_eye_slash.addEventListener('click', function () {
+p_eye_slash.addEventListener('click', function() {
     p_eye_slash.classList.remove('show');
     p_eye.classList.remove('hide');
     if (password.getAttribute("type") === "text") {
@@ -102,7 +102,7 @@ currentYear.innerHTML = year;
 /* ==================================================
 # Smooth Scroll
 ===================================================*/
-$('.navbar a, .nav-brand, .go_top a').on('click', function (e) {
+$('.navbar a, .nav-brand, .footer-nav a, .go_top a').on('click', function(e) {
     if (this.hash !== '') {
         e.preventDefault();
 
@@ -136,8 +136,8 @@ const navBrand_text = document.querySelector('.navbar .nav-brand .brand-text');
 const navBrand_logo = document.querySelector('.navbar .nav-brand .brand-logo');
 const nav_links = document.querySelectorAll('.navbar .navbar-nav .nav-item .nav-link');
 
-window.addEventListener('scroll', function () {
-    $(document).ready(function () {
+window.addEventListener('scroll', function() {
+    $(document).ready(function() {
         if ($(window).width() > 1060) {
             if (window.pageYOffset > 100) {
                 navbar.classList.add('min-height');
@@ -148,8 +148,7 @@ window.addEventListener('scroll', function () {
                     navLink.classList.add('min-fonts');
                     navLink.classList.remove('max-fonts');
                 });
-            }
-            else {
+            } else {
                 navbar.classList.remove('min-height');
                 navbar.classList.add('max-height');
                 navBrand_text.classList.remove('min-font');
