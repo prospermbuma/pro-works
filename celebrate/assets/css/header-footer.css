@@ -233,12 +233,12 @@
 
 .navbar .menu .fa-th {
     color: var(--primary-color);
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .navbar .menu .fa-th-large {
     color: var(--primary-color);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .navbar .menu .menu-bar {
@@ -574,7 +574,7 @@
         left: 0;
     }
     .navbar .menu {
-        margin-right: -10px;
+        margin-right: -8px;
     }
     .navbar .menu .menu-bar {
         background: var(--primary-color);
