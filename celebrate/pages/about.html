@@ -13,7 +13,7 @@
     <!-- Font Awesome Online -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="../assets/css/mybookings.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
     <!-- Header-Footer CSS -->
     <link rel="stylesheet" href="../assets/css/header-footer.css">
     <!-- Utilities CSS -->
@@ -55,13 +55,13 @@
                 <a href="../index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
+                <a href="#home" class="nav-link active">About</a>
             </li>
             <li class="nav-item">
                 <a href="reviews.html" class="nav-link">Reviews</a>
             </li>
             <li class="nav-item">
-                <a href="#home" class="nav-link active">My Bookings</a>
+                <a href="mybookings.html" class="nav-link">My Bookings</a>
             </li>
             <li class="nav-item">
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -149,144 +149,17 @@
     <!-- ====== Main ====== -->
     <main>
 
-        <!-- Bookings -->
-        <section id="bookings" class="text-black bg-white">
+        <!-- Reviews -->
+        <section id="reviews" class="text-black bg-white">
             <div class="container">
-                <div class="row flex even-columns pt-5 pb-3">
-                    <div class="bookings">
-                        <div class="upcoming active">Upcoming bookings</div>
-                        <div class="all">All bookings</div>
-                    </div>
-                </div>
-                <div class="row flex even-columns pb-3">
-                    <div class="back-to-service">
-                        <a href="../index.html" class="back-link">
-                            <i class="fas fa-arrow-left"></i> Back To Services
-                        </a>
-                    </div>
-                </div>
-                <div class="row flex even-columns pt-0 pb-0 booking-not-found">
-                    <div class="bookings-content">
-                        <p>There are no appointments yet. Press the "Book Now" button to make appointment.</p>
-                    </div>
-                </div>
-                <div class="row flex even-columns pt-0 pb-0 bookings-row">
-                    <div class="bookings-table">
-                        <table>
-                            <tr id="t-header">
-                                <th id="moc">MC's Image</th>
-                                <th id="moc">MC's Name</th>
-                                <th id="moc">Booking Actions</th>
-                                <th id="booking-price">Booking Unit Price</th>
-                                <th id="total">Total</th>
-                            </tr>
-                            <tr>
-                                <td><img src="../assets/img/mc/mc.jpg" alt="" class="mc-img"></td>
-                                <td>
-                                    <h5>
-                                        Mc Kwetu
-                                    </h5>
-                                </td>
-                                <td>
-                                    <div class="booking-btns">
-                                        <button class="btn btn-gray btn-update tooltip"><i class="fas fa-sync-alt"></i>
-                                            <span class="tooltiptext">
-                                                Update
-                                            </span></button>
-                                        <button class="btn btn-danger btn-remove tooltip"><i
-                                                class="fas fa-times-circle"></i>
-                                            <span class="tooltiptext">
-                                                Remove
-                                            </span></button>
-                                    </div>
-                                </td>
-                                <td>TZS 3,500,000</td>
-                                <td>TZS 3,500,000</td>
-                            </tr>
-                            <tr>
-                                <td><img src="../assets/img/mc/mc.jpg" alt="" class="mc-img"></td>
-                                <td>
-                                    <h5>
-                                        Mc Maeda
-                                    </h5>
-                                </td>
-                                <td>
-                                    <div class="booking-btns">
-                                        <button class="btn btn-gray btn-update tooltip"><i class="fas fa-sync-alt"></i>
-                                            <span class="tooltiptext">
-                                                Update
-                                            </span></button>
-                                        <button class="btn btn-danger btn-remove tooltip"><i
-                                                class="fas fa-times-circle"></i>
-                                            <span class="tooltiptext">
-                                                Remove
-                                            </span></button>
-                                    </div>
-                                </td>
-                                <td>TZS 1,500,000</td>
-                                <td>TZS 1,500,000</td>
-                            </tr>
-                            <tr>
-                                <td><img src="../assets/img/mc/mc.jpg" alt="" class="mc-img"></td>
-                                <td>
-                                    <h5>
-                                        Mc Njozi
-                                    </h5>
-                                </td>
-                                <td>
-                                    <div class="booking-btns">
-                                        <button class="btn btn-gray btn-update tooltip"><i class="fas fa-sync-alt"></i>
-                                            <span class="tooltiptext">
-                                                Update
-                                            </span></button>
-                                        <button class="btn btn-danger btn-remove tooltip"><i
-                                                class="fas fa-times-circle"></i>
-                                            <span class="tooltiptext">
-                                                Remove
-                                            </span></button>
-                                    </div>
-                                </td>
-                                <td>TZS 2,500,000</td>
-                                <td>TZS 2,500,000</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="row flex even-columns pt-0 pb-0 bookings-row-totals">
-                    <div class="bookings-table-2 mt-2">
-                        <table>
-                            <tr id="t-header">
-                                <th id="moc">Sub Total</th>
-                                <th id="moc">VAT (18%)</th>
-                                <th id="moc">Total</th>
-                            </tr>
-                            <tr>
-                                <td>TZS 3,500,000</td>
-                                <td>TZS 3,500,000</td>
-                                <td>TZS 3,500,000</td>
-                            </tr>
-                            <tr>
-                                <td>TZS 1,500,000</td>
-                                <td>TZS 1,500,000</td>
-                                <td>TZS 1,500,000</td>
-                            </tr>
-                            <tr>
-                                <td>TZS 2,500,000</td>
-                                <td>TZS 2,500,000</td>
-                                <td>TZS 2,500,000</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="row flex even-columns pt-0 pb-0 bookings-row-btns">
-                    <div class="booking-actions mt-2">
-                        <button class="btn btn-danger btn-remove">Continue Booking</button>
-                        <button class="btn btn-gray btn-update">CHECKOUT</button>
+                <div class="row flex pt-5 pb-3">
+                    <div class="about-container ">
+                        <h1 class="about-title ">Get To Know Us</h1>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Bookings -->
+        <!-- End reviews -->
 
     </main>
     <!-- End Main -->
@@ -304,9 +177,9 @@
                     </h3>
                     <nav class="footer-nav">
                         <a href="../index.html">Home</a>
-                        <a href="about.html">About</a>
+                        <a href="#home">About</a>
                         <a href="reviews.html">Reviews</a>
-                        <a href="#home">My Bookings</a>
+                        <a href="mybookings.html">My Bookings</a>
                         <a href="contact.html">Contact</a>
                     </nav>
                 </div>
@@ -361,7 +234,7 @@
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/mybookings.js"></script>
+    <script src="../assets/js/reviews.js"></script>
     <!-- End Scripts -->
 </body>
 
