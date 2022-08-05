@@ -574,7 +574,7 @@
         left: 0;
     }
     .navbar .menu {
-        margin-right: -8px;
+        margin-right: -0px;
     }
     .navbar .menu .menu-bar {
         background: var(--primary-color);
@@ -599,6 +599,9 @@
         width: 150px;
         margin-top: 15px;
     }
+    .navbar .menu {
+        margin-right: -6px;
+    }
     .navbar .carts {
         width: 40%;
         margin-top: -350px;
@@ -608,6 +611,9 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .navbar .menu {
+        margin-right: -8px;
+    }
     .navbar .user-account,
     .navbar .carts {
         width: 85%;
@@ -659,7 +665,7 @@
 
 @media only screen and (max-width: 326px) {
     .navbar .nav-brand {
-        margin-left: 15px;
+        margin-left: 2px;
     }
     .nav-brand .brand-text {
         font-size: 16px;
@@ -874,6 +880,10 @@ footer .newsletters .newsletters-form form input[type=submit]:hover {
     }
     footer .nav-brand .brand-logo {
         width: 50px;
+    }
+    footer .footer-logo {
+        margin: -60px 0 -120px 0;
+        width: 100%;
     }
 }
 
