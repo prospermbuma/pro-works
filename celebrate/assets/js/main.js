@@ -104,7 +104,7 @@ currentYear.innerHTML = year;
 ===================================================*/
 $('.navbar a, .nav-brand, .footer-nav a, .go_top a').on('click', function(e) {
     if (this.hash !== '') {
-        e.preventDefault();
+        // e.preventDefault();
 
         const hash = this.hash;
 
