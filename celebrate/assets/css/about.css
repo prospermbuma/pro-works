@@ -587,11 +587,13 @@
         padding-bottom: 20px;
         color: var(--secondary-color);
         filter: contrast(100%);
+        text-shadow: 0 3px 12px rgba(0, 0, 0, 1);
     }
     
     #about-3 .col-text .mission-para {
         font-size: 20px;
         filter: contrast(200%);
+        text-shadow: 0 3px 12px rgba(0, 0, 0, 1);
     }
     
     #about-3 .social {

@@ -112,7 +112,7 @@ section .display-4 {
 }
 
 #mc .mc-photo .img-fluid {
-    border-radius: 5px;
+    vertical-align: middle;
 }
 
 #mc iframe {

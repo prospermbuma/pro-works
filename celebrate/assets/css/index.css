@@ -201,15 +201,29 @@ section .display-4 {
 
 .featured .col {
     overflow: hidden;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }
 
 .featured .img-fluid {
+    vertical-align: middle;
     transition: transform 1s ease-in-out;
 }
 
-.featured .img-fluid:hover {
+
+/* .featured .img-fluid:hover {
     transform: scale(1.2);
-}
+} */
 
 #mcs .display-4 {
     position: relative;
