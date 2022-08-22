@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 /* ==================================================
 # General
 ===================================================*/
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +43,7 @@ section .display-4 {
     }
 }
 
+
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 768px) {
@@ -49,7 +52,9 @@ section .display-4 {
     }
 }
 
+
 /* ==== End Query ===== */
+
 
 /* ==================================================
 # Reviews
@@ -102,6 +107,10 @@ section .display-4 {
     transition: all 0.3s;
 }
 
+#reviews .user-img {
+    object-fit: cover;
+}
+
 #reviews .col-form .review-user {
     padding-bottom: 30px;
     display: flex;
@@ -126,7 +135,8 @@ section .display-4 {
     border-radius: 50%;
 }
 
-#reviews .reviews-form form input, #reviews .reviews-form textarea {
+#reviews .reviews-form form input,
+#reviews .reviews-form textarea {
     width: 100%;
     padding: 12px 24px;
     outline: none;
@@ -200,7 +210,9 @@ section .display-4 {
     gap: .4rem;
 }
 
-#reviews .rating, #reviews .review-text, #reviews .social {
+#reviews .rating,
+#reviews .review-text,
+#reviews .social {
     flex-direction: row;
 }
 
@@ -215,6 +227,7 @@ section .display-4 {
 #reviews .social a:hover {
     color: var(--gray-color);
 }
+
 
 /* ======= Media Queries ======= */
 
@@ -231,7 +244,7 @@ section .display-4 {
     #reviews .row-2 {
         margin-top: -40px;
     }
-     #reviews .col-2 {
+    #reviews .col-2 {
         margin-top: -60px;
     }
     #reviews .container {
@@ -283,5 +296,6 @@ section .display-4 {
         background: var(--gray-color);
     }
 }
+
 
 /* ======= End Queries ======== */

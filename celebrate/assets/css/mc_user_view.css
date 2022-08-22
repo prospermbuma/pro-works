@@ -83,6 +83,7 @@ section .display-4 {
     height: 180px;
     width: 180px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 #mc .mc-about p {
@@ -114,8 +115,37 @@ section .display-4 {
     border-radius: 5px;
 }
 
+#mc iframe {
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#mc .calendar-card {
+    position: relative;
+}
+
+#mc .calendar-card .calendar {
+    position: absolute;
+    top: -20px;
+    right: 18px;
+    background: var(--light-blue-color);
+    color: var(--white-color);
+    padding: 9px 24px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
 
 /* ======= Media Queries ======= */
+
+@media only screen and (max-width: 768px) {
+    #mc iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
 
 @media only screen and (max-width: 576px) {
     #mc .container {
