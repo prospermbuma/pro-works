@@ -93,7 +93,7 @@ section .display-4 {
 
 #mc .mc-about p {
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-color);
     font-weight: 600;
 }
@@ -107,7 +107,7 @@ section .display-4 {
 
 #mc .mc-social a {
     text-decoration: none;
-    color: var(--light-blue-color);
+    color: var(--primary-color);
     font-size: 20px;
     transition: all .3s;
 }
@@ -135,7 +135,7 @@ section .display-4 {
     position: absolute;
     top: -20px;
     right: 18px;
-    background: var(--light-blue-color);
+    background: var(--primary-color);
     color: var(--white-color);
     padding: 9px 24px;
     border-radius: 5px;
