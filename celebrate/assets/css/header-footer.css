@@ -132,6 +132,8 @@
     border-radius: 5px;
     border: 2px solid var(--primary-color);
     padding: 8px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 
 .navbar .search #search.min-padding-right {
