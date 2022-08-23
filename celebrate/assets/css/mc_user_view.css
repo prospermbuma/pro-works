@@ -86,6 +86,11 @@ section .display-4 {
     object-fit: cover;
 }
 
+#mc video {
+    margin: 5px;
+    width: 300px;
+}
+
 #mc .mc-about p {
     padding-top: 10px;
     font-size: 14px;
