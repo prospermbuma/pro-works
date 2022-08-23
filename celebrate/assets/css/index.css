@@ -64,6 +64,7 @@ section .display-4 {
     height: 700px;
     color: var(--black-color);
     margin-top: 60px;
+    margin-bottom: -60px;
 }
 
 #hero .container {
@@ -97,7 +98,8 @@ section .display-4 {
 
 @media only screen and (max-width: 1060px) {
     #hero {
-        margin-top: 80px;
+        margin-top: 100px;
+        margin-bottom: -100px;
     }
     #hero .container {
         padding-left: 100px;
@@ -107,12 +109,15 @@ section .display-4 {
 
 @media only screen and (max-width: 768px) {
     #hero {
-        margin-top: 40px;
-        margin-bottom: 300px;
+        margin-top: 100px;
+        margin-bottom: 370px;
     }
     #hero .container {
         padding-left: 60px;
         padding-right: 60px;
+    }
+    #hero .hero-img {
+        margin-top: -100px;
     }
     #hero .hero-text h2 {
         font-size: 80px;
@@ -128,6 +133,9 @@ section .display-4 {
         padding-left: 60px;
         padding-right: 60px;
     }
+    #hero .hero-img {
+        margin-top: 0px;
+    }
     #hero .hero-text h2 {
         font-size: 80px;
     }
@@ -135,7 +143,7 @@ section .display-4 {
 
 @media only screen and (max-width: 426px) {
     #hero {
-        margin-bottom: 0px;
+        margin-bottom: 115px;
     }
     #hero .container {
         padding-top: 120px;
@@ -146,6 +154,9 @@ section .display-4 {
 }
 
 @media only screen and (max-width: 376px) {
+    #hero {
+        margin-bottom: 20px;
+    }
     #hero .container {
         padding-top: 120px;
     }
@@ -192,7 +203,7 @@ section .display-4 {
 ===================================================*/
 
 #mcs {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 #mcs .row {
@@ -200,30 +211,38 @@ section .display-4 {
 }
 
 .featured .col {
-    overflow: hidden;
     position: relative;
     max-width: 800px;
     margin: 0 auto;
 }
 
+.featured .img-fluid {
+    vertical-align: middle;
+}
+
 .featured .content {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     color: #f1f1f1;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.featured .img-fluid {
-    vertical-align: middle;
-    transition: transform 1s ease-in-out;
+.featured .content .social a {
+    color: var(--light-gray-color);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 5px;
+    transition: all .3s ease;
 }
 
-
-/* .featured .img-fluid:hover {
-    transform: scale(1.2);
-} */
+.featured .content .social a:hover {
+    color: var(--gray-color);
+}
 
 #mcs .display-4 {
     position: relative;
@@ -304,6 +323,9 @@ section .display-4 {
 }
 
 @media only screen and (max-width: 576px) {
+    #mcs {
+        padding: 40px 0;
+    }
     #mcs .container {
         padding: 0 15px;
     }
