@@ -406,10 +406,6 @@
     color: var(--light-gray-color);
 } */
     
-    #featured .col.user-1 {
-        position: relative;
-    }
-    
     .overlay {
         position: absolute;
         bottom: 100%;
