@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 /* ==================================================
 # General
 ===================================================*/
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +43,7 @@ section .display-4 {
     }
 }
 
+
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 768px) {
@@ -49,7 +52,9 @@ section .display-4 {
     }
 }
 
+
 /* ==== End Query ===== */
+
 
 /* ==================================================
 # MCs
@@ -129,6 +134,20 @@ section .display-4 {
     color: var(--light-gray-color);
 }
 
+#mcs .mc-rating-price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+#mcs .mc-rating-price .price-badge {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--gray-color);
+}
+
+
 /* ======= Media Queries ======= */
 
 @media only screen and (max-width: 1060px) {
@@ -196,5 +215,6 @@ section .display-4 {
         background: var(--gray-color);
     }
 }
+
 
 /* ======= End Queries ======== */
