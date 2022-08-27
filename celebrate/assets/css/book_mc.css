@@ -86,20 +86,20 @@ section .display-4 {
 #mcs .display-4::before {
     position: absolute;
     content: '';
-    width: 100px;
+    width: 50px;
     height: 3px;
-    margin-left: -116px;
-    margin-top: 35px;
+    margin-left: -67px;
+    margin-top: 32px;
     background: var(--gray-color);
 }
 
 #mcs .display-4::after {
     position: absolute;
     content: '';
-    width: 100px;
+    width: 50px;
     height: 3px;
     margin-left: 19px;
-    margin-top: 35px;
+    margin-top: 32px;
     background: var(--gray-color);
 }
 
@@ -175,19 +175,19 @@ section .display-4 {
     #mcs .display-4::before {
         position: absolute;
         content: '';
-        width: 50px;
+        width: 30px;
         height: 3px;
-        margin-left: -61px;
-        margin-top: 42px;
+        margin-left: -40px;
+        margin-top: 20px;
         background: var(--gray-color);
     }
     #mcs .display-4::after {
         position: absolute;
         content: '';
-        width: 50px;
+        width: 30px;
         height: 3px;
         margin-left: 13px;
-        margin-top: 0px;
+        margin-top: 20px;
         background: var(--gray-color);
     }
 }
