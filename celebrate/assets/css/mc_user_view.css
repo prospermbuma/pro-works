@@ -135,8 +135,8 @@ section .display-4 {
     position: absolute;
     top: -20px;
     right: 18px;
-    background: var(--primary-color);
-    color: var(--white-color);
+    background: var(--warning-color);
+    color: var(--dark-color);
     padding: 9px 24px;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);

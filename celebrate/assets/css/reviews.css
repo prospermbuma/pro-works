@@ -99,7 +99,7 @@ section .display-4 {
 
 #reviews .user {
     border-radius: 50%;
-    border: 3px solid var(--gray-color);
+    border: 3px solid var(--light-gray-color);
     height: 100px;
     width: 100px;
     display: flex;
@@ -109,6 +109,7 @@ section .display-4 {
 
 #reviews .user-img {
     object-fit: cover;
+    border-radius: 50%;
 }
 
 #reviews .col-form .review-user {
@@ -129,10 +130,6 @@ section .display-4 {
 #reviews .col-form .review-user .fa-user {
     font-size: 30px;
     color: var(--gray-color);
-}
-
-#reviews .col-form .review-user img {
-    border-radius: 50%;
 }
 
 #reviews .reviews-form form input,
