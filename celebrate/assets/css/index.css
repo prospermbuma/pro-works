@@ -292,46 +292,16 @@
             padding: 0 40px;
         }
         #categories .display-4::before {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: -61px;
-            margin-top: 42px;
-            background: var(--gray-color);
+            display: none;
         }
         #categories .display-4::after {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: 13px;
-            margin-top: 0px;
-            background: var(--gray-color);
+            display: none;
         }
     }
     
     @media only screen and (max-width: 326px) {
         #categories .display-4 {
             font-size: 30px;
-        }
-        #categories .display-4::before {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: -40px;
-            margin-top: 37px;
-            background: var(--gray-color);
-        }
-        #categories .display-4::after {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: 13px;
-            margin-top: 0px;
-            background: var(--gray-color);
         }
     }
     /* ======= End Queries ======== */
@@ -544,46 +514,16 @@
             padding: 0 40px;
         }
         #featured .display-4::before {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: -61px;
-            margin-top: 42px;
-            background: var(--gray-color);
+            display: none;
         }
         #featured .display-4::after {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: 13px;
-            margin-top: 0px;
-            background: var(--gray-color);
+            display: none;
         }
     }
     
     @media only screen and (max-width: 326px) {
         #featured .display-4 {
             font-size: 30px;
-        }
-        #featured .display-4::before {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: -40px;
-            margin-top: 37px;
-            background: var(--gray-color);
-        }
-        #featured .display-4::after {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: 13px;
-            margin-top: 0px;
-            background: var(--gray-color);
         }
     }
     /* ======= End Queries ======== */
@@ -659,46 +599,16 @@
             font-size: 35px;
         }
         #better_it .display-4::before {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: -58px;
-            margin-top: 24px;
-            background: var(--gray-color);
+            display: none;
         }
         #better_it .display-4::after {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: 12px;
-            margin-top: 24px;
-            background: var(--gray-color);
+            display: none;
         }
     }
     
     @media only screen and (max-width: 326px) {
         #better_it .display-4 {
             font-size: 30px;
-        }
-        #better_it .display-4::before {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: -39px;
-            margin-top: 20px;
-            background: var(--gray-color);
-        }
-        #better_it .display-4::after {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: 12px;
-            margin-top: 20px;
-            background: var(--gray-color);
         }
     }
     /* ======= End Queries ======== */
@@ -778,46 +688,16 @@
             font-size: 35px;
         }
         #for_you .display-4::before {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: -58px;
-            margin-top: 24px;
-            background: var(--gray-color);
+            display: none;
         }
         #for_you .display-4::after {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: 12px;
-            margin-top: 24px;
-            background: var(--gray-color);
+            display: none;
         }
     }
     
     @media only screen and (max-width: 326px) {
         #for_you .display-4 {
             font-size: 30px;
-        }
-        #for_you .display-4::before {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: -39px;
-            margin-top: 20px;
-            background: var(--gray-color);
-        }
-        #for_you .display-4::after {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: 12px;
-            margin-top: 20px;
-            background: var(--gray-color);
         }
     }
     /* ======= End Queries ======== */
@@ -897,46 +777,16 @@
             padding: 0 60px;
         }
         #schedule .display-4::before {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: -58px;
-            margin-top: 24px;
-            background: var(--gray-color);
+            display: none;
         }
         #schedule .display-4::after {
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 3px;
-            margin-left: 12px;
-            margin-top: 24px;
-            background: var(--gray-color);
+            display: none;
         }
     }
     
     @media only screen and (max-width: 326px) {
         #schedule .display-4 {
             font-size: 30px;
-        }
-        #schedule .display-4::before {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: -39px;
-            margin-top: 20px;
-            background: var(--gray-color);
-        }
-        #schedule .display-4::after {
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 3px;
-            margin-left: 12px;
-            margin-top: 20px;
-            background: var(--gray-color);
         }
     }
     /* ======= End Queries ======== */
