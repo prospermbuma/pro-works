@@ -413,46 +413,16 @@ section .display-4 {
         font-size: 35px;
     }
     #about .display-4::before {
-        position: absolute;
-        content: '';
-        width: 50px;
-        height: 3px;
-        margin-left: -58px;
-        margin-top: 24px;
-        background: var(--primary-color);
+        display: none;
     }
     #about .display-4::after {
-        position: absolute;
-        content: '';
-        width: 50px;
-        height: 3px;
-        margin-left: 12px;
-        margin-top: 24px;
-        background: var(--primary-color);
+        display: none;
     }
 }
 
 @media only screen and (max-width: 326px) {
     #about .display-4 {
         font-size: 30px;
-    }
-    #about .display-4::before {
-        position: absolute;
-        content: '';
-        width: 30px;
-        height: 3px;
-        margin-left: -39px;
-        margin-top: 20px;
-        background: var(--primary-color);
-    }
-    #about .display-4::after {
-        position: absolute;
-        content: '';
-        width: 30px;
-        height: 3px;
-        margin-left: 12px;
-        margin-top: 20px;
-        background: var(--primary-color);
     }
 }
 
