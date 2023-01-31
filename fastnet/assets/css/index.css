@@ -1,0 +1,280 @@
+/* ===================================================
+# General
+=====================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-top: 70px;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    /* font-family: 'Aboreto', cursive; */
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:focus {
+    outline: none;
+}
+
+
+/* ===================================================
+# Navigation
+=====================================================*/
+
+.navbar {
+    background: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.navbar .nav-brand {
+    margin-left: 60px;
+}
+
+.nav-brand img {
+    width: 200px;
+    height: auto;
+    margin-top: 13px;
+}
+
+.navbar .navbar-nav {
+    margin-right: 90px;
+    display: flex;
+}
+
+.navbar-nav .nav-item {
+    list-style-type: none;
+    margin: 0 15px;
+    margin-top: 3px;
+}
+
+.nav-item .nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--dark-color);
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.navbar #check-btn {
+    font-size: 25px;
+    color: var(--primary-color);
+    display: none;
+}
+
+.navbar #check {
+    display: none;
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    .navbar .nav-brand {
+        margin-left: 0px;
+    }
+    .navbar #check-btn {
+        display: block;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: var(--white-color);
+        top: 0;
+        left: -150%;
+        height: 700px;
+        width: 100%;
+        margin-top: 70px;
+        padding: 40px 30px;
+        transition: all .8s;
+    }
+    .navbar #check:checked~.navbar-nav {
+        left: 0;
+    }
+    .navbar-nav .nav-item {
+        margin: 15px 0;
+    }
+    .nav-item .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar #check-btn {
+        margin-right: 20px;
+    }
+    .navbar .nav-brand {
+        margin-left: -15px;
+    }
+    .nav-brand img {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    .navbar .nav-brand {
+        margin-left: -15px;
+    }
+    .nav-brand img {
+        width: 160px;
+    }
+    .navbar #check-btn {
+        font-size: 22px;
+    }
+    .navbar .navbar-nav {
+        padding: 40px 25px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar .nav-brand {
+        margin-left: -15px;
+    }
+    .navbar #check-btn {
+        font-size: 18px;
+    }
+}
+
+
+/* ===================================================
+# Hero
+=====================================================*/
+
+#hero {
+    height: 700px;
+    position: relative;
+}
+
+#hero .hero-text {
+    margin-top: 120px;
+}
+
+#hero .hero-text span {
+    font-family: 'Julius Sans One', sans-serif;
+    color: var(--black-color);
+}
+
+#hero .hero-text p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#hero .hero-text a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#hero .hero-img {
+    margin-top: 90px;
+    position: relative;
+}
+
+#hero .hero-img img {
+    width: 420px;
+}
+
+
+/* #hero .hero-img img.wifi {
+    width: 80px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    animation: swing 1.5s ease-in-out infinite both;
+}
+
+@keyframes swing {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(-0px);
+    }
+} */
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #hero .hero-text {
+        margin-top: 120px;
+    }
+    #hero .hero-text span {
+        font-size: 65px;
+    }
+    #hero .hero-img {
+        margin-top: 90px;
+    }
+    #hero .hero-img img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #hero .hero-text {
+        margin-top: 60px;
+    }
+    #hero .hero-img {
+        margin-top: 10px;
+    }
+    #hero .hero-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #hero .hero-text {
+        margin-top: 60px;
+    }
+    #hero .hero-text span {
+        font-size: 40px;
+    }
+    #hero .hero-img {
+        margin-top: 5px;
+    }
+    #hero .hero-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #hero .hero-text {
+        margin-top: 50px;
+    }
+    #hero .hero-text span {
+        font-size: 30px;
+    }
+    #hero .hero-img {
+        margin-top: 5px;
+    }
+    #hero .hero-img img {
+        width: 100%;
+    }
+}

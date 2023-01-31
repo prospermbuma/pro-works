@@ -1,0 +1,29 @@
+
+.Book_Now {
+  font-size: 100px;
+  font-family: "Myriad Pro";
+  color: rgb(36, 79, 136);
+  line-height: 1.2;
+  position: absolute;
+  left: 1332.85px;
+  top: 952.236px;
+  width: 425px;
+  height: 76px;
+  z-index: 6;
+}
+
+
+.Rectangle_1 {
+  border-width: 0px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 1284px;
+  top: 906px;
+  width: 531px;
+  height: 188px;
+  z-index: 5;
+}
+
