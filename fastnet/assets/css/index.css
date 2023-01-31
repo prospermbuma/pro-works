@@ -206,6 +206,9 @@ html {
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 1060px) {
+    #hero {
+        height: 550px;
+    }
     #hero .hero-text {
         margin-top: 120px;
     }
@@ -221,6 +224,9 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
+    #hero {
+        height: 1200px;
+    }
     #hero .hero-text {
         margin-top: 60px;
     }
@@ -233,6 +239,9 @@ html {
 }
 
 @media only screen and (max-width: 576px) {
+    #hero {
+        height: 800px;
+    }
     #hero .hero-text {
         margin-top: 60px;
     }
@@ -247,7 +256,16 @@ html {
     }
 }
 
+@media only screen and (max-width:376px) {
+    #hero {
+        height: 750px;
+    }
+}
+
 @media only screen and (max-width: 326px) {
+    #hero {
+        height: 650px;
+    }
     #hero .hero-text {
         margin-top: 50px;
     }
@@ -259,5 +277,68 @@ html {
     }
     #hero .hero-img img {
         width: 100%;
+    }
+}
+
+
+/* ===================================================
+# Paralax
+=====================================================*/
+
+#paralax {
+    height: 450px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/structured-cabling/structured-cabling4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--light-color);
+}
+
+#paralax p {
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+    #paralax {
+        height: 300px;
+    }
+    #paralax p {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #paralax p {
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width:376px) {
+    #paralax {
+        height: 280px;
+    }
+    #paralax p {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:366px) {
+    #paralax {
+        height: 250px;
+    }
+    #paralax p {
+        font-size: 37px;
+    }
+}
+
+@media only screen and (max-width:326px) {
+    #paralax {
+        height: 200px;
+    }
+    #paralax p {
+        font-size: 30px;
+        margin-top: 50px;
     }
 }
