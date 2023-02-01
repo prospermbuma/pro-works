@@ -289,7 +289,6 @@ html {
 =====================================================*/
 
 #paralax {
-    height: 450px;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/structured-cabling/structured-cabling4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -297,6 +296,10 @@ html {
     background-position: center;
     background-attachment: fixed;
     color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
 }
 
 #paralax p {
@@ -307,9 +310,6 @@ html {
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width:768px) {
-    #paralax {
-        height: 300px;
-    }
     #paralax p {
         font-size: 60px;
     }
@@ -322,27 +322,18 @@ html {
 }
 
 @media only screen and (max-width:376px) {
-    #paralax {
-        height: 280px;
-    }
     #paralax p {
         font-size: 40px;
     }
 }
 
 @media only screen and (max-width:366px) {
-    #paralax {
-        height: 250px;
-    }
     #paralax p {
         font-size: 37px;
     }
 }
 
 @media only screen and (max-width:326px) {
-    #paralax {
-        height: 200px;
-    }
     #paralax p {
         font-size: 30px;
         margin-top: 50px;
