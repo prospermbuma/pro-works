@@ -402,10 +402,10 @@ html {
 
 @media only screen and (max-width:576px) {
     #featured .featured-text h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
     #featured .featured-text p {
-        margin-top: -20px;
+        margin-top: -5px;
         padding-right: 0px;
     }
 }
@@ -468,11 +468,78 @@ html {
 }
 
 @media only screen and (max-width:576px) {
+    #featured-2 .featured-2-img {
+        margin-top: -20PX;
+    }
     #featured-2 .featured-2-text h1 {
-        font-size: 60px;
+        font-size: 45px;
     }
     #featured-2 .featured-2-text p {
-        margin-top: -20px;
+        margin-top: -5px;
+        padding-right: 0px;
+    }
+}
+
+
+/* ===================================================
+# Featured-3
+=====================================================*/
+
+#featured-3 {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 90px 0;
+}
+
+#featured-3 .featured-3-img img {
+    width: 450px;
+}
+
+#featured-3 .featured-3-text h1 {
+    font-family: 'Aboreto', cursive;
+    font-size: 60px;
+}
+
+#featured-3 .featured-3-text p {
+    font-weight: 300;
+    margin-top: -20px;
+    padding-right: 60px;
+    line-height: 1.7em;
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width:1060px) {
+    #featured-3 .row {
+        flex-flow: column wrap;
+    }
+    #featured-3 .featured-3-img img {
+        width: 100%;
+    }
+    #featured-3 .featured-3-text h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #featured-3 {
+        padding-top: 40px;
+    }
+    #featured-3 .featured-3-img img {
+        width: 100%;
+    }
+    #featured-3 .featured-3-text {
+        margin-top: -30px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #featured-3 .featured-3-text h1 {
+        font-size: 40px;
+    }
+    #featured-3 .featured-3-text p {
+        margin-top: -5px;
         padding-right: 0px;
     }
 }
