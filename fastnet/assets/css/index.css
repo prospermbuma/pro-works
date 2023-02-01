@@ -260,6 +260,9 @@ html {
     #hero {
         height: 750px;
     }
+    #hero .hero-text span {
+        font-size: 32px;
+    }
 }
 
 @media only screen and (max-width: 326px) {
