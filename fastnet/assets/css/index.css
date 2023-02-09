@@ -109,9 +109,9 @@ html {
     font-size: 22px;
     transition: all .3s;
     border: 1px solid var(--dark-color);
-    border-radius: 50px;
-    height: 38px;
-    width: 38px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
 }
 
 .navbar .social a:hover {
@@ -332,6 +332,7 @@ html {
 
 #paralax p {
     text-align: center;
+    font-family: 'Aboreto', cursive;
 }
 
 
@@ -381,6 +382,7 @@ html {
 
 #featured .featured-img img {
     width: 450px;
+    border-radius: 5px;
 }
 
 #featured .featured-text h1 {
@@ -412,7 +414,7 @@ html {
 
 @media only screen and (max-width:768px) {
     #featured {
-        padding-top: 40px;
+        padding-top: 75px;
     }
     #featured .featured-img img {
         width: 100%;
@@ -423,6 +425,9 @@ html {
 }
 
 @media only screen and (max-width:576px) {
+    #featured {
+        padding-top: 70px;
+    }
     #featured .featured-text h1 {
         font-size: 40px;
     }
