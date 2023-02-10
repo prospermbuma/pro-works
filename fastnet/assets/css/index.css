@@ -532,7 +532,7 @@ html {
 =====================================================*/
 
 #featured-3 {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: var(--white-color);
     padding: 90px 0;
 }
