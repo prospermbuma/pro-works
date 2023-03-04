@@ -666,9 +666,10 @@
     #footer .contact-address .email,
     #footer .contact-address .phone {
         display: flex;
-        justify-content: space-between;
+        justify-content: stretch;
         align-items: center;
-        margin: 15px 0;
+        margin: 20px 0;
+        gap: 1.5rem;
     }
     
     #footer .hr-copy {
@@ -762,9 +763,16 @@
         #footer .footer-text {
             margin-top: -30px;
         }
+        #footer nav {
+            display: flex;
+            justify-content: start;
+        }
     }
     
     @media only screen and (max-width:576px) {
+        #footer .row {
+            align-items: start;
+        }
         #footer .footer-text h1 {
             font-size: 40px;
         }
