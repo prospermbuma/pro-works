@@ -75,7 +75,6 @@
     color: var(--gray-color);
     transition: color 0.3s ease;
     position: relative;
-    transition: all 0.3s ease;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.min-fonts {

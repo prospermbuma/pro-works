@@ -304,12 +304,13 @@
 .btn-outline-light {
     background-color: transparent;
     border: 2px solid var(--light-color);
+    color: var(--dark-color);
 }
 
 .btn-outline-light:hover {
     background-color: var(--light-color);
     border: 2px solid var(--light-color);
-    color: var(--primary-color);
+    color: var(--dark-color);
 }
 
 .bg-white,
@@ -381,6 +382,7 @@
 .bg-dark a,
 .btn-dark a {
     color: var(--white-color);
+    text-decoration: none;
 }
 
 
