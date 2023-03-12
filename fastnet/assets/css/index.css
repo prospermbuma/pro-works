@@ -454,3 +454,137 @@
         padding-right: 0px;
     }
 }
+
+
+/* ===================================================
+# Swiper
+=====================================================*/
+
+#swiper {
+    position: relative;
+    background: var(--white-color);
+    color: var(--black-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 25px 0 60px 0;
+    overflow: hidden;
+}
+
+#swiper .container {
+    overflow: hidden;
+}
+
+#swiper .swiper {
+    width: 1050px;
+}
+
+#swiper .testimonial {
+    font-family: 'Aboreto', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+#swiper .card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#swiper .card::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: var(--light-color);
+    border-radius: 20px 20px 0 0;
+}
+
+#swiper .card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+#swiper .card .card-image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: var(--primary-color);
+}
+
+#swiper .card .card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid#fff;
+}
+
+#swiper .card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    color: #333;
+}
+
+#swiper .name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#swiper .name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#swiper .card .review {
+    color: var(--gray-color);
+}
+
+#swiper .swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: var(--primary-color);
+}
+
+#swiper .swiper-button-next,
+#swiper .swiper-button-prev {
+    opacity: 0.7;
+    color: var(--primary-color);
+    outline: none;
+}
+
+#swiper .swiper-button-next:hover,
+#swiper .swiper-button-prev:hover {
+    opacity: 1;
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width:1060px) {
+    #swiper .testimonial {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #swiper .testimonial {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #swiper .testimonial {
+        font-size: 35px;
+    }
+}
