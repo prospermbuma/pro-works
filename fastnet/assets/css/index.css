@@ -489,14 +489,14 @@
     position: relative;
     background: #fff;
     border-radius: 20px;
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
 }
 
 #swiper .card::before {
     content: "";
     position: absolute;
-    height: 40%;
+    height: 45%;
     width: 100%;
     background: var(--light-color);
     border-radius: 20px 20px 0 0;
@@ -547,6 +547,7 @@
 
 #swiper .card .review {
     color: var(--gray-color);
+    text-align: center;
 }
 
 #swiper .swiper-pagination-bullet {
