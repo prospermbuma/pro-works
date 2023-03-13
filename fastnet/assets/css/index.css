@@ -210,11 +210,18 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width:1060px) {
+    #featured {
+        padding-top: 0px;
+        padding-bottom: 90px;
+    }
     #featured .row {
         flex-flow: column wrap;
     }
     #featured .featured-img img {
         width: 100%;
+    }
+    #featured .featured-text {
+        margin-top: -150px;
     }
     #featured .featured-text h1 {
         font-size: 60px;

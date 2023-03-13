@@ -61,8 +61,8 @@
 =====================================================*/
 
 #about {
-    background: var(--light-color);
-    color: var(--black-color);
+    background: var(--primary-color);
+    color: var(--white-color);
     padding: 60px 0;
 }
 
@@ -101,7 +101,7 @@
 =====================================================*/
 
 #ours {
-    background: var(--white-color);
+    background: var(--light-color);
     color: var(--black-color);
     padding: 60px 0;
 }
@@ -132,7 +132,7 @@
 #team {
     background: var(--primary-color);
     color: var(--white-color);
-    padding: 20px 0 65px 0;
+    padding: 20px 0 60px 0;
 }
 
 #team .team-heading {
@@ -191,7 +191,7 @@
 }
 
 #team .card .social i {
-    opacity: 1;
+    opacity: 0.6;
     margin-top: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -201,7 +201,7 @@
 }
 
 #team .card .social i:hover {
-    opacity: 0.6;
+    opacity: 1;
 }
 
 #team .card .name-profession {
@@ -231,12 +231,18 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width:1060px) {
+    #team {
+        padding: 20px 0 50px 0;
+    }
     #team .team-heading {
         font-size: 50px;
     }
 }
 
 @media only screen and (max-width:768px) {
+    #team {
+        padding: 30px 0 45px 0;
+    }
     #team .team-heading {
         font-size: 40px;
     }
