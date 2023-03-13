@@ -1,0 +1,255 @@
+/* ===================================================
+# About-header
+=====================================================*/
+
+#about-header {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/camera/camera15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+}
+
+#about-header p {
+    text-align: center;
+    font-family: 'Aboreto', cursive;
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width:768px) {
+    #about-header p {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #about-header p {
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width:376px) {
+    #about-header p {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:366px) {
+    #about-header p {
+        font-size: 37px;
+    }
+}
+
+@media only screen and (max-width:326px) {
+    #about-header p {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+}
+
+
+/* ===================================================
+# About
+=====================================================*/
+
+#about {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 60px 0;
+}
+
+#about p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width:1060px) {
+    #about .row {
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* ===================================================
+# Ours
+=====================================================*/
+
+#ours {
+    background: var(--light-color);
+    color: var(--black-color);
+    padding: 60px 0;
+}
+
+#ours h2 {
+    font-family: 'Aboreto', cursive;
+}
+
+#ours p {
+    color: var(--dark-color);
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width:768px) {
+    #ours {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+
+/* ===================================================
+# Team
+=====================================================*/
+
+#team {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px 0 60px 0;
+}
+
+#team .team-heading {
+    font-family: 'Aboreto', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+#team .card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+
+#team .card::before {
+    content: "";
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: var(--light-color);
+    border-radius: 20px 20px 0 0;
+}
+
+#team .card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+#team .card .card-image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: var(--primary-color);
+}
+
+#team .card .card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--white-color);
+}
+
+#team .card .social {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#team .card .social i {
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#team .card .social i:hover {
+    opacity: 1;
+}
+
+#team .card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+#team .name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#team .name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#team .card .review {
+    color: var(--gray-color);
+    text-align: center;
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width:1060px) {
+    #team {
+        padding: 20px 0 50px 0;
+    }
+    #team .team-heading {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #team {
+        padding: 30px 0 45px 0;
+    }
+    #team .team-heading {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #team .team-heading {
+        font-size: 35px;
+    }
+}
