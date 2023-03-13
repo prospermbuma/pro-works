@@ -106,6 +106,10 @@
     padding: 60px 0;
 }
 
+#ours .card {
+    border-left: 5px solid var(--primary-color);
+}
+
 #ours h2 {
     font-family: 'Aboreto', cursive;
 }
@@ -121,6 +125,12 @@
     #ours {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #ours .container {
+        padding: 0 20px;
     }
 }
 

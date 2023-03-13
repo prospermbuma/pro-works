@@ -1,8 +1,8 @@
 /* ===================================================
-# About-header
+# Project-header
 =====================================================*/
 
-#about-header {
+#project-header {
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/camera/camera15.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@
     height: 45vh;
 }
 
-#about-header p {
+#project-header p {
     text-align: center;
     font-family: 'Aboreto', cursive;
 }
@@ -25,31 +25,31 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width:768px) {
-    #about-header p {
+    #project-header p {
         font-size: 60px;
     }
 }
 
 @media only screen and (max-width:576px) {
-    #about-header p {
+    #project-header p {
         font-size: 44px;
     }
 }
 
 @media only screen and (max-width:376px) {
-    #about-header p {
+    #project-header p {
         font-size: 40px;
     }
 }
 
 @media only screen and (max-width:366px) {
-    #about-header p {
+    #project-header p {
         font-size: 37px;
     }
 }
 
 @media only screen and (max-width:326px) {
-    #about-header p {
+    #project-header p {
         font-size: 30px;
         margin-top: 50px;
     }
@@ -57,60 +57,20 @@
 
 
 /* ===================================================
-# About
+# Projects
 =====================================================*/
 
-#about {
-    background: var(--primary-color);
-    color: var(--white-color);
-    padding: 60px 0;
-}
-
-#about p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.7em;
-}
-
-
-/* ==== Media Queries ==== */
-
-@media only screen and (max-width:1060px) {
-    #about .row {
-        flex-flow: column wrap;
-    }
-}
-
-@media only screen and (max-width:768px) {
-    #about {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-}
-
-@media only screen and (max-width:576px) {
-    #about {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-
-
-/* ===================================================
-# Ours
-=====================================================*/
-
-#ours {
+#projects {
     background: var(--light-color);
     color: var(--black-color);
     padding: 60px 0;
 }
 
-#ours h2 {
+#projects h2 {
     font-family: 'Aboreto', cursive;
 }
 
-#ours p {
+#projects p {
     color: var(--dark-color);
 }
 
@@ -118,7 +78,7 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width:768px) {
-    #ours {
+    #projects {
         padding-top: 40px;
         padding-bottom: 40px;
     }
