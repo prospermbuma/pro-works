@@ -204,8 +204,8 @@
 
 .card-img-top {
     width: 100%;
-    border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px);
+    border-top-left-radius: calc(0.45rem - 1px);
+    border-top-right-radius: calc(0.45rem - 1px);
 }
 
 .inner {
@@ -218,7 +218,7 @@
 }
 
 .card-body {
-    padding: 25px;
+    padding: 10px 25px 20px 25px;
 }
 
 .card-body h2 {
