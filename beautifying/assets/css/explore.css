@@ -1,0 +1,38 @@
+/*===================================================
+# Categories
+====================================================*/
+
+.categories {
+    margin: 30px 0 60px 0;
+}
+
+.categories img {
+    width: 300px;
+    height: 410px;
+    object-fit: cover;
+}
+
+.categories .card {
+    border-left: 8px solid #c46a21;
+    transition: all .3s;
+}
+
+.categories .card:hover {
+    background: #c46a21;
+    color: #fff;
+}
+
+.categories .card:hover p {
+    color: #fff;
+}
+
+.categories p {
+    background: orange;
+    color: #000;
+    font-weight: bold;
+    padding: 9px 12px;
+    width: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+/*===================================================
+# Trends
+====================================================*/
+
+.trends {
+    margin: 30px 0 60px 0;
+}
+
+.trends img {
+    width: 300px;
+    height: 410px;
+    object-fit: cover;
+}
+
+.trends .card {
+    border-left: 8px solid #c46a21;
+    transition: all .3s;
+}
+
+.trends .card:hover {
+    background: #c46a21;
+    color: #fff;
+}
+
+.trends .card:hover p {
+    color: #fff;
+}
+
+.trends p {
+    background: orange;
+    color: #000;
+    font-weight: bold;
+    padding: 9px 12px;
+    width: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}

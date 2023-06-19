@@ -1,149 +1,19 @@
 /*===================================================
-# General | Custom CSS
-====================================================*/
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    background: radial-gradient(#e4d2d2, #cfa2a0);
-}
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-
-.container {
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.title {
-    text-align: center;
-    margin: 0 auto 40px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-
-.title::after {
-    content: '';
-    background: #c46a21;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-h4 {
-    color: #555;
-    font-weight: normal;
-}
-
-p {
-    color: #555;
-}
-
-a {
-    text-decoration: none;
-    color: #555;
-}
-
-.btn {
-    display: inline-block;
-    background: #c46a21;
-    color: #ffffff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s ease;
-}
-
-.btn:hover {
-    background: radial-gradient(#744c4c, #f38680);
-}
-
-/*===================================================
-# Header | Navigation
-====================================================*/
-
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.navbar .nav-brand img {
-    width: 125px;
-}
-
-.navbar-nav {
-    flex: 1;
-    text-align: right;
-}
-
-.navbar-nav ul {
-    display: inline-block;
-    list-style-type: none;
-}
-
-.navbar-nav ul li {
-    display: inline-block;
-    margin: 20px;
-}
-
-
-/* ====  Media Queries ==== */
-
-@media only screen and (max-width: 800px) {
-    nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-    }
-
-    nav ul li {
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        color: #fff;
-    }
-}
-
-/*===================================================
 # Main
 ====================================================*/
-
 .hero-txt {
-    flex-basis: 50%;
-    min-width: 300px;
+    flex-basis: 45%;
+    margin-top: 0%;
 }
 
 .hero-img {
-    margin-top: -6%;
+    flex-basis: 40%;
+    margin-top: -5%;
 }
 
 .hero-img img {
-    max-width: 83%;
+    max-width: 90%;
+    margin: 0 45px;
 }
 
 .hero-txt h1 {
@@ -152,36 +22,42 @@ a {
     margin: 25px 0;
 }
 
-.col-2 {
+
+/*===================================================
+# Today Deals
+====================================================*/
+.todays_deals .today-title {
+   margin-left: 50px;
+}
+
+.todays_deals .col-2 {
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
 }
 
-.col-2 img {
+.todays_deals .col-2 img {
     width: 100%;
 }
 
+/*===================================================
+# Featured
+====================================================*/
 .featured img {
     width: 350px;
     height: 480px;
     object-fit: cover;
 }
 
-
-.col-3 {
-    padding: 5px;
-    margin-bottom: 40px;
-    transition: transform 0.5s;
-}
-
-.col-3 p {
-    font-size: 14px;
-}
-
-
-.col-3:hover {
-    transform: translateY(-5px);
+.featured p {
+    background: orange;
+    color: #000;
+    font-weight: bold;
+    padding: 9px 12px;
+    width: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
 }
 
 /*===================================================
