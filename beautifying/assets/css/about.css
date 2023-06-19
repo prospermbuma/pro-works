@@ -35,6 +35,20 @@
     background: #c46a21;
 }
 
+@media only screen and (max-width: 768px) {
+    .about h1.title {
+        font-size: 60px;
+        margin-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .about h1.title {
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+}
+
 /*===================================================
 # Team
 ====================================================*/
@@ -51,7 +65,6 @@
 .team .row-2 {
     margin-bottom: 40px;
 }
-
 
 .team .cardy {
     margin: 0 25px;

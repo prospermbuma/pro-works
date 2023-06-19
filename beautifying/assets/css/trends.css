@@ -12,6 +12,15 @@
     object-fit: cover;
 }
 
+@media only screen and (max-width: 768px) {
+    .trends img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
 .trends .card {
     border-left: 8px solid #c46a21;
     transition: all .3s;

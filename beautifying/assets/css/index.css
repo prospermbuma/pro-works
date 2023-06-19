@@ -54,6 +54,16 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    .todays_deals .today-title {
+        margin-left: 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+
 /*===================================================
 # Featured
 ====================================================*/
@@ -74,6 +84,38 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 1060px) {
+    .featured img {
+        width: 300px;
+        height: 450px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .featured img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .featured img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .featured img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
 /*===================================================
 # Footer
 ====================================================*/
@@ -82,6 +124,12 @@
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
+}
+
+@media only screen and (max-width: 1060px) {
+    .footer .row {
+        flex-direction: column;
+    }
 }
 
 .footer p {
