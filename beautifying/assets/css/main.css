@@ -244,6 +244,10 @@ a {
     text-align: center;
 }
 
+.footer .social i {
+    font-size: 18px;
+}
+
 ul {
     list-style-type: none;
 }
