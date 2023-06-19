@@ -6,6 +6,13 @@
     margin-top: 0%;
 }
 
+.hero-txt h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+
 .hero-img {
     flex-basis: 40%;
     margin-top: -5%;
@@ -16,10 +23,17 @@
     margin: 0 45px;
 }
 
-.hero-txt h1 {
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
+@media only screen and (max-width: 768px) {
+    .hero-txt h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin: 25px 0;
+    }
+
+    .hero-img img {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 
@@ -27,7 +41,7 @@
 # Today Deals
 ====================================================*/
 .todays_deals .today-title {
-   margin-left: 50px;
+    margin-left: 50px;
 }
 
 .todays_deals .col-2 {
