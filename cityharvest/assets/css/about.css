@@ -1,0 +1,80 @@
+/* =====================================================
+# Hero
+===================================================== */
+#hero {
+    /* height: 700px;
+    margin-top: 70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(to left top, var(--primary-color), #eaefe7), url('../img/church/church1.png'); */
+    /* background: linear-gradient(to left top, rgba(65, 146, 3, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church1.png'); */
+    /* background: linear-gradient(360deg, rgba(65, 146, 3, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church1.png'); */
+    /* background: linear-gradient(360deg, rgba(59, 113, 18, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church1.png'); */
+    background: linear-gradient(360deg, rgba(41, 41, 41, 0.8), rgba(170, 216, 143, 0.8)), url('../img/church/church1.png');
+    /* background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church1.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+}
+
+/* #hero .row {
+    margin-top: 60px;
+} */
+
+#hero .hero-txt {
+    text-align: center;
+}
+
+#hero .hero-txt h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    color: var(--secondary-color);
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#hero .hero-txt .btn {
+    text-decoration: none;
+    background: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 13px 52px;
+    transition: all .3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero .hero-txt .btn:hover {
+    opacity: 0.8;
+}
+
+/* =====================================================
+# Services Schedule
+===================================================== */
+#services-schedule .card {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background: hsl(0, 0%, 100%, .3);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 32px;
+    width: 800px;
+    height: 150px;
+    z-index: 1030;
+}
+
+#services-schedule .card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#services-schedule .card .head-txt h1,
+#services-schedule .card .head-txt h2 {
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
