@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <!-- === AOS (Animation On Scroll CSS) CDN === -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- === Title === -->
     <title>City Harvest Church</title>
     <!-- === CSS === -->
@@ -26,16 +28,16 @@
     <!-- === Navigation === -->
     <nav class="navbar">
         <a href="#home" class="nav-brand">
-            <img src="assets/img/logo/logo3.png" alt="">
+            <img src="assets/img/logo/logo2.png" alt="" id="logo">
         </a>
         <div class="navbar-menu">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="app/about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Publication</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Ministries</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="app/about.html" class="nav-link change-Color">About</a></li>
+                <li class="nav-item"><a href="" class="nav-link change-Color">Sermons</a></li>
+                <li class="nav-item"><a href="" class="nav-link change-Color">Publication</a></li>
+                <li class="nav-item"><a href="" class="nav-link change-Color">Ministries</a></li>
+                <li class="nav-item"><a href="" class="nav-link change-Color">Contact</a></li>
             </ul>
             <a href="#" class="btn btn-outline-primary">Give</a>
         </div>
@@ -91,15 +93,36 @@
                 </div>
             </div>
         </section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum omnis quasi, tempore nihil ex perferendis nemo, excepturi cupiditate quaerat corporis quibusdam fugiat consequatur eos reiciendis incidunt reprehenderit minus cumque.
-        Vero, eligendi. Architecto numquam quas provident reprehenderit ullam repudiandae quos, autem dolorem, sequi, impedit illo. Rerum accusantium, aspernatur eum saepe aperiam in! Libero natus cupiditate tempora quibusdam nihil explicabo animi.
-        Alias odit maxime repellat ad consectetur veniam! Quae obcaecati nulla animi minima ea possimus. Maxime nihil nam, perspiciatis possimus quam facere dicta eaque, tenetur facilis cumque corporis id explicabo? Molestiae.
-        Sint excepturi laudantium quo, laborum nemo iure labore molestiae dolores nulla, laboriosam obcaecati amet sed facere nihil vero in sit, aliquid molestias provident! Repellendus voluptatum pariatur voluptatibus beatae, quae esse?
-        Doloremque expedita ratione inventore exercitationem voluptate eligendi incidunt, animi qui quod, quos praesentium laudantium soluta hic sapiente iusto enim. Rerum minima perferendis neque nihil numquam magni sequi aperiam eius repellat.
-        Veritatis id reiciendis enim deserunt! Impedit vitae iusto voluptas et repellat incidunt ea autem modi nobis fugiat vero, rerum, facilis quisquam necessitatibus consequatur tempora magnam accusantium inventore odio, quibusdam totam.
-        Voluptatem id veritatis optio. Eveniet quia esse veritatis sit repellendus optio? Dicta illo iusto sit suscipit voluptas doloremque accusamus debitis incidunt asperiores. Reprehenderit dolore suscipit possimus quis explicabo, ullam aliquid.
-        Ullam asperiores mollitia, debitis ex sed unde. Impedit quo tempora rem distinctio ab et totam inventore est, id voluptas animi dicta veritatis harum delectus eius quibusdam laborum ducimus ullam ipsum.
-        Ea eveniet ab eum aliquam quo rem officia. Ipsa odit accusamus a eveniet, repellat eaque nihil, id dicta voluptates maxime minus nisi officiis cum suscipit laborum obcaecati repellendus atque ad.
+        <section id="pastors">
+            <div class="container">
+                <div class="row even-columns">
+                    <div class="pastors-img" data-aos="fade-right" data-aos-delay="100">
+                        <img src="assets/img/pastors/pastors000.png" alt="">
+                    </div>
+                    <div class="pastors-txt" data-aos="fade-left" data-aos-delay="100">
+                        <h1 class="lead"> MEET OUR LEAD PASTORS</h1>
+                        <h1>Rev. Arch. Yared Dondo & Pastor Matilda Dondo</h1>
+                        <p class="text-justify">
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis porro quam in ipsa
+                            molestias minima magnam aspernatur minus quos repudiandae, sequi at nulla tempora maiores
+                            itaque nostrum, autem repellat eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maiores illo inventore,
+                            adipisci quo eaque dolor porro, impedit, labore numquam officia cupiditate at est modi.
+                            Praesentium corrupti ut asperiores culpa!
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minima nostrum tempora in
+                            cumque debitis obcaecati esse consequatur vero. Repudiandae, facilis provident soluta vel
+                            eveniet similique consequuntur voluptatibus fuga eos?
+                            Fugit culpa saepe nemo harum quos odit vero neque, voluptatibus totam repellat nobis
+                            consequuntur dicta dignissimos. Similique eveniet necessitatibus, praesentium qui, et in
+                            sequi quos, beatae quae enim porro est.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- === Footer === -->
@@ -108,10 +131,16 @@
     </footer>
 
     <!-- === Scripts === -->
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous">
+        </script>
+    <!-- AOS (Animation On Scroll JS) CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-    <script>
-
-    </script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

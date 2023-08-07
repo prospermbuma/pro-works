@@ -12,25 +12,12 @@
 }
 
 body {
-    /* background: linear-gradient(to left top, #031A9A, #8B53FF); */
+    background: var(--secondary-color);
     overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-.container {
-    max-width: 1100px;
-    overflow: auto;
-    margin: auto;
-    padding: 40px;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* =====================================================
@@ -40,11 +27,11 @@ html {
     height: 80px;
     width: 100%;
     position: fixed;
-    top: 0;
+    top: 22px;
     left: 0;
     right: 0;
     z-index: 1030;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); */
     /* background: linear-gradient(to left top, var(--primary-color), #44be07); */
     display: flex;
     align-items: center;
@@ -54,9 +41,9 @@ html {
     /* background: hsl(0, 0%, 100%, .3); */
     /* background: hsl(0, 0%, 100%, .8);
     backdrop-filter: blur(10px); */
-    background: var(--white-color);
-    backdrop-filter: blur(10px);
-    transition: background .2s;
+    /* background: var(--white-color); */
+    /* backdrop-filter: blur(10px); */
+    transition: all .2s;
 }
 
 .navbar .nav-brand {
@@ -87,7 +74,7 @@ html {
 
 .navbar .navbar-nav .nav-item .nav-link {
     text-decoration: none;
-    color: #000;
+    color: var(--light-color);
     transition: all .3s;
 }
 
