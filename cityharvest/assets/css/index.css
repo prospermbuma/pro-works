@@ -42,7 +42,8 @@
 }
 
 #hero .hero-txt h2 {
-    font-size: 90px;
+    text-transform: capitalize;
+    font-size: 75px;
     font-weight: 900;
     line-height: 5rem;
     margin-bottom: 30px;
@@ -97,7 +98,7 @@
 ===================================================== */
 #pastors {
     /* height: 500px; */
-    padding: 60px 0 40px 0;
+    padding: 60px 0 60px 0;
 }
 
 #pastors .container {
@@ -109,14 +110,109 @@
     gap: 3rem;
 }
 
-/* #pastors .pastors-img {
-    flex-basis: 80%;
-} */
 
 #pastors .pastors-img img {
     width: 100%;
 }
 
-/* #pastors .pastors-txt {
-    flex-basis: 80%;
+/* =====================================================
+# Paralax
+===================================================== */
+#paralax {
+    height: 450px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/church/church1.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#paralax .container {
+    padding: 0 90px;
+    overflow: hidden;
+}
+
+#paralax .paralax-txt {
+    text-align: center;
+}
+
+#paralax h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-size: 70px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+#paralax p {
+    text-align: center;
+    color: var(--light-color);
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#paralax .btn {
+    margin-top: 30px;
+}
+
+/* =====================================================
+# Campus
+===================================================== */
+#campus {
+    padding: 60px 60px;
+}
+
+#campus .container {
+    overflow: hidden;
+}
+
+/* #campus .row {
+    gap: .3rem;
 } */
+
+#campus .campus-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#campus .campus-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+#campus .card-body>* {
+    margin-top: 17px;
+}
+
+#campus .card-body h2 {
+    text-transform: uppercase;
+}
+
+#campus .card-body p {
+    text-align: justify;
+}
+
+#campus .card-body .btn {
+    margin-bottom: 10px;
+    padding: 12px 24px;
+}

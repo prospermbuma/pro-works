@@ -14,6 +14,7 @@ AOS.init({
 const navbar = document.querySelector(".navbar");
 const nav_brand = document.querySelector(".navbar #logo");
 const nav_link_change = document.querySelectorAll(".navbar .change-Color");
+const nav_btn_give = document.querySelector(".give");
 
 window.addEventListener('scroll', () => {
    if (window.scrollY > 50) {
@@ -25,7 +26,7 @@ window.addEventListener('scroll', () => {
       nav_link_change.forEach(link => {
          link.style.color = "#000";
       });
-
+      nav_btn_give.style.color = "#419203";
    }
    else {
       navbar.style.background = "transparent";
@@ -36,7 +37,7 @@ window.addEventListener('scroll', () => {
       nav_link_change.forEach(link => {
          link.style.color = "#f8f9fa";
       });
-
+      nav_btn_give.style.color = "#fff";
    }
 });
 
