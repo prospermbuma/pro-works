@@ -115,3 +115,75 @@ html {
     color: var(--white-color);
     background: var(--primary-color);
 }
+
+/* =====================================================
+# Footer
+===================================================== */
+#footer {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    background: var(--white-color);
+}
+
+#footer .logo {
+    width: 150px;
+}
+
+#footer ul li {
+    list-style: none;
+    margin-bottom: 4px;
+
+}
+
+#footer a {
+    text-decoration: none;
+    color: var(--gray-color);
+    font-weight: 500;
+    transition: all .3s;
+}
+
+#footer a:hover {
+    color: var(--primary-color);
+}
+
+#footer h2 {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 15px;
+}
+
+#footer .col-staff {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#footer .staff-mail {
+    border-radius: 50px;
+    border: 2px solid var(--primary-color);
+    padding: 12px 24px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    transition: all .3s;
+    box-shadow: 0px 1px 10px rgba(31, 197, 2, 0.15);
+}
+
+#footer .staff-mail:hover {
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+
+#footer .social {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+#footer .social .fab {
+    color: var(--gray-color);
+    margin: 0 8px;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+#footer .social .fab:hover {
+    color: var(--primary-color);
+}

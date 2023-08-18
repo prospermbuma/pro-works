@@ -98,7 +98,8 @@
 ===================================================== */
 #pastors {
     /* height: 500px; */
-    padding: 60px 0 60px 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 #pastors .container {
@@ -355,7 +356,7 @@
 ===================================================== */
 #weekly-services {
     padding-top: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 55px;
 }
 
 #weekly-services .container {
@@ -370,7 +371,12 @@
 #weekly-services .card {
     overflow: hidden;
     position: relative;
+    /* background: var(--secondary-color); */
 }
+
+/* #weekly-services #wed {
+    background: var(--secondary-color);
+} */
 
 
 #weekly-services .card-img {
