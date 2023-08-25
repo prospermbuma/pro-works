@@ -286,7 +286,7 @@ html {
 #footer .staff-mail {
     border-radius: 50px;
     border: 2px solid var(--primary-color);
-    padding: 12px 24px;
+    padding: 10px 24px;
     background: var(--primary-color);
     color: var(--white-color);
     transition: all .3s;
