@@ -84,7 +84,7 @@
 
 @media only screen and (max-width: 578px) {
     #hero .hero-txt {
-        margin-bottom: 90px;
+        margin-bottom: 190px;
     }
 
     #hero .hero-txt h2 {
@@ -105,6 +105,7 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 30px;
+    padding: 23px;
     width: 800px;
     height: 150px;
     z-index: 2;
@@ -119,6 +120,10 @@
 #services-schedule .card .head-txt h2 {
     font-weight: 900;
     font-family: 'Inter', sans-serif;
+}
+
+#services-schedule .services-all-mobile {
+    display: none;
 }
 
 /* ==== Media Queries ==== */
@@ -143,8 +148,27 @@
     #services-schedule .card {
         width: 100%;
         height: auto;
-        margin-bottom: -90px;
+        margin-bottom: -20px;
+        padding: 15px;
+    }
+
+    #services-schedule .services-all-desktop {
         display: none;
+    }
+
+    #services-schedule .services-all-mobile {
+        display: block;
+    }
+
+    #services-schedule .card .head-txt {
+        text-align: center;
+    }
+
+    #services-schedule .card .space-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
     }
 }
 
