@@ -72,13 +72,25 @@
 @media only screen and (max-width: 1060px) {
     #hero .hero-txt {
         margin-bottom: 190px;
-        z-index: 2;
     }
 
     #hero .hero-txt h2 {
         font-size: 35px;
         line-height: 2.2rem;
         margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 578px) {
+    #hero .hero-txt {
+        margin-bottom: 90px;
+    }
+
+    #hero .hero-txt h2 {
+        font-size: 35px;
+        line-height: 2.2rem;
+        margin-bottom: 40px;
     }
 
 }
@@ -132,6 +144,7 @@
         width: 100%;
         height: auto;
         margin-bottom: -90px;
+        display: none;
     }
 }
 
@@ -156,10 +169,15 @@
 }
 
 /* ==== Media Queries ==== */
+@media only screen and (max-width: 1060px) {
+    #pastors .container {
+        padding: 0 4 0px;
+    }
+}
 
 @media only screen and (max-width: 578px) {
     #pastors {
-        padding-top: 120px;
+        padding-top: 50px;
         padding-bottom: 60px;
     }
 
@@ -226,6 +244,12 @@
 
 /* ==== Media Queries ==== */
 
+@media only screen and (max-width: 1060px) {
+    #paralax {
+        height: 750px;
+    }
+}
+
 @media only screen and (max-width: 578px) {
     #paralax {
         height: 650px;
@@ -245,7 +269,12 @@
         margin-top: 20px;
         font-size: 18px;
     }
+}
 
+@media only screen and (max-width: 327px) {
+    #paralax {
+        height: 750px;
+    }
 }
 
 
