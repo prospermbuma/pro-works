@@ -67,6 +67,22 @@
     opacity: 0.8;
 }
 
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #hero .hero-txt {
+        margin-bottom: 190px;
+        z-index: 2;
+    }
+
+    #hero .hero-txt h2 {
+        font-size: 35px;
+        line-height: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+}
+
 /* =====================================================
 # Services Schedule
 ===================================================== */
@@ -93,11 +109,36 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #services-schedule .card {
+        width: 80%;
+        height: auto;
+        margin-bottom: 120px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #services-schedule .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 190px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #services-schedule .card {
+        width: 100%;
+        height: auto;
+        margin-bottom: -90px;
+    }
+}
+
 /* =====================================================
 # Pastors
 ===================================================== */
 #pastors {
-    /* height: 500px; */
     padding-top: 50px;
     padding-bottom: 60px;
 }
@@ -115,6 +156,15 @@
 #pastors .pastors-img img {
     width: 100%;
 }
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #pastors {
+        display: none;
+    }
+}
+
 
 /* =====================================================
 # Paralax
@@ -166,6 +216,15 @@
     color: var(--white-color);
 }
 
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #paralax {
+        display: none;
+    }
+}
+
+
 /* =====================================================
 # Campus
 ===================================================== */
@@ -187,7 +246,6 @@
     overflow: hidden;
     position: relative;
 }
-
 
 #campus .card-img {
     height: 230px;
@@ -280,6 +338,23 @@
     opacity: .8;
 }
 
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #campus .container {
+        padding: 0 20px;
+    }
+
+    #campus .campus-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #campus .campus-title::before {
+        top: 58px;
+    }
+}
+
 /* =====================================================
 # latest-message
 ===================================================== */
@@ -335,6 +410,23 @@
     border-radius: 20px;
 }
 
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #latest-message .container {
+        padding: 0 20px;
+    }
+
+    #latest-message .latest-message-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #latest-message .latest-message-title::before {
+        top: 58px;
+    }
+}
+
 /* =====================================================
 # abundant-harvest
 ===================================================== */
@@ -349,7 +441,21 @@
 
 #abundant-harvest img {
     border-radius: 20px;
+    width: 100%;
 }
+
+
+@media only screen and (max-width: 1060px) {
+    #abundant-harvest {
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+
+    #abundant-harvest .container {
+        padding: 0 20px;
+    }
+}
+
 
 /* =====================================================
 # Weekly-services
@@ -434,7 +540,7 @@
     right: -32px;
     bottom: 25px;
     transform: rotate(-90deg);
-    box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.3); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,4 +575,21 @@
 
 #weekly-services .card-body .btn:hover {
     opacity: .8;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #weekly-services .container {
+        padding: 0 20px;
+    }
+
+    #weekly-services .weekly-services-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #weekly-services .weekly-services-title::before {
+        top: 58px;
+    }
 }
