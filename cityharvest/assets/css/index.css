@@ -530,7 +530,7 @@
 #weekly-services .card {
     overflow: hidden;
     position: relative;
-    background: var(--secondary-color);
+    /* background: var(--secondary-color); */
 }
 
 /* #weekly-services #wed {
@@ -603,6 +603,7 @@
     height: 20px;
     padding: 20px;
     z-index: -1;
+    border-top-right-radius: 15px;
 }
 
 #weekly-services .card-body>* {
