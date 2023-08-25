@@ -147,11 +147,9 @@
     padding: 0 20px;
 }
 
-
 #pastors .row {
     gap: 3rem;
 }
-
 
 #pastors .pastors-img img {
     width: 100%;
@@ -159,9 +157,19 @@
 
 /* ==== Media Queries ==== */
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 578px) {
     #pastors {
-        display: none;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    #pastors .container {
+        padding: 0 30px;
+    }
+
+    #pastors .pastors-txt {
+        text-align: center;
+        margin-top: -20px;
     }
 }
 
@@ -218,10 +226,26 @@
 
 /* ==== Media Queries ==== */
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 578px) {
     #paralax {
-        display: none;
+        height: 650px;
     }
+
+    #paralax .container {
+        padding: 0 40px;
+    }
+
+    #paralax h2 {
+        font-size: 30px;
+    }
+
+    #paralax p {
+        text-align: justify;
+        color: var(--light-color);
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
 }
 
 
