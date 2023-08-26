@@ -82,9 +82,21 @@
 
 }
 
+@media only screen and (max-width: 669px) {
+    #hero .hero-txt {
+        margin-bottom: 60px;
+    }
+
+    #hero .hero-txt h2 {
+        font-size: 35px;
+        line-height: 2.2rem;
+        margin-bottom: 30px;
+    }
+}
+
 @media only screen and (max-width: 578px) {
     #hero .hero-txt {
-        margin-bottom: 190px;
+        margin-bottom: 60px;
     }
 
     #hero .hero-txt h2 {
@@ -144,12 +156,19 @@
     }
 }
 
+@media only screen and (max-width: 669px) {
+    #services-schedule .card {
+       display: none;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     #services-schedule .card {
         width: 100%;
         height: auto;
         margin-bottom: -20px;
         padding: 15px;
+        display: none;
     }
 
     #services-schedule .services-all-desktop {
