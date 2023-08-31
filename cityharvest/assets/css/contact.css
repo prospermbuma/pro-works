@@ -1,0 +1,81 @@
+/* =====================================================
+# Hero
+===================================================== */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: linear-gradient(to left top, var(--primary-color), rgba(234, 239, 231, 0.8)), url('../img/church/church2.jpg');
+    /* background: linear-gradient(to left top, rgba(65, 146, 3, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church2.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+#hero .row {
+    margin-top: 60px;
+}
+
+#hero .hero-txt {
+    text-align: center;
+}
+
+#hero .hero-txt h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: var(--white-color);
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero .hero-txt .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero .hero-txt .social i {
+    color: var(--secondary-color);
+    font-size: 25px;
+    transition: all .3s ease-in-out;
+}
+
+#hero .hero-txt .social i:hover {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 578px) {
+    #hero .hero-txt h2 {
+        font-size: 35px;
+    }
+
+}
+
+/* =====================================================
+# Services Schedule
+===================================================== */
+#services-schedule .card {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background: hsl(0, 0%, 100%, .3);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 32px;
+    width: 800px;
+    height: 150px;
+    z-index: 1030;
+}
+
+#services-schedule .card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#services-schedule .card .head-txt h1,
+#services-schedule .card .head-txt h2 {
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
