@@ -344,6 +344,10 @@ html {
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 1060px) {
+    #footer {
+        padding-top: 50px;
+    }
+
     #footer .col-staff {
         margin-top: 35px;
         margin-left: 0px;
