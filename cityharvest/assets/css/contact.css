@@ -179,11 +179,12 @@
     justify-content: center;
     align-items: center;
     height: 60vh;
-    /* background: linear-gradient(to left top, rgba(65, 146, 3, 0.8), rgba(234, 239, 231, 0.6)), url('../img/church/church2.jpg'); */
-    background: linear-gradient(to left top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../img/church/church2.jpg');
+    /* background: linear-gradient(to left top, rgba(65, 146, 3, 0.8), rgba(234, 239, 231, 0.6)), url('../img/church/church1.png'); */
+    background: linear-gradient(360deg, rgba(65, 146, 3, 0.95), rgba(16, 16, 15, 0.95)), url('../img/church/church1.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top;
+    background-position: bottom;
+    background-blend-mode: multiply;
 }
 
 #hero .row {
