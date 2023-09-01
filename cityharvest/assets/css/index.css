@@ -330,7 +330,7 @@
 
 @media only screen and (max-width: 669px) {
     #services-schedule .card {
-       display: none;
+        display: none;
     }
 }
 
@@ -558,8 +558,19 @@
     margin-bottom: 30px;
 }
 
+#campus .card-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#campus .card-btns .btn.direction {
+   background: transparent;
+   color: var(--primary-color);
+}
+
 #campus .card-body {
-    padding: 18px 40px 25px 40px;
+    padding: 18px 30px 25px 30px;
 }
 
 #campus .card .campus-text {
@@ -595,11 +606,11 @@
 
 #campus .card-body .btn {
     margin-bottom: 10px;
-    padding: 9px 22px;
+    padding: 9px 15px;
     background: var(--primary-color);
     color: var(--white-color);
     transition: all .3s;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); */
 }
 
 #campus .card-body .btn:hover {
@@ -620,6 +631,13 @@
 
     #campus .campus-title::before {
         top: 58px;
+    }
+
+    #campus .card-btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
     }
 }
 
