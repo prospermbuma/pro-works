@@ -183,6 +183,7 @@
     background-attachment: fixed;
     background-position: top;
     background-blend-mode: multiply;
+    background-size: cover;
 }
 
 #hero .row {

@@ -178,11 +178,12 @@
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background: linear-gradient(360deg, rgba(65, 146, 3, 0.85), rgba(16, 16, 15, 0.85)), url('../img/church/ch-kg1.png');
-    background-repeat: no-repeat;
+    background: linear-gradient(360deg, rgba(65, 146, 3, 0.85), rgba(16, 16, 15, 0.85)), url('../img/church/rock-city-mall-mwanza.jpg');
+    /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-position: top;
     background-blend-mode: multiply;
+    /* background-size: cover; */
 }
 
 #hero .row {
