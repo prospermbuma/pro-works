@@ -392,7 +392,7 @@
 
 @media only screen and (max-width: 578px) {
     #pastors {
-        padding-top: 5px;
+        padding-top: 50px;
         padding-bottom: 60px;
     }
 
@@ -402,7 +402,7 @@
 
     #pastors .pastors-txt {
         text-align: center;
-        margin-top: -20px;
+        margin-top: -10px;
     }
 }
 
@@ -467,7 +467,7 @@
 
 @media only screen and (max-width: 578px) {
     #paralax {
-        height: 650px;
+        height: 600px;
     }
 
     #paralax .container {
@@ -486,7 +486,7 @@
     }
 }
 
-@media only screen and (max-width: 327px) {
+@media only screen and (max-width: 350px) {
     #paralax {
         height: 750px;
     }
@@ -638,13 +638,33 @@
         font-size: 14px;
     }
 
+}
 
-    /* #campus .card-btns {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column;
-    } */
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 350px) {
+    #campus {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    #campus .container {
+        padding: 0 20px;
+    }
+
+    #campus .campus-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #campus .campus-title::before {
+        top: 50px;
+    }
+
+    #campus .card-body .btn {
+        font-size: 10px;
+    }
+
 }
 
 /* =====================================================
@@ -719,6 +739,21 @@
     }
 }
 
+@media only screen and (max-width: 350px) {
+    #latest-message {
+        padding-bottom: 15px;
+    }
+
+    #latest-message .latest-message-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #latest-message .latest-message-title::before {
+        top: 50px;
+    }
+}
+
 /* =====================================================
 # abundant-harvest
 ===================================================== */
@@ -736,7 +771,6 @@
     width: 100%;
 }
 
-
 @media only screen and (max-width: 1060px) {
     #abundant-harvest {
         padding-top: 20px;
@@ -745,6 +779,12 @@
 
     #abundant-harvest .container {
         padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #abundant-harvest {
+        padding-bottom: 15px;
     }
 }
 
@@ -768,13 +808,7 @@
 #weekly-services .card {
     overflow: hidden;
     position: relative;
-    /* background: var(--secondary-color); */
 }
-
-/* #weekly-services #wed {
-    background: var(--secondary-color);
-} */
-
 
 #weekly-services .card-img {
     height: 230px;
@@ -826,12 +860,9 @@
 #weekly-services .card .weekly-services-text {
     content: "";
     position: absolute;
-    /* top: 30px; */
-    /* left: 0; */
     right: -32px;
     bottom: 25px;
     transform: rotate(-90deg);
-    /* box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.3); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -883,5 +914,24 @@
 
     #weekly-services .weekly-services-title::before {
         top: 58px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #weekly-services {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    #weekly-services .container {
+        padding: 0 20px;
+    }
+
+    #weekly-services .weekly-services-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #weekly-services .weekly-services-title::before {
+        top: 50px;
     }
 }
