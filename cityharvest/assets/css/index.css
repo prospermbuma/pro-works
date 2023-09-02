@@ -391,7 +391,7 @@
 
 @media only screen and (max-width: 578px) {
     #pastors {
-        padding-top: 40px;
+        padding-top: 0px;
         padding-bottom: 60px;
     }
 
@@ -639,6 +639,31 @@
 
 }
 
+@media only screen and (max-width: 578px) {
+    #campus {
+        padding-top: 45px;
+        padding-bottom: 28px;
+    }
+
+    #campus .container {
+        padding: 0 20px;
+    }
+
+    #campus .campus-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #campus .campus-title::before {
+        top: 58px;
+    }
+
+    #campus .card-body .btn {
+        font-size: 14px;
+    }
+
+}
+
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 350px) {
@@ -774,6 +799,17 @@
     #abundant-harvest {
         padding-top: 20px;
         padding-bottom: 35px;
+    }
+
+    #abundant-harvest .container {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    #abundant-harvest {
+        padding-top: 15px;
+        padding-bottom: 25px;
     }
 
     #abundant-harvest .container {
@@ -921,6 +957,7 @@
         padding-top: 10px;
         padding-bottom: 50px;
     }
+
     #weekly-services .container {
         padding: 0 20px;
     }
