@@ -73,12 +73,12 @@
             </div>
         </section>
 
-        <!-- == Latest Message == -->
-        <section id="latest-message">
+        <!-- == Latest Sermons == -->
+        <section id="latest-sermons">
             <div class="container">
-                <h1 class="latest-message-title">Latest Sermons</h1>
+                <h1 class="latest-sermons-title">Latest Sermons</h1>
                 <div class="row">
-                    <div class="video-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-wrapper">
                         <iframe frameborder="0"
                             src="https://www.youtube.com/embed?listType=playlist&list=UUQLLAyIDCHSstiXWt5w2dpQ">
                         </iframe>
@@ -87,74 +87,11 @@
             </div>
         </section>
 
-        <!-- == weekly-services == -->
-        <section id="weekly-services">
+        <!-- == sermons == -->
+        <section id="sermons">
             <div class="container">
-                <h1 class="weekly-services-title" data-aos="fade-right" data-aos-delay="100">WEEKLY SERVICES</h1>
-                <div class="even-columns">
-                    <div class="card bg-white" data-aos="flip-up" data-aos-delay="100">
-                        <div class="card-body">
-                            <h2>SUNDAY</h2>
-                            <p>
-                            <div class="first-service">
-                                First Service:
-                                <br>
-                                <small><b>7:00 AM - 9:00 AM</b></small>
-                            </div>
-                            <hr>
-                            <div class="second-service">
-                                Second Service:
-                                <br>
-                                <small><b>09:30 AM - 12:30 PM</b></small>
-                            </div>
-                            </p>
-                        </div>
-                        <div class="weekly-services-text">
-                            <span>SERVICE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="even-columns">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card-body">
-                            <h2>TUESDAY</h2>
-                            <p>
-                                WELL.COM Groups:
-                                <br>
-                                <small><b>5:00 PM</b></small>
-                            </p>
-                        </div>
-                        <div class="weekly-services-text">
-                            <span>SERVICE</span>
-                        </div>
-                    </div>
-                    <div class="card" id="wed" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card-body">
-                            <h2>WEDNESDAY</h2>
-                            <p>
-                                Evening Service:
-                                <br>
-                                <small><b>4:30 PM - 6:00 PM</b></small>
-                            </p>
-                        </div>
-                        <div class="weekly-services-text">
-                            <span>SERVICE</span>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card-body">
-                            <h2>FRIDAY</h2>
-                            <p>
-                                Evening Prayers:
-                                <br>
-                                <small><b>4:30 PM - 6:00 PM</b></small>
-                            </p>
-                        </div>
-                        <div class="weekly-services-text">
-                            <span>SERVICE</span>
-                        </div>
-                    </div>
-                </div>
+                <div id="video-list" class="even-columns"></div>
+                <div id="pagination"></div>
             </div>
         </section>
 
@@ -227,6 +164,11 @@
     </footer>
 
     <!-- === Scripts === -->
+    <!-- YouTube Data API JavaScript Library -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <!-- YouTube Player API  -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
     <!-- JQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
@@ -236,7 +178,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/contact.js"></script>
+    <script src="../assets/js/sermons.js"></script>
 </body>
 
 </html>

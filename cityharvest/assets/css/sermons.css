@@ -234,18 +234,18 @@
 }
 
 /* =====================================================
-# latest-message
+# Latest Sermons
 ===================================================== */
-#latest-message {
+#latest-sermons {
     padding-top: 40px;
     padding-bottom: 10px;
 }
 
-#latest-message .container {
+#latest-sermons .container {
     overflow: hidden;
 }
 
-#latest-message .latest-message-title {
+#latest-sermons .latest-sermons-title {
     position: relative;
     display: flex;
     justify-content: center;
@@ -258,7 +258,7 @@
     font-weight: 600;
 }
 
-#latest-message .latest-message-title::before {
+#latest-sermons .latest-sermons-title::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -270,7 +270,7 @@
 }
 
 
-#latest-message .video-wrapper {
+#latest-sermons .video-wrapper {
     position: relative;
     /* padding-bottom: 56.25%; */
     padding-bottom: 54.25%;
@@ -279,7 +279,7 @@
     height: 200px;
 }
 
-#latest-message .video-wrapper iframe {
+#latest-sermons .video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -291,169 +291,85 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 1060px) {
-    #latest-message {
+    #latest-sermons {
         padding-top: 30px;
     }
 
-    #latest-message .container {
+    #latest-sermons .container {
         padding: 0 20px;
     }
 
-    #latest-message .latest-message-title {
+    #latest-sermons .latest-sermons-title {
         margin-bottom: 55px;
         font-size: 30px;
     }
 
-    #latest-message .latest-message-title::before {
+    #latest-sermons .latest-sermons-title::before {
         top: 58px;
     }
 }
 
 @media only screen and (max-width: 350px) {
-    #latest-message {
+    #latest-sermons {
         padding-bottom: 15px;
     }
 
-    #latest-message .latest-message-title {
+    #latest-sermons .latest-sermons-title {
         margin-bottom: 55px;
         font-size: 25px;
     }
 
-    #latest-message .latest-message-title::before {
+    #latest-sermons .latest-sermons-title::before {
         top: 50px;
     }
 }
 
 /* =====================================================
-# Weekly-services
+# Sermons
 ===================================================== */
-#weekly-services {
+#sermons {
     padding-top: 30px;
     padding-bottom: 55px;
     background: var(--light-color);
 }
 
-#weekly-services .container {
+#sermons .container {
     overflow: hidden;
 }
 
 
-#weekly-services .row {
-    gap: .5rem;
+#sermons .even-columns {
+    gap: 1.5rem;
 }
 
-#weekly-services .card {
-    overflow: hidden;
-    position: relative;
+#sermons iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
 }
 
-#weekly-services .card-img {
-    height: 230px;
-}
-
-#weekly-services .card .card-img-top {
-    transition: transform 1s ease-in-out;
-    height: 230px;
-    object-fit: cover;
-}
-
-#weekly-services .card .card-img-top:hover {
-    transform: scale(1.6);
-}
-
-#weekly-services .weekly-services-title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--black-color);
-    margin-bottom: 50px;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-#weekly-services .weekly-services-title::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 7px;
-    bottom: 0;
-    top: 65px;
-    background: var(--primary-color);
-    border-radius: 5px;
-}
-
-#weekly-services .weekly-services-para {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#weekly-services .card-body {
-    padding: 18px 40px 25px 40px;
-}
-
-#weekly-services .card .weekly-services-text {
-    content: "";
-    position: absolute;
-    right: -32px;
-    bottom: 25px;
-    transform: rotate(-90deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--primary-color);
-    color: var(--white-color);
-    width: 100px;
-    height: 20px;
-    padding: 20px;
-    z-index: -1;
-    border-top-right-radius: 15px;
-}
-
-#weekly-services .card-body>* {
-    margin-top: 17px;
-}
-
-#weekly-services .card-body h2 {
-    text-transform: uppercase;
-}
-
-#weekly-services .card-body p {
-    text-align: justify;
-}
-
-#weekly-services .card-body .btn {
-    margin-bottom: 10px;
-    padding: 9px 22px;
-    background: var(--primary-color);
-    color: var(--white-color);
-    transition: all .3s;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-#weekly-services .card-body .btn:hover {
-    opacity: .8;
+#sermons .video-title {
+    margin-top: 10px;
+   font-size: 15px;
 }
 
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 1060px) {
-    #weekly-services {
+    #sermons {
         padding-top: 20px;
     }
 
-    #weekly-services .container {
+    #sermons .container {
         padding: 0 20px;
     }
 
-    #weekly-services .weekly-services-title {
+    #sermons .sermons-title {
         margin-bottom: 55px;
         font-size: 30px;
     }
 
-    #weekly-services .weekly-services-title::before {
+    #sermons .sermons-title::before {
         top: 58px;
     }
 }
