@@ -337,20 +337,51 @@
     overflow: hidden;
 }
 
-
-#sermons .even-columns {
-    gap: 1.5rem;
+#sermons .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-#sermons iframe {
+#sermons .video-item {
+    text-align: center;
+}
+
+#sermons .video-item .video-title {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+#sermons .video-item iframe {
     width: 100%;
     height: 200px;
     border-radius: 20px;
 }
 
-#sermons .video-title {
-    margin-top: 10px;
-   font-size: 15px;
+#sermons .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#sermons .pagination-button {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#sermons .pagination-button.prev {
+    background-color: #333;
+}
+
+#sermons .pagination-button.next {
+    background-color: #333;
 }
 
 /* ==== Media Queries ==== */
@@ -364,12 +395,13 @@
         padding: 0 20px;
     }
 
-    #sermons .sermons-title {
-        margin-bottom: 55px;
-        font-size: 30px;
+    #sermons .video-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    #sermons .sermons-title::before {
-        top: 58px;
+@media only screen and (max-width: 578px) {
+    #sermons .video-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

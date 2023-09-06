@@ -91,87 +91,97 @@ window.addEventListener('scroll', () => {
 /* =====================================================
 # YouTube Data API - Getting Youtube Videos Playlist
 ===================================================== */
-// YouTube Data API Key.
+// YouTube Data API Key & Playlist ID.
 const API_KEY = 'AIzaSyDeHAzKbI8wQ3hwhzhf_7tMnmkzZCQYliY';
 const PLAYLIST_ID = 'UUQLLAyIDCHSstiXWt5w2dpQ';
-const MAX_RESULTS = 3; // Number of videos per page.
+const MAX_RESULTS = 6; // Number of videos per page.
 let nextPageToken = '';
+let currentPage = 1;
+let totalVideos = 0;
 
 // Load the YouTube Data API client library.
 gapi.load('client', start);
 
 function start() {
-    gapi.client.init({
-        apiKey: API_KEY,
-    }).then(() => {
-        return gapi.client.request({
-            path: `https://www.googleapis.com/youtube/v3/playlistItems`,
-            params: {
-                part: 'snippet',
-                playlistId: PLAYLIST_ID,
-                maxResults: MAX_RESULTS,
-                pageToken: nextPageToken,
-            },
-        });
-    }).then(response => {
-        const videoList = document.getElementById('video-list');
-        const pagination = document.getElementById('pagination');
-        const videos = response.result.items;
+   gapi.client.init({
+      apiKey: API_KEY,
+   }).then(() => {
+      return gapi.client.request({
+         path: `https://www.googleapis.com/youtube/v3/playlistItems`,
+         params: {
+            part: 'snippet',
+            playlistId: PLAYLIST_ID,
+            maxResults: MAX_RESULTS,
+            pageToken: nextPageToken,
+         },
+      });
+   }).then(response => {
+      const videoList = document.getElementById('video-list');
+      const pagination = document.getElementById('pagination');
+      const videos = response.result.items;
 
-        if (videos.length === 0) {
-            videoList.innerHTML = 'No videos found in the playlist.';
-            return;
-        }
+      if (videos.length === 0) {
+         videoList.innerHTML = 'No videos found in the playlist.';
+         return;
+      }
 
-        nextPageToken = response.result.nextPageToken;
+      totalVideos = response.result.pageInfo.totalResults;
+      nextPageToken = response.result.nextPageToken;
 
-        videos.forEach(video => {
-            const title = video.snippet.title;
-            const videoId = video.snippet.resourceId.videoId;
-            const thumbnailUrl = video.snippet.thumbnails.default.url;
-            // <iframe src="https://www.youtube.com/embed/${videoId}?controls=0&showinfo=0"  frameborder="0" allowfullscreen></iframe>
-            // Create a div to display the video.
-            const videoDiv = document.createElement('div');
-            videoDiv.classList.add('video-item'); // Add video-item class
-            videoDiv.setAttribute('data-aos', 'fade-up');// Set AOS attributes
-            videoDiv.setAttribute('data-aos-delay', '100');// Set AOS attributes
-            videoDiv.innerHTML = `
-        <div class="video-player" data-video-id="${videoId}"></div>
-        <h2 class="video-title">${title}</h2>
-      `;
+      videos.forEach(video => {
+         const title = video.snippet.title;
+         const videoId = video.snippet.resourceId.videoId;
 
-            videoList.appendChild(videoDiv);
-        });
+         // Create a div to display the video.
+         const videoDiv = document.createElement('div');
+         videoDiv.classList.add('video-item'); // Add video-item class
+         videoDiv.setAttribute('data-aos', 'fade-up');// Set AOS attributes
+         videoDiv.setAttribute('data-aos-delay', '100');// Set AOS attributes
+         videoDiv.innerHTML = `
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}?showinfo=0" frameborder="0" allowfullscreen>
+          </iframe>
+          <h2 class="video-title">${title}</h2>
+        `;
 
-        // Load YouTube player for each video
-        const videoPlayers = document.querySelectorAll('.video-player');
-        videoPlayers.forEach(player => {
-            const videoId = player.getAttribute('data-video-id');
-            createYouTubePlayer(videoId, player);
-        });
+         videoList.appendChild(videoDiv);
+      });
 
-        function createYouTubePlayer(videoId, container) {
-            const player = new YT.Player(container, {
-                videoId: videoId,
-                playerVars: {
-                    modestbranding: 1, // Hide YouTube logo
-                    controls: 0, // Hide player controls
-                    showinfo: 0, // Hide video title and uploader info
-                    rel: 0 // Disable related videos at the end
-                },
-            });
-        }
-
-        // Add pagination buttons.
-        if (nextPageToken) {
-            const nextPageButton = document.createElement('button');
-            nextPageButton.innerText = 'Next Page';
-            nextPageButton.addEventListener('click', loadNextPage);
-            pagination.appendChild(nextPageButton);
-        }
-    });
+      updatePagination();
+   });
 }
 
-function loadNextPage() {
-    start();
+function updatePagination() {
+   const totalPages = Math.ceil(totalVideos / MAX_RESULTS);
+
+   const pagination = document.getElementById('pagination');
+   pagination.innerHTML = '';
+
+   if (currentPage > 1) {
+      const prevButton = createPaginationButton('Prev', currentPage - 1, 'prev');
+      pagination.appendChild(prevButton);
+   }
+
+   if (currentPage < totalPages) {
+      const nextButton = createPaginationButton('Next', currentPage + 1, 'next');
+      pagination.appendChild(nextButton);
+   }
+}
+
+function createPaginationButton(label, page, className = '') {
+   const button = document.createElement('div');
+   button.className = `pagination-button ${className}`;
+   button.innerText = label;
+   button.addEventListener('click', () => goToPage(page));
+   return button;
+}
+
+function goToPage(page) {
+   currentPage = page;
+   const startIndex = (currentPage - 1) * MAX_RESULTS;
+   const endIndex = startIndex + MAX_RESULTS;
+
+   const videoList = document.getElementById('video-list');
+   videoList.innerHTML = '';
+
+   start(); // Fetch and display videos for the new page
 }
