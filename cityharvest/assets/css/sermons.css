@@ -360,6 +360,11 @@
     border-radius: 20px;
 }
 
+.page-number {
+    text-align: center;
+    margin-top: 20px;
+  }
+
 #sermons .pagination {
     display: flex;
     justify-content: center;
@@ -371,18 +376,18 @@
     margin: 0 5px;
     cursor: pointer;
     padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     border: none;
     border-radius: 5px;
 }
 
 #sermons .pagination-button.prev {
-    background-color: #333;
+    background-color: var(--dark-color);
 }
 
 #sermons .pagination-button.next {
-    background-color: #333;
+    background-color: var(--dark-color);
 }
 
 /* ==== Media Queries ==== */
