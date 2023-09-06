@@ -239,6 +239,7 @@
 #latest-sermons {
     padding-top: 40px;
     padding-bottom: 10px;
+    background: linear-gradient(180deg, var(--secondary-color), var(--light-color));
 }
 
 #latest-sermons .container {
