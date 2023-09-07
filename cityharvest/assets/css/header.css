@@ -5,15 +5,13 @@
     height: 80px;
     width: 100%;
     position: fixed;
+    top: 22px;
     left: 0;
     right: 0;
     z-index: 1030;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: hsl(0, 0%, 100%, .9);
-    backdrop-filter: blur(10px);
     transition: all .2s;
 }
 
@@ -45,7 +43,7 @@
 
 .navbar .navbar-nav .nav-item .nav-link {
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--light-color);
     transition: all .3s;
 }
 
@@ -71,13 +69,13 @@
 
 .navbar .btn.login:hover {
     background: transparent;
-    color: var(--primary-color);
+    color: var(--white-color);
     border: 2px solid var(--primary-color);
 }
 
 .navbar .btn.give {
     background: transparent;
-    color: var(--primary-color);
+    color: var(--white-color);
     transition: all .3s;
     padding: 9px 32px;
 }
@@ -116,13 +114,14 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        background: var(--secondary-color);
+        background: hsla(120, 1%, 19%, 0.9);
+        backdrop-filter: blur(10px);
         top: 0;
         left: -150%;
         height: 1500px;
         width: 100%;
         margin-top: 80px;
-        padding: 30px 30px;
+        padding: 10px 30px;
         transition: all .8s;
     }
 
@@ -135,7 +134,7 @@
         flex-direction: column;
         padding: 30px 30px;
         transition: all .8s;
-        gap: 2rem;
+        gap: 1.7rem;
     }
 
     .navbar #check:checked~.navbar-menu {

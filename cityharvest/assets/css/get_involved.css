@@ -1,0 +1,240 @@
+/* =====================================================
+# Hero
+===================================================== */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: linear-gradient(360deg, rgba(65, 146, 3, 0.85), rgba(16, 16, 15, 0.85)), url('../img/get-involved/get-involved.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+#hero .row {
+    margin-top: 60px;
+}
+
+#hero .hero-txt {
+    text-align: center;
+}
+
+#hero .hero-txt h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: var(--white-color);
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero .hero-txt .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero .hero-txt .social i {
+    color: var(--secondary-color);
+    font-size: 55px;
+    transition: all .3s ease-in-out;
+}
+
+#hero .hero-txt .social i:hover {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 578px) {
+    #hero {
+        background-position: 72%;
+    }
+
+    #hero .hero-txt h2 {
+        font-size: 35px;
+    }
+
+}
+
+/* =====================================================
+# Latest Sermons
+===================================================== */
+#latest-sermons {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background: linear-gradient(180deg, var(--secondary-color), var(--light-color));
+}
+
+#latest-sermons .container {
+    overflow: hidden;
+}
+
+#latest-sermons .latest-sermons-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#latest-sermons .latest-sermons-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+
+#latest-sermons .video-wrapper {
+    position: relative;
+    /* padding-bottom: 56.25%; */
+    padding-bottom: 54.25%;
+    /* 16:9 */
+    width: 100%;
+    height: 200px;
+}
+
+#latest-sermons .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #latest-sermons {
+        padding-top: 30px;
+    }
+
+    #latest-sermons .container {
+        padding: 0 20px;
+    }
+
+    #latest-sermons .latest-sermons-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #latest-sermons .latest-sermons-title::before {
+        top: 58px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #latest-sermons {
+        padding-bottom: 15px;
+    }
+
+    #latest-sermons .latest-sermons-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #latest-sermons .latest-sermons-title::before {
+        top: 50px;
+    }
+}
+
+/* =====================================================
+# Sermons
+===================================================== */
+#sermons {
+    padding-top: 30px;
+    padding-bottom: 55px;
+    background: var(--light-color);
+}
+
+#sermons .container {
+    overflow: hidden;
+}
+
+#sermons .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#sermons .video-item {
+    text-align: center;
+}
+
+#sermons .video-item .video-title {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+#sermons .video-item iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.page-number {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+#sermons .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#sermons .pagination-button {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+}
+
+#sermons .pagination-button.prev {
+    background-color: var(--dark-color);
+}
+
+#sermons .pagination-button.next {
+    background-color: var(--dark-color);
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #sermons {
+        padding-top: 20px;
+    }
+
+    #sermons .container {
+        padding: 0 20px;
+    }
+
+    #sermons .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    #sermons .video-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
