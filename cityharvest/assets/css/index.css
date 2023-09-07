@@ -635,7 +635,7 @@
 @media only screen and (max-width: 578px) {
     #abundant-harvest {
         padding-top: 10px;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
 
     #abundant-harvest .container {
@@ -780,7 +780,7 @@
 
 @media only screen and (max-width: 578px) {
     #weekly-services {
-        padding-top: 10px;
+        padding-top: 0px;
         padding-bottom: 0px;
     }
 
