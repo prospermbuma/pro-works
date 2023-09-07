@@ -323,7 +323,7 @@
 # Campus
 ===================================================== */
 #campus {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -609,8 +609,8 @@
 # abundant-harvest
 ===================================================== */
 #abundant-harvest {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 #abundant-harvest .container {
@@ -635,7 +635,7 @@
 
 @media only screen and (max-width: 578px) {
     #abundant-harvest {
-        padding-top: 15px;
+        padding-top: 10px;
         padding-bottom: 25px;
     }
 
@@ -655,7 +655,7 @@
 ===================================================== */
 #weekly-services {
     padding-top: 0px;
-    padding-bottom: 55px;
+    padding-bottom: 30px;
 }
 
 #weekly-services .container {
@@ -779,10 +779,30 @@
     }
 }
 
+@media only screen and (max-width: 578px) {
+    #weekly-services {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    #weekly-services .container {
+        padding: 0 20px;
+    }
+
+    #weekly-services .weekly-services-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #weekly-services .weekly-services-title::before {
+        top: 58px;
+    }
+}
+
 @media only screen and (max-width: 350px) {
     #weekly-services {
         padding-top: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
 
     #weekly-services .container {
@@ -797,4 +817,214 @@
     #weekly-services .weekly-services-title::before {
         top: 50px;
     }
+}
+
+/* =====================================================
+# Events
+===================================================== */
+#events {
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+#events .container {
+    overflow: hidden;
+}
+
+#events .day {
+    margin-right: 5px;
+}
+
+#events .row {
+    gap: .3rem;
+}
+
+#events .events-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#events .events-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+#events .events-para {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#events .card {
+    overflow: hidden;
+}
+
+#events .card-img {
+    height: 230px;
+    position: relative;
+}
+
+#events .card .events-text {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--white-color);
+    width: 100px;
+    height: 20px;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#events .card .card-img-top {
+    transition: transform 1s ease-in-out;
+    height: 230px;
+    object-fit: cover;
+}
+
+#events .card .card-img-top:hover {
+    transform: scale(1.6);
+}
+
+#events .card-body {
+    padding: 18px 30px 25px 30px;
+}
+
+#events .card-body>* {
+    margin-top: 17px;
+}
+
+#events .card-body h2 {
+    text-transform: uppercase;
+}
+
+#events .card-body p {
+    text-align: start;
+}
+
+#events .card-body .btn {
+    margin-bottom: 10px;
+    padding: 9px 15px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    transition: all .3s;
+    font-size: 16px;
+}
+
+#events .card-body .btn:hover {
+    opacity: .8;
+}
+
+#events .card-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#events .card-btns .btn.event {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+#events .card-btns .btn.event:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #events {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    #events .container {
+        padding: 0 20px;
+    }
+
+    #events .events-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #events .events-title::before {
+        top: 58px;
+    }
+
+    #events .card-body .btn {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 578px) {
+    #events {
+        padding-top: 25px;
+        padding-bottom: 45px;
+    }
+
+    #events .container {
+        padding: 0 20px;
+    }
+
+    #events .events-title {
+        margin-bottom: 45px;
+        font-size: 30px;
+    }
+
+    #events .events-title::before {
+        top: 58px;
+    }
+
+    #events .card-body .btn {
+        font-size: 14px;
+    }
+
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 350px) {
+    #events {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    #events .container {
+        padding: 0 20px;
+    }
+
+    #events .events-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #events .events-title::before {
+        top: 50px;
+    }
+
+    #events .card-body .btn {
+        font-size: 10px;
+    }
+
 }

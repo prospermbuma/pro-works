@@ -61,19 +61,26 @@
 }
 
 /* =====================================================
-# Latest Sermons
+# get_involved
 ===================================================== */
-#latest-sermons {
+#get_involved {
     padding-top: 40px;
-    padding-bottom: 10px;
-    background: linear-gradient(180deg, var(--secondary-color), var(--light-color));
+    padding-bottom: 50px;
 }
 
-#latest-sermons .container {
+#get_involved .container {
     overflow: hidden;
 }
 
-#latest-sermons .latest-sermons-title {
+#get_involved .day {
+    margin-right: 5px;
+}
+
+#get_involved .row {
+    gap: .3rem;
+}
+
+#get_involved .get_involved-title {
     position: relative;
     display: flex;
     justify-content: center;
@@ -81,12 +88,12 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--black-color);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-size: 40px;
     font-weight: 600;
 }
 
-#latest-sermons .latest-sermons-title::before {
+#get_involved .get_involved-title::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -97,144 +104,163 @@
     border-radius: 5px;
 }
 
+#get_involved .get_involved-para {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-#latest-sermons .video-wrapper {
+#get_involved .card {
+    overflow: hidden;
+}
+
+#get_involved .card-img {
+    height: 230px;
     position: relative;
-    /* padding-bottom: 56.25%; */
-    padding-bottom: 54.25%;
-    /* 16:9 */
-    width: 100%;
-    height: 200px;
 }
 
-#latest-sermons .video-wrapper iframe {
+#get_involved .card .get_involved-text {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--white-color);
+    width: 100px;
+    height: 20px;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 10px;
+    font-weight: bold;
 }
+
+#get_involved .card .card-img-top {
+    transition: transform 1s ease-in-out;
+    height: 230px;
+    object-fit: cover;
+}
+
+#get_involved .card .card-img-top:hover {
+    transform: scale(1.6);
+}
+
+#get_involved .card-body {
+    padding: 18px 30px 25px 30px;
+}
+
+#get_involved .card-body>* {
+    margin-top: 17px;
+}
+
+#get_involved .card-body h2 {
+    text-transform: uppercase;
+}
+
+#get_involved .card-body p {
+    text-align: start;
+}
+
+#get_involved .card-body .btn {
+    margin-bottom: 10px;
+    padding: 9px 15px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    transition: all .3s;
+    font-size: 16px;
+}
+
+#get_involved .card-body .btn:hover {
+    opacity: .8;
+}
+
+#get_involved .card-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#get_involved .card-btns .btn.event {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+#get_involved .card-btns .btn.event:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
 
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 1060px) {
-    #latest-sermons {
-        padding-top: 30px;
-    }
-
-    #latest-sermons .container {
+    #get_involved .container {
         padding: 0 20px;
     }
 
-    #latest-sermons .latest-sermons-title {
+    #get_involved .get_involved-title {
         margin-bottom: 55px;
         font-size: 30px;
     }
 
-    #latest-sermons .latest-sermons-title::before {
+    #get_involved .get_involved-title::before {
         top: 58px;
     }
-}
 
-@media only screen and (max-width: 350px) {
-    #latest-sermons {
-        padding-bottom: 15px;
+    #get_involved .card-body .btn {
+        font-size: 14px;
     }
 
-    #latest-sermons .latest-sermons-title {
+}
+
+@media only screen and (max-width: 578px) {
+    #get_involved {
+        padding-top: 30px;
+        padding-bottom: 22px;
+    }
+
+    #get_involved .container {
+        padding: 0 20px;
+    }
+
+    #get_involved .get_involved-title {
         margin-bottom: 55px;
-        font-size: 25px;
+        font-size: 30px;
     }
 
-    #latest-sermons .latest-sermons-title::before {
-        top: 50px;
+    #get_involved .get_involved-title::before {
+        top: 58px;
     }
-}
 
-/* =====================================================
-# Sermons
-===================================================== */
-#sermons {
-    padding-top: 30px;
-    padding-bottom: 55px;
-    background: var(--light-color);
-}
+    #get_involved .card-body .btn {
+        font-size: 14px;
+    }
 
-#sermons .container {
-    overflow: hidden;
-}
-
-#sermons .video-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-#sermons .video-item {
-    text-align: center;
-}
-
-#sermons .video-item .video-title {
-    margin-top: 10px;
-    font-size: 15px;
-}
-
-
-#sermons .video-item iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
-}
-
-.page-number {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-#sermons .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#sermons .pagination-button {
-    margin: 0 5px;
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-    border-radius: 5px;
-}
-
-#sermons .pagination-button.prev {
-    background-color: var(--dark-color);
-}
-
-#sermons .pagination-button.next {
-    background-color: var(--dark-color);
 }
 
 /* ==== Media Queries ==== */
 
-@media only screen and (max-width: 1060px) {
-    #sermons {
-        padding-top: 20px;
+@media only screen and (max-width: 350px) {
+    #get_involved {
+        padding-top: 45px;
+        padding-bottom: 25px;
     }
 
-    #sermons .container {
+    #get_involved .container {
         padding: 0 20px;
     }
 
-    #sermons .video-grid {
-        grid-template-columns: repeat(2, 1fr);
+    #get_involved .get_involved-title {
+        margin-bottom: 55px;
+        font-size: 25px;
     }
-}
 
-@media only screen and (max-width: 578px) {
-    #sermons .video-grid {
-        grid-template-columns: repeat(1, 1fr);
+    #get_involved .get_involved-title::before {
+        top: 50px;
     }
+
+    #get_involved .card-body .btn {
+        font-size: 10px;
+    }
+
 }
