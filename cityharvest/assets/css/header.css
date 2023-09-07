@@ -56,6 +56,99 @@
     font-weight: bold;
 }
 
+/* == About - Drop-down */
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown .dropdown-menu {
+    position: absolute;
+    background: var(--light-color);
+    color: var(--light-color);
+    padding: 5px 0px 12px 0px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 200px;
+    z-index: 1030;
+    margin-top: 3px;
+    transition: all .3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid var(--primary-color);
+    animation: zoom-in .3s alternate forwards ease-in-out;
+}
+
+.navbar .dropdown .dropdown-menu .nav-item {
+    text-decoration: none;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.navbar .dropdown .dropdown-menu :nth-child(5) {
+    border-bottom: none;
+}
+
+.navbar .dropdown .dropdown-menu .nav-link {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all .3s;
+}
+
+.navbar .dropdown .dropdown-menu .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+/* == Location Drop-down == */
+.navbar .dropdown-location {
+    position: relative;
+}
+
+.navbar .dropdown-location .dropdown-menu-location {
+    position: absolute;
+    left: 32px;
+    background: var(--light-color);
+    color: var(--light-color);
+    padding: 10px 0px 12px 0px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 200px;
+    z-index: 1030;
+    margin-top: 3px;
+    transition: all .3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid var(--primary-color);
+    animation: zoom-left .3s alternate forwards ease-in-out;
+}
+
+.navbar .dropdown-location .dropdown-menu-location .nav-item {
+    text-decoration: none;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.navbar .dropdown-location .dropdown-menu-location :nth-child(5) {
+    border-bottom: none;
+}
+
+.navbar .dropdown-location .dropdown-menu-location .nav-link {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all .3s;
+}
+
+.navbar .dropdown-location .dropdown-menu-location .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar .dropdown-location:hover .dropdown-menu-location {
+    display: flex;
+}
+
 .navbar .btn.login {
     text-decoration: none;
     background: var(--primary-color);

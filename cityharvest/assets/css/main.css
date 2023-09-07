@@ -28,3 +28,27 @@ html {
 a {
     text-decoration: none;
 }
+
+/* === Animation === */
+@keyframes zoom-in {
+    from {
+        /* transform: scale(0.9); */
+        transform: translateY(20px);
+    }
+
+    to {
+        /* transform: scale(1.0); */
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom-left {
+    from {
+        transform: translateX(20px);
+    }
+
+    to {
+        /* transform: scale(1.0); */
+        transform: translateX(0);
+    }
+}

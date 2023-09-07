@@ -2,28 +2,21 @@
 # Hero
 ===================================================== */
 #hero {
-    /* height: 700px;
-    margin-top: 70px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* background: linear-gradient(to left top, var(--primary-color), #eaefe7), url('../img/church/church1.png'); */
-    /* background: linear-gradient(to left top, rgba(65, 146, 3, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church1.png'); */
-    /* background: linear-gradient(360deg, rgba(65, 146, 3, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church1.png'); */
-    /* background: linear-gradient(360deg, rgba(59, 113, 18, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church1.png'); */
-    background: linear-gradient(360deg, rgba(41, 41, 41, 0.8), rgba(170, 216, 143, 0.8)), url('../img/church/church1.png');
-    /* background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(234, 239, 231, 0.8)), url('../img/church/church1.png'); */
-    background-size: cover;
+    height: 60vh;
+    background: linear-gradient(360deg, rgba(65, 146, 3, 0.85), rgba(16, 16, 15, 0.85)), url('../img/about/about.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top;
-    position: relative;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
-/* #hero .row {
+#hero .row {
     margin-top: 60px;
-} */
+}
 
 #hero .hero-txt {
     text-align: center;
@@ -34,47 +27,440 @@
     font-weight: 900;
     margin-bottom: 30px;
     font-family: 'Inter', sans-serif;
-    color: var(--secondary-color);
+    text-transform: uppercase;
+    color: var(--white-color);
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero .hero-txt .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero .hero-txt .social i {
+    color: var(--secondary-color);
+    font-size: 55px;
+    transition: all .3s ease-in-out;
+}
+
+#hero .hero-txt .social i:hover {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 578px) {
+    #hero {
+        background-position: 72%;
+    }
+
+    #hero .hero-txt h2 {
+        font-size: 35px;
+    }
 
 }
 
-#hero .hero-txt .btn {
-    text-decoration: none;
+/* =====================================================
+# About
+===================================================== */
+#about {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+#about .container {
+    overflow: hidden;
+}
+
+#about .day {
+    margin-right: 5px;
+}
+
+#about .row {
+    gap: .3rem;
+}
+
+#about .about-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#about .about-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
     background: var(--primary-color);
-    color: #fff;
-    border: 1px solid var(--primary-color);
-    border-radius: 50px;
-    padding: 13px 52px;
+    border-radius: 5px;
+}
+
+#about .about-para {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about .card::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: var(--primary-color);
+    width: 15px;
+    height: 20px;
+}
+
+#about .card-body {
+    padding: 18px 30px 25px 30px;
+}
+
+#about .card-body>* {
+    margin-top: 17px;
+}
+
+#about .card-body h2 {
+    text-transform: uppercase;
+}
+
+#about .card-body p {
+    text-align: start;
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #about .container {
+        padding: 0 20px;
+    }
+
+    #about .about-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #about .about-title::before {
+        top: 58px;
+    }
+
+    #about .card-body .btn {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 578px) {
+    #about {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+    #about .container {
+        padding: 0 20px;
+    }
+
+    #about .about-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #about .about-title::before {
+        top: 58px;
+    }
+
+    #about .card-body .btn {
+        font-size: 14px;
+    }
+
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 350px) {
+    #about {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    #about .container {
+        padding: 0 20px;
+    }
+
+    #about .about-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #about .about-title::before {
+        top: 50px;
+    }
+
+    #about .card-body .btn {
+        font-size: 10px;
+    }
+
+}
+
+/* =====================================================
+# Pastors
+===================================================== */
+#pastors {
+    padding-top: 0px;
+    padding-bottom: 35px;
+}
+
+#pastors .container {
+    padding: 0 20px;
+}
+
+#pastors .row {
+    gap: 3rem;
+}
+
+#pastors .pastors-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#pastors .pastors-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+#pastors .pastors-img img {
+    width: 100%;
+}
+
+/* ==== Media Queries ==== */
+@media only screen and (max-width: 1060px) {
+    #pastors .container {
+        padding: 0 40px;
+    }
+
+    #pastors .pastors-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #pastors .pastors-title::before {
+        top: 58px;
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    #pastors {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    #pastors .container {
+        padding: 0 30px;
+    }
+
+    #pastors .pastors-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #pastors .pastors-title::before {
+        top: 58px;
+    }
+
+
+    #pastors .pastors-txt {
+        text-align: center;
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    #pastors .container {
+        padding: 0 20px;
+    }
+
+    #pastors .pastors-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #pastors .pastors-title::before {
+        top: 50px;
+    }
+
+    #pastors .card-body .btn {
+        font-size: 10px;
+    }
+}
+
+/* =====================================================
+# Weekly-services
+===================================================== */
+#weekly-services {
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+#weekly-services .container {
+    overflow: hidden;
+}
+
+
+#weekly-services .row {
+    gap: .5rem;
+}
+
+#weekly-services .card {
+    overflow: hidden;
+    position: relative;
+}
+
+#weekly-services .card-img {
+    height: 230px;
+}
+
+#weekly-services .card .card-img-top {
+    transition: transform 1s ease-in-out;
+    height: 230px;
+    object-fit: cover;
+}
+
+#weekly-services .card .card-img-top:hover {
+    transform: scale(1.6);
+}
+
+#weekly-services .weekly-services-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#weekly-services .weekly-services-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+#weekly-services .weekly-services-para {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#weekly-services .card-body {
+    padding: 18px 40px 25px 40px;
+}
+
+#weekly-services .card .weekly-services-text {
+    content: "";
+    position: absolute;
+    right: -32px;
+    bottom: 25px;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--white-color);
+    width: 100px;
+    height: 20px;
+    padding: 20px;
+    z-index: -1;
+    border-top-right-radius: 15px;
+}
+
+#weekly-services .card-body>* {
+    margin-top: 17px;
+}
+
+#weekly-services .card-body h2 {
+    text-transform: uppercase;
+}
+
+#weekly-services .card-body p {
+    text-align: justify;
+}
+
+#weekly-services .card-body .btn {
+    margin-bottom: 10px;
+    padding: 9px 22px;
+    background: var(--primary-color);
+    color: var(--white-color);
     transition: all .3s;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-#hero .hero-txt .btn:hover {
-    opacity: 0.8;
+#weekly-services .card-body .btn:hover {
+    opacity: .8;
 }
 
-/* =====================================================
-# Services Schedule
-===================================================== */
-#services-schedule .card {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    background: hsl(0, 0%, 100%, .3);
-    backdrop-filter: blur(10px);
-    position: absolute;
-    bottom: 32px;
-    width: 800px;
-    height: 150px;
-    z-index: 1030;
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #weekly-services .container {
+        padding: 0 20px;
+    }
+
+    #weekly-services .weekly-services-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #weekly-services .weekly-services-title::before {
+        top: 58px;
+    }
 }
 
-#services-schedule .card p {
-    font-size: 18px;
-    font-weight: bold;
-}
+@media only screen and (max-width: 350px) {
+    #weekly-services {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
 
-#services-schedule .card .head-txt h1,
-#services-schedule .card .head-txt h2 {
-    font-weight: 900;
-    font-family: 'Inter', sans-serif;
+    #weekly-services .container {
+        padding: 0 20px;
+    }
+
+    #weekly-services .weekly-services-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #weekly-services .weekly-services-title::before {
+        top: 50px;
+    }
 }
