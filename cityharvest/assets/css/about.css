@@ -132,7 +132,16 @@
 }
 
 #about .card-body p {
-    text-align: start;
+    text-align: justify;
+}
+
+#about .beliefs {
+    color: var(--primary-color);
+    transition: all .2s;
+}
+
+#about .beliefs:hover {
+    color: var(--gray-color);
 }
 
 
