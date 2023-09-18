@@ -63,7 +63,7 @@
 
 .navbar .dropdown .dropdown-menu {
     position: absolute;
-    background: var(--light-color);
+    background: var(--white-color);
     color: var(--light-color);
     padding: 5px 0px 12px 0px;
     display: none;
@@ -84,7 +84,7 @@
     border-bottom: 1px solid var(--light-gray-color);
 }
 
-.navbar .dropdown .dropdown-menu :nth-child(5) {
+.navbar .dropdown .dropdown-menu :nth-child(6) {
     border-bottom: none;
 }
 
@@ -104,6 +104,55 @@
 
 /* == END About - Drop-down == */
 
+/* == Services Drop-down == */
+.navbar .dropdown-services {
+    position: relative;
+}
+
+.navbar .dropdown-services .dropdown-menu-services {
+    position: absolute;
+    left: 32px;
+    background: var(--white-color);
+    color: var(--light-color);
+    padding: 10px 0px 12px 0px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 200px;
+    z-index: 1030;
+    margin-top: 3px;
+    transition: all .3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid var(--primary-color);
+    animation: zoom-left .3s alternate forwards ease-in-out;
+}
+
+.navbar .dropdown-services .dropdown-menu-services .nav-item {
+    text-decoration: none;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.navbar .dropdown-services .dropdown-menu-services :nth-child(2) {
+    border-bottom: none;
+}
+
+.navbar .dropdown-services .dropdown-menu-services .nav-link {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all .3s;
+}
+
+.navbar .dropdown-services .dropdown-menu-services .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar .dropdown-services:hover .dropdown-menu-services {
+    display: flex;
+}
+
+/* == END Services Drop-down == */
+
 /* == Location Drop-down == */
 .navbar .dropdown-location {
     position: relative;
@@ -112,7 +161,7 @@
 .navbar .dropdown-location .dropdown-menu-location {
     position: absolute;
     left: 32px;
-    background: var(--light-color);
+    background: var(--white-color);
     color: var(--light-color);
     padding: 10px 0px 12px 0px;
     display: none;
@@ -153,6 +202,54 @@
 
 /* == END Location Drop-down == */
 
+/* == Sermons Drop-down == */
+.navbar .dropdown-sermons {
+    position: relative;
+}
+
+.navbar .dropdown-sermons .dropdown-menu-sermons {
+    position: absolute;
+    background: var(--white-color);
+    color: var(--light-color);
+    padding: 0px 0px 8px 0px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 200px;
+    z-index: 1030;
+    margin-top: 3px;
+    transition: all .3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid var(--primary-color);
+    animation: zoom-in .3s alternate forwards ease-in-out;
+}
+
+.navbar .dropdown-sermons .dropdown-menu-sermons .nav-item {
+    text-decoration: none;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.navbar .dropdown-sermons .dropdown-menu-sermons :nth-child(4) {
+    border-bottom: none;
+}
+
+.navbar .dropdown-sermons .dropdown-menu-sermons .nav-link {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all .3s;
+}
+
+.navbar .dropdown-sermons .dropdown-menu-sermons .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar .dropdown-sermons:hover .dropdown-menu-sermons {
+    display: flex;
+}
+
+/* == END Sermons Drop-down == */
+
 /* == Resources Drop-down == */
 .navbar .dropdown-resources {
     position: relative;
@@ -160,7 +257,6 @@
 
 .navbar .dropdown-resources .dropdown-menu-resources {
     position: absolute;
-    left: 32px;
     background: var(--white-color);
     color: var(--light-color);
     padding: 0px 0px 8px 0px;
@@ -182,7 +278,7 @@
     border-bottom: 1px solid var(--light-gray-color);
 }
 
-.navbar .dropdown-resources .dropdown-menu-resources :nth-child(4) {
+.navbar .dropdown-resources .dropdown-menu-resources :nth-child(3) {
     border-bottom: none;
 }
 
@@ -201,6 +297,54 @@
 }
 
 /* == END Resources Drop-down == */
+
+/* == Ministries - Drop-down == */
+.navbar .dropdown-ministries {
+    position: relative;
+}
+
+.navbar .dropdown-ministries .dropdown-menu-ministries {
+    position: absolute;
+    background: var(--white-color);
+    color: var(--light-color);
+    padding: 5px 0px 12px 0px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 200px;
+    z-index: 1030;
+    margin-top: 3px;
+    transition: all .3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid var(--primary-color);
+    animation: zoom-in .3s alternate forwards ease-in-out;
+}
+
+.navbar .dropdown-ministries .dropdown-menu-ministries .nav-item {
+    text-decoration: none;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.navbar .dropdown-ministries .dropdown-menu-ministries :nth-child(10) {
+    border-bottom: none;
+}
+
+.navbar .dropdown-ministries .dropdown-menu-ministries .nav-link {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all .3s;
+}
+
+.navbar .dropdown-ministries .dropdown-menu-ministries .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar .dropdown-ministries:hover .dropdown-menu-ministries {
+    display: flex;
+}
+
+/* == END Ministries - Drop-down == */
 
 .navbar .btn.login {
     text-decoration: none;
@@ -269,6 +413,7 @@
         margin-top: 80px;
         padding: 10px 30px;
         transition: all .8s;
+        overflow-y: scroll;
     }
 
     .navbar .navbar-nav {

@@ -228,11 +228,117 @@
 
 }
 
+/* =====================================================
+# Pastors
+===================================================== */
+#pastors {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+#pastors .container {
+    padding: 0 20px;
+}
+
+#pastors .row {
+    gap: 3rem;
+}
+
+#pastors .pastors-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#pastors .pastors-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+#pastors .pastors-img img {
+    width: 100%;
+}
+
+/* ==== Media Queries ==== */
+@media only screen and (max-width: 1060px) {
+    #pastors .container {
+        padding: 0 40px;
+    }
+
+    #pastors .pastors-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #pastors .pastors-title::before {
+        top: 58px;
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    #pastors {
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
+
+    #pastors .container {
+        padding: 0 30px;
+    }
+
+    #pastors .pastors-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+
+    #pastors .pastors-title::before {
+        top: 58px;
+    }
+
+
+    #pastors .pastors-txt {
+        text-align: center;
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    #pastors .container {
+        padding: 0 20px;
+    }
+
+    #pastors .pastors-title {
+        margin-bottom: 55px;
+        font-size: 25px;
+    }
+
+    #pastors .pastors-title::before {
+        top: 50px;
+    }
+
+    #pastors .card-body .btn {
+        font-size: 10px;
+    }
+}
+
 /*=================================================
 # Contact-info
 ==================================================*/
 #contact-info {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 0px;
     background: var(--light-color);
     color: var(--dark-color);
@@ -325,7 +431,7 @@
 
 @media only screen and (max-width: 786px) {
     #contact-info {
-        padding: 40px 0 30px 0;
+        padding: 30px 0 30px 0;
     }
 
     #contact-info .container {
