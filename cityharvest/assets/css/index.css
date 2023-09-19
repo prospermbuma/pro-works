@@ -278,7 +278,7 @@
 ===================================================== */
 #paralax {
     height: 450px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/church/church1.png');
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/church/church1.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;

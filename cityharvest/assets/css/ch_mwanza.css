@@ -383,6 +383,20 @@
     right: 35px;
     font-size: 25px;
     color: var(--primary-color);
+    transition: color .3s;
+}
+
+#contact-info .card i:hover {
+    color: var(--gray-color);
+}
+
+#contact-info .card  p a {
+    color: var(--dark-color);
+    transition: color .3s;
+}
+
+#contact-info .card p a:hover {
+    color: var(--primary-color);
 }
 
 #contact-info .card .left-our {
@@ -426,7 +440,6 @@
         top: 58px;
     }
 }
-
 
 @media only screen and (max-width: 786px) {
     #contact-info {
